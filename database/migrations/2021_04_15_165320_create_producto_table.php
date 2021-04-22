@@ -23,7 +23,9 @@ class CreateProductoTable extends Migration
             $table->string('estado');
             $table->bigInteger('visitas');
             $table->bigInteger('enlace_compra')->unsigned();
-            $table->foreign('enlace_compra')->references('id')->on('enlace_compra')->onDelete('cascade');
+            $table->bigInteger('id_tienda')->unsigned();
+            $table->foreign('enlace_compra')->references('id')->on('enlace_compra');
+            $table->foreign('id_tienda')->references('id')->on('tienda');
             $table->timestamps();
         });
     }

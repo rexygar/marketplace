@@ -23,8 +23,10 @@ class CreateTiendaTable extends Migration
             $table->string('foto_portada')->nullable();
             $table->bigInteger('id_direccion')->unsigned();
             $table->bigInteger('id_enlace_compra')->unsigned();
+            $table->bigInteger('id_categoria')->unsigned(); 
             $table->foreign('id_direccion')->references('id')->on('direccion')->onDelete('cascade')->nullable();
             $table->foreign('id_enlace_compra')->references('id')->on('enlace_compra')->onDelete('cascade')->nullable();
+            $table->foreign('id_categoria')->references('id')->on('categorias');
             $table->timestamps();
         });
     }
