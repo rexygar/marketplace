@@ -22,3 +22,7 @@ Route::get('/home', [App\Http\Controllers\MainController::class, 'index2'])->nam
 
 // ADMINISTRADOR
 Route::get('/ADM', [App\Http\Controllers\AdminController::class, 'getCategoria'])->name('admin.index');
+
+Route::get('/tests', function () {
+    return view('home');
+});
