@@ -17,10 +17,6 @@ class CreateDireccionTable extends Migration
             $table->id();
             $table->string('calle');
             $table->string('numero');
-            $table->bigInteger('id_Region')->unsigned();
-            $table->bigInteger('id_Comuna')->unsigned();
-            $table->foreign('id_Region')->references('id')->on('region')->onDelete('cascade')->nullable();
-            $table->foreign('id_Comuna')->references('id')->on('comuna')->onDelete('cascade')->nullable();
             $table->timestamps();
         });
     }

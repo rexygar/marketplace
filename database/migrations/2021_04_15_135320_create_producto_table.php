@@ -23,11 +23,7 @@ class CreateProductoTable extends Migration
             $table->string('estado');
             $table->bigInteger('visitas');
             $table->bigInteger('enlace_compra')->unsigned();
-            $table->bigInteger('id_Region')->unsigned();
-            $table->bigInteger('id_Comuna')->unsigned();
             $table->foreign('enlace_compra')->references('id')->on('enlace_compra')->onDelete('cascade');
-            $table->foreign('id_Region')->references('id')->on('region')->onDelete('cascade')->nullable();
-            $table->foreign('id_Comuna')->references('id')->on('comuna')->onDelete('cascade')->nullable();
             $table->timestamps();
         });
     }

@@ -8,6 +8,4 @@ use Illuminate\Database\Eloquent\Model;
 class Direccion extends Model
 {
     use HasFactory;
-    public $table = "direccion";
-    protected $connection = 'mysql';
 }
