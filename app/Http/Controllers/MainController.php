@@ -15,12 +15,12 @@ class MainController extends Controller
 
     public function index(){
         if(Auth::check()){
-            $rol = Auth::rol();
-            if($rol == 'ADMIN'){
-                return redirect()->route('admin.index');
+            $rol = Auth::user();
+            if($rol->rol == 'Admin'){
+                return view('dashboard.dashboard');
             }
         }
-        return view('index');
+        return view('home');
     }
 
     public function index2(){
