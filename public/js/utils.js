@@ -19,6 +19,7 @@ function eliminar(){
         $('#myModaldelete').modal("hide");
         toastr['info']('Se ha eliminado correctamente.')
         $('#tablaVenta').DataTable().ajax.reload()
+        location.reload();
 
     }).fail(function(jqXHR, ajaxOptions, thrownError ){
         console.log(jqXHR)

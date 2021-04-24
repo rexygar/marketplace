@@ -146,7 +146,7 @@ class AdminController extends Controller
         $producto = Producto::findOrFail($request->id);
 
         $producto->delete();
-        return back()->with('alert-danger', 'Usuario eliminado exitosamente');
+        return redirect()->route('list.producto');
     }
 
 }

@@ -21,17 +21,22 @@
                           @csrf
                           <input type="hidden" name="id" value="@if (isset($producto->id)){{ $producto->id }} @endif">
                           <span class="text-xl leading-relaxed text-center sm:text-left  w-full font-bold text-gray-700">Titulo</span>
-                          <input type="text" class="mr-16 border border-gray-700" name="titulo" value="@if (isset($producto->titulo)){{ $producto->titulo }} @endif">
+                          <input type="text" required class="mr-16 border border-gray-700" name="titulo" value="@if (isset($producto->titulo)){{ $producto->titulo }} @endif">
                           <br>
                           <span class="text-xl leading-relaxed text-center sm:text-left  w-full font-bold text-gray-700">Descripción</span>
-                          <input type="text" class="mr-16 border border-gray-700" name="descripcion" value="@if (isset($producto->descripcion)){{ $producto->descripcion }} @endif">
+                          <input type="text" required class="mr-16 border border-gray-700" name="descripcion" value="@if (isset($producto->descripcion)){{ $producto->descripcion }} @endif">
                           <br>
                           <label class="leading-loose">Imagen del producto</label>
-                          <input type="file" name="img" accept="image/" value="@if (isset($producto->img)){{ $producto->img }} @endif" multiple class="px-4 py-2 border focus:ring-gray-500 focus:border-gray-900 w-full sm:text-sm border-gray-300 rounded-md focus:outline-none text-gray-600" placeholder="Event title">
+                          <input type="file" required name="img" accept="image/*" value="@if (isset($producto->img)){{ $producto->img }} @endif" multiple class="px-4 py-2 border focus:ring-gray-500 focus:border-gray-900 w-full sm:text-sm border-gray-300 rounded-md focus:outline-none text-gray-600" placeholder="Event title">
                           <div class="mt-8"></div>
                           <select name="tienda">
                             @foreach ($tienda as $t)
-                                <option value="{{ $t->id }}" @if($t->id == $producto->id_tienda) selected @endif>{{ $t->razon_social }}</option>
+                              @if(!isset($producto->id_tienda))
+                              <option value="{{ $t->id }}" >{{ $t->razon_social }}</option>
+                              @else
+                              <option value="{{ $t->id }}" @if($t->id == $producto->id_tienda) selected @endif>{{ $t->razon_social }}</option>
+                              @endif
+                             
                             @endforeach
                           </select>
                           <div class="mt-8"></div>
