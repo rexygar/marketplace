@@ -31,7 +31,7 @@
                           <div class="mt-8"></div>
                           <select name="tienda">
                             @foreach ($tienda as $t)
-                                <option value="{{ $t->id }}">{{ $t->razon_social }}</option>
+                                <option value="{{ $t->id }}" @if($t->id == $producto->id_tienda) selected @endif>{{ $t->razon_social }}</option>
                             @endforeach
                           </select>
                           <div class="mt-8"></div>

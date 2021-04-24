@@ -34,10 +34,32 @@
                   </table>
                   <!-- End Table -->
                 </div>
-                
                 </div>
             </div>
         </div>
+        <div class="main-modal fixed w-full h-100 inset-0 z-50 overflow-hidden flex justify-center items-center animated fadeIn faster"
+                style="background: rgba(0,0,0,.7);">
+                <div
+                  class="border border-teal-500 shadow-lg modal-container bg-white mx-auto rounded z-50 overflow-y-auto">
+                  <div class="modal-content py-4 text-left px-6">
+                    <!--Title-->
+                    <div class="flex justify-between items-center pb-3">
+                      <p class="text-2xl font-bold">Eliminar Producto</p>
+                    </div>
+                    <!--Body-->
+                    <div class="my-5">
+                      <input type="hidden" id="idDelete" value="">
+                      <input type="hidden" id="productos" value="{{ route('delete.producto') }}">
+                      ¿Está seguro que desea Eliminar este registro?
+                    </div>
+                    <!--Footer-->
+                    <div class="flex justify-end pt-2">
+                      <button class="focus:outline-none modal-close px-4 bg-gray-400 p-3 rounded-lg text-black hover:bg-gray-300">Cancelar</button>
+                      <button class="focus:outline-none px-4 bg-green-500 p-3 ml-3 rounded-lg text-white hover:bg-green-400" onclick="eliminar()">Eliminar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
     </div>
 @stop
 
@@ -48,6 +70,49 @@
 <link href="https://cdn.datatables.net/select/1.3.1/css/select.dataTables.min.css" rel="stylesheet">
 <link href="https://cdn.datatables.net/buttons/1.6.5/css/buttons.dataTables.min.css" rel="stylesheet">
 <link rel="stylesheet" href="{{ asset('js/toastr/toastr.min.css') }}">
+<style>
+  .animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+
+  .animated.faster {
+    -webkit-animation-duration: 500ms;
+    animation-duration: 500ms;
+  }
+
+  .fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+  }
+
+  .fadeOut {
+    -webkit-animation-name: fadeOut;
+    animation-name: fadeOut;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+
+    to {
+      opacity: 0;
+    }
+  }
+</style>
 @endsection
 
 @section('vendor-script')
@@ -63,4 +128,38 @@
 
 @section('page-script')
 <script src="{{ asset('js/tablaProducto.js') }}"></script>
+<script src="{{ asset('js/utils.js') }}"></script>
+<script>
+  const modal = document.querySelector('.main-modal');
+		const closeButton = document.querySelectorAll('.modal-close');
+
+		const modalClose = () => {
+			modal.classList.remove('fadeIn');
+			modal.classList.add('fadeOut');
+			setTimeout(() => {
+				modal.style.display = 'none';
+			}, 500);
+		}
+
+		const openModal = (btn) => {
+			modal.classList.remove('fadeOut');
+			modal.classList.add('fadeIn');
+			modal.style.display = 'flex';
+      id = btn;
+      $('#idDelete').val(id);
+		}
+
+		for (let i = 0; i < closeButton.length; i++) {
+
+			const elements = closeButton[i];
+
+			elements.onclick = (e) => modalClose();
+
+			modal.style.display = 'none';
+
+			window.onclick = function (event) {
+				if (event.target == modal) modalClose();
+			}
+		}
+</script>
 @stop

@@ -16,7 +16,7 @@
                     <p class="text-5xl text-gray-800 font-semibold">Lista de Todas las Tiendas</p>
 
                     <div class="flex justify-between items-center bg-gray-100 border-b px-6 py-4">
-                      <a href="#" type="submit" class="bg-blue-500 flex justify-center items-center w-full text-white px-4 py-3 rounded-md focus:outline-none">Crear Tienda</a>
+                      <a href="#" type="submit" class="bg-blue-500 flex justify-center items-center hidden w-full text-white px-4 py-3 rounded-md focus:outline-none">Crear Tienda</a>
                     </div>
                   </div>
                   <!-- End Header -->
