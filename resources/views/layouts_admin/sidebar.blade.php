@@ -1,8 +1,8 @@
       <nav class="col-span-2 col-start-1 bg-black  h-screen px-4 text-gray-900 border border-yellow-500">
         <div class="flex flex-wrap mt-4">
             <div class="w-4/6 mx-auto">
-              <a href="{{ route('admin.index') }}">
-                <img src="{{ asset('img/logo_tecno.png') }}" alt="">
+              <a href="{{ route('admin.index') }}" class="text-blue-500 text-lg font-bold">
+                Marketplace Quillota
               </a>
             </div>
         </div>
@@ -35,15 +35,15 @@
               </a>
             </li>
             <li class="mb-2 px-4 py-4 text-gray-100 flex flex-row  border-gray-300 hover:text-white   hover:bg-blue-500  hover:font-bold rounded rounded-lg">
-              <a href="#"><i class="fa fa-folder"></i><span class="ml-2 font-bold">Listar Categorias</span>
+              <a href="{{ route('list.categoria') }}"><i class="fa fa-folder"></i><span class="ml-2 font-bold">Listar Categorias</span>
               </a>
             </li>
             <li class="mb-2 px-4 py-4 text-gray-100 flex flex-row  border-gray-300 hover:text-white   hover:bg-blue-500  hover:font-bold rounded rounded-lg">
-              <a href="#"><i class="fas fa-store"></i><span class="ml-2 font-bold">Listar Tiendas</span>
+              <a href="{{ route('list.tienda') }}"><i class="fas fa-store"></i><span class="ml-2 font-bold">Listar Tiendas</span>
               </a>
             </li>
             <li class="mb-2 px-4 py-4 text-gray-100 flex flex-row  border-gray-300 hover:text-white   hover:bg-blue-500  hover:font-bold rounded rounded-lg">
-              <a href="#"><i class="fas fa-shopping-basket"></i><span class="ml-2 font-bold">Listar Productos</span>
+              <a href="{{ route('list.producto') }}"><i class="fas fa-shopping-basket"></i><span class="ml-2 font-bold">Listar Productos</span>
               </a>
             </li>
           </ul>

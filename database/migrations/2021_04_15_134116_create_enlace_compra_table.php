@@ -16,7 +16,6 @@ class CreateEnlaceCompraTable extends Migration
         Schema::create('enlace_compra', function (Blueprint $table) {
             $table->id();
             $table->string('link');
-            $table->string('nombre');
             $table->timestamps();
         });
     }

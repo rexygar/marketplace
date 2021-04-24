@@ -21,6 +21,12 @@ Route::get('/home', [App\Http\Controllers\MainController::class, 'index2'])->nam
 
 
 // ADMINISTRADOR
+Route::get('/listaCategoria', [App\Http\Controllers\AdminController::class, 'listCategoria'])->name('list.categoria');
+Route::get('/listaTienda', [App\Http\Controllers\AdminController::class, 'listTiendas'])->name('list.tienda');
+Route::get('/listaProductos', [App\Http\Controllers\AdminController::class, 'listProductos'])->name('list.producto');
+Route::get('/crearProducto', [App\Http\Controllers\AdminController::class, 'createProduct'])->name('create.product');
+Route::get('/editarProducto', [App\Http\Controllers\AdminController::class, 'createProduct'])->name('edit.product');
+Route::POST('/proudctoAgregado', [App\Http\Controllers\AdminController::class, 'addProduct'])->name('add.product');
 Route::get('/ADM', [App\Http\Controllers\AdminController::class, 'getCategoria'])->name('admin.index');
 
 Route::get('/tests1', function () {

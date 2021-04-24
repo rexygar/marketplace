@@ -25,13 +25,12 @@ $(document).ready(function(){
         dom: 'Blfrtip',
         columns: [
             {data: 'id', name: 'id'},
-            {data: 'titulo', name: 'titulo'},
-            {data: 'descripcion', name: 'descripcion'},
+            {data: 'razon_social', name: 'razon_social'},
             {data: 'action', orderable:false, searchable:false},
         ],
         columnDefs: [
             { searchPanes: { show: true }, targets: [1] },
-            { searchPanes: { show: false }, targets: [0, 2, 3] }
+            { searchPanes: { show: false }, targets: [0] }
         ]
     })
 })

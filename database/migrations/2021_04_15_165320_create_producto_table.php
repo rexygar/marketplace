@@ -17,11 +17,11 @@ class CreateProductoTable extends Migration
             $table->id();
             $table->string('titulo');
             $table->string('descripcion', 4000);
-            $table->integer('precio');
+            $table->integer('precio')->nullable();
             $table->string('img');
-            $table->integer('stock');
-            $table->string('estado');
-            $table->bigInteger('visitas');
+            $table->integer('stock')->nullable();
+            $table->string('estado')->nullable();
+            $table->bigInteger('visitas')->nullable();
             $table->bigInteger('enlace_compra')->unsigned();
             $table->bigInteger('id_tienda')->unsigned();
             $table->foreign('enlace_compra')->references('id')->on('enlace_compra');

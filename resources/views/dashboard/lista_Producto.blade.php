@@ -7,13 +7,15 @@
     <div class="col-span-10 col-start-3 px-6 ">
         <div class="mx-auto container">
             <div class=" border-b px-6 py-2 items-center grid grid-cols-12">
-              <input type="hidden" id="rutaListar" value="{{ route('product.list') }}">
+              <input type="hidden" id="rutaListar" value="{{ route('list.producto') }}">
                 <div class="col-span-12">
                     <div class="flex flex-col max-w-full shadow-md m-6">
                   <!-- Header -->
                   <div class="flex justify-between items-center bg-gray-100 border-b px-6 py-4">
                     <p class="text-5xl text-gray-800 font-semibold">Lista de Productos</p>
-
+                    <div class="flex justify-between items-center bg-gray-100 border-b px-6 py-4">
+                      <a href="{{ route('create.product') }}" type="submit" class="bg-blue-500 flex justify-center items-center w-full text-white px-4 py-3 rounded-md focus:outline-none">Crear Producto</a>
+                    </div>
                   </div>
                   <!-- End Header -->
                 
@@ -21,16 +23,13 @@
                   <table class="overflow-x-auto w-full bg-white divide-y divide-gray-200 data-table">
                     <thead class="bg-gray-50 text-gray-500 text-sm">
                       <tr class="divide-x divide-gray-300">
-                        <th class="px-3 py-2 text-left text-xs font-medium text-gray-500 uppercase">Codigo del Producto</th>
-                        <th class="px-3 py-2 text-left text-xs font-medium text-gray-500 uppercase">Producto</th>
-                        <th class="px-3 py-2 text-left text-xs font-medium text-gray-500 uppercase">Sup. Categoria</th>
-                        <th class="px-3 py-2 text-left text-xs font-medium text-gray-500 uppercase">Categoria</th>
-                        <th class="px-3 py-2 text-left text-xs font-medium text-gray-500 uppercase">Sub. Categoria</th>
-                        <th class="px-3 py-2 text-left text-xs font-medium text-gray-500 uppercase">Sub. Sub. Categoria</th>
-                        <th class="px-3 py-2 text-left text-xs font-medium text-gray-500 uppercase">Precio</th>
+                        <th class="px-3 py-2 text-left text-lg font-medium text-gray-500 uppercase">ID</th>
+                        <th class="px-3 py-2 text-left text-lg font-medium text-gray-500 uppercase">Titulo</th>
+                        <th class="px-3 py-2 text-left text-lg font-medium text-gray-500 uppercase">Descripcion</th>
+                        <th class="px-3 py-2 text-left text-lg font-medium text-gray-500 uppercase">Acciones</th>
                       </tr>
                     </thead>
-                    <tbody class="text-gray-500 text-xs divide-y divide-gray-200">
+                    <tbody class="text-gray-500 text-center text-lg divide-y divide-gray-200">
                     </tbody>
                   </table>
                   <!-- End Table -->

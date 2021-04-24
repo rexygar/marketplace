@@ -7,12 +7,15 @@
     <div class="col-span-10 col-start-3 px-6 ">
         <div class="mx-auto container">
             <div class=" border-b px-6 py-2 items-center grid grid-cols-12">
-              <input type="hidden" id="rutaListar" value="{{ route('list.estado') }}">
+              <input type="hidden" id="rutaListar" value="{{ route('list.categoria') }}">
                 <div class="col-span-12">
                     <div class="flex flex-col max-w-full shadow-md m-6">
                   <!-- Header -->
                   <div class="flex justify-between items-center bg-gray-100 border-b px-6 py-4">
                     <p class="text-5xl text-gray-800 font-semibold">Lista de Categorias</p>
+                    <div class="flex justify-between items-center bg-gray-100 border-b px-6 py-4">
+                      <a href="#" type="submit" class="bg-blue-500 flex justify-center items-center w-full text-white px-4 py-3 rounded-md focus:outline-none">Crear Categoria</a>
+                    </div>
                   </div>
                   <!-- End Header -->
                 
@@ -58,5 +61,5 @@
 @endsection
 
 @section('page-script')
-<script src="{{ asset('js/tablaEstado.js') }}"></script>
+<script src="{{ asset('js/tablaCategoria.js') }}"></script>
 @stop
