@@ -29,37 +29,88 @@
 
 
   <div class="col-span-12 grid grid-cols-12 col-start-1 text-left    text-black">
-    <fieldset class="rating col-span-12 grid grid-cols-12 text-center">
+    <fieldset class="rating col-span-12 grid grid-cols-12 text-center ">
 
-      <div class="col-span-2">
-        <h5><strong class="uppercase py-3 px-6"> <label class="full" for="star6"> <input type="radio"
-                name="Categoria_radio" id="star6" value="6" />Textil</label></strong></h5>
-      </div>
-      <div class="col-span-2">
-        <h5><strong class="uppercase border-blue-300 border-l-2 checked:border-blue-500 checked:border-b-2 py-3 px-6">
-            <label class="full" for="star5"> <input type="radio" name="Categoria_radio" id="star5"
-                value="5" />Gastronomia</label></strong></h5>
-      </div>
-      <div class="col-span-2">
-        <h5><strong class="uppercase border-blue-300 border-l-2 checked:border-blue-500 checked:border-b-2 py-3 px-6">
-            <label class="full" for="star4"> <input type="radio" name="Categoria_radio" id="star4" value="4" />Casa y
-              Decoración</label></strong></h5>
-      </div>
-      <div class="col-span-2">
-        <h5><strong class="uppercase border-blue-300 border-l-2 checked:border-blue-500 checked:border-b-2 py-3 px-6">
-            <label class="full" for="star3"><input type="radio" name="Categoria_radio" id="star3"
-                value="3" />Naturaleza</label></strong></h5>
-      </div>
-      <div class="col-span-2">
-        <h5><strong class="uppercase border-blue-300 border-l-2 checked:border-blue-500 checked:border-b-2 py-3 px-6">
-            <label class="full" for="star2"><input type="radio" name="Categoria_radio" id="star2" value="2" />Salud y
-              Belleza </label></strong></h5>
-      </div>
-      <div class="col-span-2">
-        <h5><strong class="uppercase border-blue-300 border-l-2 checked:border-blue-500 checked:border-b-2 py-3 px-6">
-            <label class="full" for="star1"> <input type="radio" name="Categoria_radio" id="star1"
-                value="1" />Diseño</label></strong></h5>
-      </div>
+      <label class="full col-span-2 py-3 px-2 lx:px-6 md:inline-block align-middle " for="star6">
+        <div class="col-span-2  text-center ">
+          <strong class="uppercase  md:inline-block align-middle">
+            <input type="radio" name="Categoria_radio" id="star6" value="6" />Textil
+          </strong>
+          <div class="_Textil">
+            @include('componentes.Categorias_productos.Cats_selected')
+
+          </div>
+
+        </div>
+      </label>
+      <label class="full col-span-2 py-3 px-2 lx:px-6 md:inline-block align-middle  border-blue-300 border-l-2"
+        for="star5">
+        <div class="col-span-2  text-center ">
+          <strong class="uppercase  md:inline-block align-middle">
+            <input type="radio" name="Categoria_radio" id="star5" value="5" />Gastronomia
+          </strong>
+          <div class="_Gastronomia">
+            @include('componentes.Categorias_productos.Cats_selected')
+
+          </div>
+
+        </div>
+      </label>
+      <label class="full col-span-2 py-3 px-2 lx:px-6 md:inline-block align-middle  border-blue-300 border-l-2"
+        for="star4">
+        <div class="col-span-2  text-center ">
+          <strong class="uppercase  md:inline-block align-middle">
+            <input type="radio" name="Categoria_radio" id="star4" value="4" />Casa y
+            Decoración
+          </strong>
+          <div class="_Casa">
+            @include('componentes.Categorias_productos.Cats_selected')
+
+          </div>
+
+        </div>
+      </label>
+      <label class="full col-span-2 py-3 px-2 lx:px-6 md:inline-block align-middle  border-blue-300 border-l-2"
+        for="star3">
+        <div class="col-span-2  text-center ">
+          <strong class="uppercase">
+            <input type="radio" name="Categoria_radio" id="star3" value="3" />Naturaleza
+          </strong>
+          <div class="_Naturaleza">
+            @include('componentes.Categorias_productos.Cats_selected')
+
+          </div>
+
+        </div>
+      </label>
+      <label class="full col-span-2 py-3 px-2 lx:px-6 md:inline-block align-middle  border-blue-300 border-l-2"
+        for="star2">
+        <div class="col-span-2  text-center ">
+          <strong class="uppercase">
+            <input type="radio" name="Categoria_radio" id="star2" value="2" />
+            Salud y
+            Belleza
+          </strong>
+          <div class="_Salud">
+            @include('componentes.Categorias_productos.Cats_selected')
+
+          </div>
+
+        </div>
+      </label>
+      <label class="full col-span-2 py-3 px-2 lx:px-6 md:inline-block align-middle  border-blue-300 border-l-2"
+        for="star1">
+        <div class="col-span-2  text-center ">
+          <strong class="uppercase">
+            <input type="radio" name="Categoria_radio" id="star1" value="1" />Diseño
+          </strong>
+          <div class="_Diseño">
+            @include('componentes.Categorias_productos.Cats_selected')
+
+          </div>
+
+        </div>
+      </label>
     </fieldset>
   </div>
 

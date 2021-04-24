@@ -5,7 +5,7 @@
     padding-left: 3px;
   }
 </style>
-<footer class="relative bk-rndm   pt-16 lg:pt-16 md:pt-16 xl:pt-16 2xl:pt-16 pb-6 ">
+<footer class="w-full col-span-12 bk-rndm   pt-16 lg:pt-16 md:pt-16 xl:pt-16 2xl:pt-16 pb-6 ">
 
   <div class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
     style="height: 80px; transform: translateZ(0px);">
@@ -17,14 +17,14 @@
 
   <!-- <footer> -->
 
-  <div class="grid grid-cols-12 px-16">
+  <div class="grid grid-cols-12 px-16 md:px-6">
 
 
 
-    <div class="col-span-3 grid grid-cols-12 ">
+    <div class="col-span-3 lg:col-span-3 md:col-span-4 xl:col-span-3 2xl:col-span-3 grid grid-cols-12 ">
       <div class="col-span-12  ">
         <div
-          class="h-auto  rounded-t-2xl mx-2 text-left bg-white   shadow-xl md:w-3/12 absolute md:p-0 lg:p-0 md:mx-0 md:pr-0   lg:mx-0 w-full   md:-mt-36 xl:-mt-36 2xl:-mt-36 lg:-mt-36"
+          class="h-auto  rounded-t-2xl mx-2 text-left bg-white   shadow-xl lg:w-3/12 xl:w-3/12 2xl:w-3/12  md:w-4/12 absolute md:p-0 lg:p-0 md:mx-0 md:pr-0   lg:mx-0 w-full   md:-mt-36 xl:-mt-36 2xl:-mt-36 lg:-mt-36"
           @click.away="Despacho = false" style="z-index: 99999999;">
           <!-- Success alert -->
           <div style="background-color: #fba70b" class="flex p-4  text-center rounded-t-2xl">
@@ -39,7 +39,7 @@
             </div>
           </div>
           {{-- modal body --}}
-          <div class="mt-3 text-center px-4 ">
+          <div class="mt-3 text-center px-4 rounded-b-lg">
             <article style="" class=" col-start-1 col-end-3">
               <label class="py-2">
                 <!--Card 1-->
@@ -100,8 +100,9 @@
         </div>
       </div>
     </div>
-    <div class="col-span-9 grid grid-cols-12  md:grid-flow-row row-span-2">
-      <div class="col-span-6 grid grid-cols-3  px-2 ">
+    <div
+      class="col-span-9 lg:col-span-9 md:col-span-8 xl:col-span-9 2xl:col-span-9 grid grid-cols-12  md:grid-flow-row row-span-2">
+      <div class="col-span-6  lg:col-span-6 md:col-span-12 xl:col-span-6 2xl:col-span-6 grid grid-cols-3  px-2 ">
         <div class="col-span-1 pl-16">
           <figure class="image is-128x128 ">
             <img class="is-rounded" src="https://bulma.io/images/placeholders/128x128.png">
@@ -140,7 +141,7 @@
           </article>
         </div>
       </div>
-      <div class="col-span-6 rounded-3xl">
+      <div class="col-span-6 lg:col-span-6 xl:col-span-6 2xl:col-span-6  md:col-span-8 md:col-start-3 rounded-3xl">
         <img class="rounded-3xl" src="{{ asset('img/map.PNG') }}" alt="">
       </div>
 

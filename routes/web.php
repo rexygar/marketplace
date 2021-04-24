@@ -23,6 +23,17 @@ Route::get('/home', [App\Http\Controllers\MainController::class, 'index2'])->nam
 // ADMINISTRADOR
 Route::get('/ADM', [App\Http\Controllers\AdminController::class, 'getCategoria'])->name('admin.index');
 
-Route::get('/tests', function () {
-    return view('home');
+Route::get('/tests1', function () {
+    return view('Vistas.index');
+});
+
+Route::get('/tests2', function () {
+    return view('Vistas.Cats');
+});
+
+Route::get('/tests3', function () {
+    return view('Vistas.Tienda');
+});
+Route::get('/tests4', function () {
+    return view('Vistas.productos');
 });

@@ -1,7 +1,8 @@
 @extends('layouts.Contenido')
 
 @section('content')
-<div class="container">
- 
+@include('componentes.hero-index')
+<div class="w-full">
+    @include('componentes.cats')
 </div>
 @endsection

@@ -1,4 +1,4 @@
-<div class="col-span-12 grid grid-cols-7 _Casa py-10 px-36 ">
+<div class="col-span-12 grid grid-cols-7 _Casa py-20 px-36 md:px-16 lg:px-36 2xl:px-36 xl:px-36 ">
   <div class="col-span-7 grid grid-cols-3  gap-6 lg:gap-4">
 
 
@@ -15,7 +15,7 @@
                 class="image is-3by4 border-4 border-blue-400 hover:border-yellow-500 w-full h-48 object-cover overflow-hidden">
                 <div
                   class="px-6 py-4 h-full  w-full absolute  bg-blend-darken left-0 top-0 opacity-50 bg-blue-500 hover:bg-yellow-500">
-                  <p class="text-white font-bold text-5xl mix-blend-multiply pt-24">CASA Y DECORACIÓN</p>
+                  <p class="text-white text-center font-bold text-5xl md:text-2xl lg:text-5xl xl:text-5xl 2xl:text-5xl mix-blend-multiply pt-24 md:pt-12 lg:pt-24 xl:pt-24 2xl:pt-24 uppercase">CASA Y DECORACIÓN</p>
 
                 </div>
               </div>

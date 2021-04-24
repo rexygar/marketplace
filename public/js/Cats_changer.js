@@ -16,8 +16,8 @@ $(document).ready(function() {
             switch (valor) {
                 case 1:
 
+                    $('._Diseño').toggleClass('hidden', false);
                     $('._Casa').toggleClass('hidden', true);
-                    $('._Diseño').toggleClass('hidden', false).toggleClass("border-blue-300 border-b-2");
                     toggleClass("border-blue-300 border-b-2");
                     $('._Gastronomia').toggleClass('hidden', true);
                     $('._Naturaleza').toggleClass('hidden', true);
@@ -27,10 +27,10 @@ $(document).ready(function() {
                     break;
                 case 2:
                     $('._Casa').toggleClass('hidden', true);
+                    $('._Salud').toggleClass('hidden', false);
                     $('._Diseño').toggleClass('hidden', true);
                     $('._Gastronomia').toggleClass('hidden', true);
                     $('._Naturaleza').toggleClass('hidden', true);
-                    $('._Salud').toggleClass('hidden', false).toggleClass("border-blue-300 border-b-2");
                     $('._Textil').toggleClass('hidden', true);
 
                     console.log(valor);
@@ -38,8 +38,8 @@ $(document).ready(function() {
                 case 3:
                     $('._Casa').toggleClass('hidden', true);
                     $('._Diseño').toggleClass('hidden', true);
+                    $('._Naturaleza').toggleClass('hidden', false);
                     $('._Gastronomia').toggleClass('hidden', true);
-                    $('._Naturaleza').toggleClass('hidden', false).toggleClass("border-blue-300 border-b-2");
                     $('._Salud').toggleClass('hidden', true);
                     $('._Textil').toggleClass('hidden', true);
 
@@ -47,10 +47,10 @@ $(document).ready(function() {
                     break;
                 case 4:
 
-                    $('._Casa').toggleClass('hidden', false).toggleClass("border-blue-300 border-b-2");
                     $('._Diseño').toggleClass('hidden', true);
                     $('._Gastronomia').toggleClass('hidden', true);
                     $('._Naturaleza').toggleClass('hidden', true);
+                    $('._Casa').toggleClass('hidden', false);
                     $('._Salud').toggleClass('hidden', true);
                     $('._Textil').toggleClass('hidden', true);
                     console.log(valor);
@@ -59,7 +59,7 @@ $(document).ready(function() {
 
                     $('._Casa').toggleClass('hidden', true);
                     $('._Diseño').toggleClass('hidden', true);
-                    $('._Gastronomia').toggleClass('hidden', false).toggleClass("border-blue-300 border-b-2");
+                    $('._Gastronomia').toggleClass('hidden', false);
                     $('._Naturaleza').toggleClass('hidden', true);
                     $('._Salud').toggleClass('hidden', true);
                     $('._Textil').toggleClass('hidden', true);
@@ -72,7 +72,7 @@ $(document).ready(function() {
                     $('._Gastronomia').toggleClass('hidden', true);
                     $('._Naturaleza').toggleClass('hidden', true);
                     $('._Salud').toggleClass('hidden', true);
-                    $('._Textil').toggleClass('hidden', false).toggleClass("border-blue-300 border-b-2");
+                    $('._Textil').toggleClass('hidden', false);
                     console.log(valor);
                     break;
 

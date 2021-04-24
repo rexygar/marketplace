@@ -1,9 +1,9 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
 <div class="sm:block hidden" x-data="{ searchy : true}">
     <nav class="font-sans grid  grid-cols-12 text-center content-center sm:flex-row sm:text-left sm:justify-between py-2 px-6 sm:items-baseline w-full"
-        style="background-color: #409bca">
+        style="background-color: #44b0e8">
         <div class="grid grid-cols-12  col-span-12 md:grid-cols-12 lg:py-2">
-            <div class="col-span-6"></div>
+            <div class="col-span-2 sm:col-span-2 md:col-span-6 lg:col-span-6 xl:col-span-6 2xl:col-span-6"></div>
             {{-- <div class="md:col-span-5 lg:col-span-6 sm:col-span-7 xl:col-span-6 col-span-6  
                 2xl:col-span-6  sm:hidden md:block">
                 <form action="" method="GET">
@@ -30,7 +30,7 @@
 
 
             <div
-                class="md:col-span-6 lg:col-span-6  sm:col-span-6 col-span-6  xl:col-span-6 2xl:col-span-6   grid grid-cols-2 md:-ml-36 lg:-ml-20  xl:-ml-36 sm:ml-2 2xl:-ml-36 xl:-mr-6  sm:-mr-16 md:-mr-0 lg:-mr-0">
+                class="md:col-span-6 lg:col-span-6  sm:col-span-6 col-span-12  xl:col-span-6 2xl:col-span-6   grid grid-cols-2 md:-ml-36 lg:-ml-20  xl:-ml-36 sm:ml-2 2xl:-ml-36 xl:-mr-6  sm:-mr-16 md:-mr-0 lg:-mr-0">
 
                 <div class="col-span-12 ">
 
