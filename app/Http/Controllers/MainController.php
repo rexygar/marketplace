@@ -109,13 +109,40 @@ class MainController extends Controller
     { //mostrar todas las tiendas ->with('producto ,$(product')->producto()
 
         $tiendas = Tienda::where('id_categoria', $id_tienda)->get();
+        $portada = "";
+        switch ($id_tienda) {
+            case  1:
+                $portada = '\img\cats\textil.png';
+                break;
+            case 2:
+                $portada = '\img\cats\diseño.png';
+                break;
+            case 3:
+                $portada = '\img\cats\salud.png';
+                break;
+            case  4:
+                $portada = '\img\cats\casa.png';
+                break;
+            case  5:
+                $portada = '\img\cats\gastro.png';
+                break;
+            case  6:
+                $portada = '\img\cats\naturaleza.png';
+                break;
 
+            default:
+                # code...
+                break;
+        }
 
         // return dd($tiendas_Salud);
 
         return View('Vistas.Categorias')->with(
             'tiendas',
             $tiendas
+        )->with(
+            'portada',
+            $portada
         );
     }
     public static function show_Productos()

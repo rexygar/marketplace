@@ -24,7 +24,7 @@
     justify-content: center;
   }
 </style>
-<div class="col-span-12 grid grid-cols-12 h-full md:px-6 lg:px-16 xl:px-16 2xl:px-16 py-36">
+<div class="col-span-12 grid grid-cols-12 h-full md:px-6 sm:px-6 lg:px-16 xl:px-16 2xl:px-16 py-36">
 
   
 
@@ -43,4 +43,4 @@
 
 </div>
 
-<script src="{{ asset('js/Cats_changer.js') }}"></script>
+ 
