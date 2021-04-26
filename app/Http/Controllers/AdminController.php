@@ -135,7 +135,15 @@ class AdminController extends Controller
     public function updateTienda(Request $request){
         $tienda = Tienda::where('id', $request->id)->first();
 
+        $file = $request->file('logo');
+
+        $imagen = time()."_".$file->getClientOriginalName();
+        $imagen = str_replace(' ','', $imagen);
+        \Storage::disk('local')->put($imagen, \File::get($file));
+
         $tienda->razon_social = $request->nombre;
+        $tienda->descripcion = $request->descripcion;
+        $tienda->logo = $request->logo;
         $tienda->save();
 
         return Redirect()->back();

@@ -18,8 +18,12 @@ class CreateTiendaTable extends Migration
             $table->string('razon_social');
             $table->string('logo')->nullable();
             $table->string('descripcion',4000)->nullable();
+            $table->string('instagram')->nullable();
+            $table->string('facebook')->nullable();
             $table->bigInteger('id_categoria')->unsigned();
             $table->foreign('id_categoria')->references('id')->on('categorias');
+            $table->bigInteger('enlace_compra')->unsigned();
+            $table->foreign('enlace_compra')->references('id')->on('enlace_compra');
             $table->timestamps();
         });
     }

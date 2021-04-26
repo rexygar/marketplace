@@ -21,8 +21,28 @@
                     <form action="{{ route('update.tienda') }}" method="POST" enctype="multipart/form-data">
                       @csrf
                       <input type="hidden" name="id" value="@if (isset($tienda->id)) {{ $tienda->id }} @endif">
-                      <label class="leading-loose">Nombre de la Tienda</label>
+                      <span class="text-xl leading-relaxed text-center sm:text-left  w-full font-bold text-gray-700">Nombre de la Tienda</span>
                       <input type="text" name="nombre" value="{{ $tienda->razon_social }}">
+                      <div class="mt-8">
+
+                      </div>
+                      <span class="text-xl leading-relaxed text-center sm:text-left  w-full font-bold text-gray-700">Descripción de la Tienda</span>
+                      <input type="text" name="descripcion" value="@if (isset($tienda->descripcion)){{ $tienda->descripcion }} @endif">
+                      <div class="mt-8">
+
+                      </div>
+                      <span class="text-xl leading-relaxed text-center sm:text-left  w-full font-bold text-gray-700">Foto de la Tienda</span>
+                      <input type="file" accept="image/*" class="px-4 py-2 border focus:ring-gray-500 focus:border-gray-900 w-full sm:text-sm border-gray-300 rounded-md focus:outline-none text-gray-600" name="logo">
+                      <div class="mt-8">
+
+                      </div>
+                      <span class="text-xl leading-relaxed text-center sm:text-left  w-full font-bold text-gray-700">Instagram de la Tienda</span>
+                      <input type="text" name="instagram" value="@if (isset($tienda->instagram)){{ $tienda->instagram }} @endif">
+                      <div class="mt-8">
+
+                      </div>
+                      <span class="text-xl leading-relaxed text-center sm:text-left  w-full font-bold text-gray-700">Facebook de la Tienda</span>
+                      <input type="text" name="facebook" value="@if (isset($tienda->facebook)){{ $tienda->facebook }} @endif">
                       <div class="pt-4 flex items-center space-x-4">
                         <button id="crear" type="submit" class="bg-blue-500 flex justify-center items-center w-full text-white px-4 py-3 rounded-md focus:outline-none">Editar</button>
                         <a href="{{ route('admin.index') }}" class="bg-red-700 flex justify-center items-center w-full text-white px-4 py-3 rounded-md focus:outline-none">Cancelar</a>

@@ -9,9 +9,13 @@
               <div class="relative px-4 py-10 bg-white mx-8 md:mx-0 shadow rounded-3xl sm:p-32">
                 <div class="w-11/12 mx-auto">
                   <div class="flex items-center space-x-5">
-                    <div class="h-14 w-14 bg-black rounded-full flex flex-shrink-0 justify-center items-center text-yellow-600 text-2xl font-mono">C</div>
+                    <div class="h-14 w-14 bg-blue-500 rounded-full flex flex-shrink-0 justify-center items-center text-white-50 text-2xl font-mono">C</div>
                     <div class="block pl-2 font-semibold text-xl self-start text-gray-700">
-                      <h2 class="leading-relaxed">Crear Producto</h2>
+                      @if (isset($producto->id))
+                        <h2 class="leading-relaxed">Editar Producto</h2>
+                      @else
+                        <h2 class="leading-relaxed">Crear Producto</h2>
+                      @endif
                     </div>
                   </div>
                   <div class="divide-y divide-gray-200">
@@ -22,13 +26,20 @@
                           <input type="hidden" name="id" value="@if (isset($producto->id)){{ $producto->id }} @endif">
                           <span class="text-xl leading-relaxed text-center sm:text-left  w-full font-bold text-gray-700">Titulo</span>
                           <input type="text" required class="mr-16 border border-gray-700" name="titulo" value="@if (isset($producto->titulo)){{ $producto->titulo }} @endif">
-                          <br>
+                          <div class="mt-8">
+
+                          </div>
                           <span class="text-xl leading-relaxed text-center sm:text-left  w-full font-bold text-gray-700">Descripción</span>
                           <input type="text" required class="mr-16 border border-gray-700" name="descripcion" value="@if (isset($producto->descripcion)){{ $producto->descripcion }} @endif">
-                          <br>
+                          <div class="mt-8">
+
+                          </div>
                           <label class="leading-loose">Imagen del producto</label>
-                          <input type="file" required name="img" accept="image/*" value="@if (isset($producto->img)){{ $producto->img }} @endif" multiple class="px-4 py-2 border focus:ring-gray-500 focus:border-gray-900 w-full sm:text-sm border-gray-300 rounded-md focus:outline-none text-gray-600" placeholder="Event title">
-                          <div class="mt-8"></div>
+                          <input type="file" required name="img" accept="image/*" value="@if (isset($producto->img)){{ $producto->img }} @endif" class="px-4 py-2 border focus:ring-gray-500 focus:border-gray-900 w-full sm:text-sm border-gray-300 rounded-md focus:outline-none text-gray-600" placeholder="Event title">
+                          <div class="mt-8">
+
+                          </div>
+                          <span class="text-xl leading-relaxed text-center sm:text-left  w-full font-bold text-gray-700">Tienda del Producto</span>
                           <select name="tienda">
                             @foreach ($tienda as $t)
                               @if(!isset($producto->id_tienda))
@@ -42,7 +53,9 @@
                           <div class="mt-8"></div>
                           <span class="text-xl leading-relaxed text-center sm:text-left  w-full font-bold text-gray-700">Enlace al Vendedor</span>
                           <input type="text" name="enlace" value="@if (isset($enlace->id)){{ $enlace->link }} @endif">
-                          <br><br>
+                          <div class="mt-8">
+
+                          </div>
                           <div class="pt-4 flex items-center space-x-4">
                             <button id="crear" type="submit" class="bg-blue-500 flex justify-center items-center w-full text-white px-4 py-3 rounded-md focus:outline-none">Crear</button>
                             <a href="{{ route('admin.index') }}" class="bg-red-700 flex justify-center items-center w-full text-white px-4 py-3 rounded-md focus:outline-none">Cancelar</a>

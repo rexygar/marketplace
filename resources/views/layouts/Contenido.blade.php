@@ -7,7 +7,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
    
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>TecnoBuy</title>
+    <title>Marketplace Quillota</title>
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
