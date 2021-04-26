@@ -132,7 +132,7 @@
       {{--  --}}
       <div class=" mb-10 md:container md:mx-auto px-4 md:px-0 col-span-1">
 
-        <a href="{{ URL('/') }}/Product/">
+        <a href="{{ URL('/') }}/Categorias/1">
           <div class="content">
 
             <div class="w-full max-w-6xl rounded md:mb-0  ">
@@ -161,7 +161,7 @@
       {{--  --}}
       <div class=" mb-10 md:container md:mx-auto px-4 md:px-0 col-span-1">
 
-        <a href="{{ URL('/') }}/Product/">
+        <a href="{{ URL('/') }}/Categorias/5">
           <div class="content">
 
             <div class="w-full max-w-6xl rounded md:mb-0  ">
@@ -190,7 +190,7 @@
       {{--  --}}
       <div class=" mb-10 md:container md:mx-auto px-4 md:px-0 col-span-1">
 
-        <a href="{{ URL('/') }}/Product/">
+        <a href="{{ URL('/') }}/Categorias/4">
           <div class="content">
 
             <div class="w-full max-w-6xl rounded md:mb-0  ">
@@ -219,7 +219,7 @@
       {{--  --}}
       <div class=" mb-10 md:container md:mx-auto px-4 md:px-0 col-span-1">
 
-        <a href="{{ URL('/') }}/Product/">
+        <a href="{{ URL('/') }}/Categorias/6">
           <div class="content">
 
             <div class="w-full max-w-6xl rounded md:mb-0  ">
@@ -248,7 +248,7 @@
       {{--  --}}
       <div class=" mb-10 md:container md:mx-auto px-4 md:px-0 col-span-1">
 
-        <a href="{{ URL('/') }}/Product/">
+        <a href="{{ URL('/') }}/Categorias/3">
           <div class="content">
 
             <div class="w-full max-w-6xl rounded md:mb-0  ">
@@ -277,7 +277,7 @@
       {{--  --}}
       <div class=" mb-10 md:container md:mx-auto px-4 md:px-0 col-span-1">
 
-        <a href="{{ URL('/') }}/Product/">
+        <a href="{{ URL('/') }}/Categorias/2">
           <div class="content">
 
             <div class="w-full max-w-6xl rounded md:mb-0  ">
@@ -289,7 +289,7 @@
                     class=" h-full  w-full absolute  bg-blend-darken left-0 top-0 opacity-75 hover:opacity-85  bg-blue-600 hover:bg-yellow-600">
                     <p
                       class="text-white lobster text-center font-bold font-serif italic sm:text-4xl text-5xl md:text-2xl lg:text-5xl xl:text-5xl 2xl:text-5xl  mix-blend-multiply pt-24 md:pt-24 lg:pt-24 xl:pt-24 2xl:pt-24 capitalize hover:text-blue-800 w-full h-full font-black">
-                      papeleria</p>
+                      Diseño</p>
 
                   </div>
                 </div>

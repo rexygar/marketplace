@@ -39,10 +39,13 @@
                             aria-label="toggle menu">
                             <i class="fa fa-search" aria-hidden="true"></i>
                         </button></span>
-                    <span class="font-bold text-white text-xl"><a href="">INICIO </a></span>
-                    <span class="font-bold text-white text-xl"><a href="">QUIENES SOMOS</a></span>
-                    <span class="font-bold text-white text-xl"><a href="">PRODUCTOS </a></span>
-                    <span class="font-bold text-white text-xl"><a href="">BLOG</a></span>
+                    <span class="font-bold text-white text-xl lg:px-2 xl:px-2 2xl:px-2"><a href="{{__('/') }}">INICIO
+                        </a></span>
+                    <span class="font-bold text-white text-xl lg:px-2 xl:px-2 2xl:px-2"><a href="{{ __('/About') }}">QUIENES
+                            SOMOS</a></span>
+                    <span class="font-bold text-white text-xl lg:px-2 xl:px-2 2xl:px-2"><a href="{{ __('/Categorias') }}">PRODUCTOS
+                        </a></span>
+                    <span class="font-bold text-white text-xl lg:px-2 xl:px-2 2xl:px-2"><a href="">BLOG</a></span>
                 </div>
             </div>
 

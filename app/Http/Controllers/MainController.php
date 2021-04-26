@@ -105,12 +105,19 @@ class MainController extends Controller
         }
     }
 
-    // public static function show_Categorias()
-    // { //mostrar tiendas en base a la categoria
+    public static function show_Categorias($id_tienda)
+    { //mostrar todas las tiendas ->with('producto ,$(product')->producto()
 
-    //     return redirect('/');
-    // }
+        $tiendas = Tienda::where('id_categoria', $id_tienda)->get();
 
+
+        // return dd($tiendas_Salud);
+
+        return View('Vistas.Categorias')->with(
+            'tiendas',
+            $tiendas
+        );
+    }
     public static function show_Productos()
     { //mostrar todos los productos
 

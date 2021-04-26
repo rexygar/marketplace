@@ -1,8 +1,8 @@
 @extends('layouts.Contenido')
 
 @section('content')
-@include('componentes.hero-cats')
+@include('componentes.hero-index')
 <div class="w-full">
-    @include('componentes.Categorias')
+    @include('componentes.Cats_indx')
 </div>
 @endsection

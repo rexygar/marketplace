@@ -155,7 +155,7 @@
     <div class="col-span-2">
       <button class="rounded-full py-3 px-6 font-black text-white w-full bg-yellow-500 uppercase"> visitar</button>
     </div>
-  
+
     <div></div>
 
 
