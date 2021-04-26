@@ -27,7 +27,7 @@
 <div
   class="col-span-12 grid grid-cols-12 h-full md:px-6 lg:px-16 xl:px-16 2xl:px-16 pt-6 pb-36 md:pt-6 md:pb-36 lg:pt-6 lg:pb-36 xl:pt-6 xl:pb-36 2xl:pt-6 2xl:pb-36">
 
-  <div class="col-span-12 grid gap-4 grid-cols-12 py-4 px-36 md:px-16 lg:px-16 2xl:px-16 xl:px-16 ">
+  <div class="col-span-12 grid gap-4 grid-cols-12 py-4 xs:px-6 sm:px-16 md:px-16 lg:px-16 2xl:px-16 xl:px-16 ">
 
     <div></div>
     <div class="col-span-12 text-center  grid grid-cols-12">
@@ -124,8 +124,9 @@
 
   </div>
 
-  <div class="col-span-12 grid grid-cols-7  pt-16 pb-6  px-36 md:px-16 lg:px-36 2xl:px-36 xl:px-36 ">
-    <div class="col-span-7 grid grid-cols-3  gap-6 lg:gap-8 md:gap-4">
+  <div
+    class="col-span-12 grid grid-cols-7  pt-16 lg:pt-16 sm:pt-10   md:pt-16 xl:pt-16 2xl:pt-16 pb-6  xs:px-6 sm:px-16 md:px-16 lg:px-36 2xl:px-36 xl:px-36 ">
+    <div class="col-span-7 grid grid-cols-2  gap-1 md:grid-cols-3  sm:gap-6 lg:gap-8 xl:gap-8 2xl:gap-8 md:gap-4">
 
 
       {{--  --}}
@@ -142,7 +143,7 @@
                   <div
                     class=" h-full  w-full absolute  bg-blend-darken left-0 top-0 opacity-75 hover:opacity-85  bg-blue-600 hover:bg-yellow-600">
                     <p
-                      class="text-white text-center font-bold font-serif italic text-5xl md:text-2xl lg:text-4xl xl:text-4xl 2xl:text-4xl mix-blend-multiply pt-24 md:pt-24 lg:pt-24 xl:pt-24 2xl:pt-24 uppercase hover:text-blue-800 w-full h-full font-black">
+                      class="text-white lobster text-center font-bold font-serif italic sm:text-4xl text-5xl md:text-2xl lg:text-5xl xl:text-5xl 2xl:text-5xl  mix-blend-multiply pt-24 md:pt-24 lg:pt-24 xl:pt-24 2xl:pt-24 capitalize hover:text-blue-800 w-full h-full font-black">
                       textil</p>
 
                   </div>
@@ -171,7 +172,7 @@
                   <div
                     class=" h-full  w-full absolute  bg-blend-darken left-0 top-0 opacity-75 hover:opacity-85  bg-blue-600 hover:bg-yellow-600">
                     <p
-                      class="text-white text-center font-bold font-serif italic text-5xl md:text-2xl lg:text-4xl xl:text-4xl 2xl:text-4xl mix-blend-multiply pt-24 md:pt-24 lg:pt-24 xl:pt-24 2xl:pt-24 uppercase hover:text-blue-800 w-full h-full font-black">
+                      class="text-white lobster text-center font-bold font-serif italic sm:text-4xl text-5xl md:text-2xl lg:text-5xl xl:text-5xl 2xl:text-5xl  mix-blend-multiply pt-24 md:pt-24 lg:pt-24 xl:pt-24 2xl:pt-24 capitalize hover:text-blue-800 w-full h-full font-black">
                       gastronomia</p>
 
                   </div>
@@ -200,7 +201,7 @@
                   <div
                     class=" h-full  w-full absolute  bg-blend-darken left-0 top-0 opacity-75 hover:opacity-85  bg-blue-600 hover:bg-yellow-600">
                     <p
-                      class="text-white text-center font-bold font-serif italic text-5xl md:text-2xl lg:text-4xl xl:text-4xl 2xl:text-4xl mix-blend-multiply pt-24 md:pt-24 lg:pt-24 xl:pt-24 2xl:pt-24 uppercase hover:text-blue-800 w-full h-full font-black">
+                      class="text-white lobster text-center font-bold font-serif italic sm:text-4xl text-5xl md:text-2xl lg:text-5xl xl:text-5xl 2xl:text-5xl  mix-blend-multiply pt-24 md:pt-24 lg:pt-24 xl:pt-24 2xl:pt-24 capitalize hover:text-blue-800 w-full h-full font-black">
                       decoracion</p>
 
                   </div>
@@ -229,7 +230,7 @@
                   <div
                     class=" h-full  w-full absolute  bg-blend-darken left-0 top-0 opacity-75 hover:opacity-85  bg-blue-600 hover:bg-yellow-600">
                     <p
-                      class="text-white text-center font-bold font-serif italic text-5xl md:text-2xl lg:text-4xl xl:text-4xl 2xl:text-4xl mix-blend-multiply pt-24 md:pt-24 lg:pt-24 xl:pt-24 2xl:pt-24 uppercase hover:text-blue-800 w-full h-full font-black">
+                      class="text-white lobster text-center font-bold font-serif italic sm:text-4xl text-5xl md:text-2xl lg:text-5xl xl:text-5xl 2xl:text-5xl  mix-blend-multiply pt-24 md:pt-24 lg:pt-24 xl:pt-24 2xl:pt-24 capitalize hover:text-blue-800 w-full h-full font-black">
                       naturaleza</p>
 
                   </div>
@@ -258,7 +259,7 @@
                   <div
                     class=" h-full  w-full absolute  bg-blend-darken left-0 top-0 opacity-75 hover:opacity-85  bg-blue-600 hover:bg-yellow-600">
                     <p
-                      class="text-white text-center font-bold font-serif italic text-5xl md:text-2xl lg:text-4xl xl:text-4xl 2xl:text-4xl mix-blend-multiply pt-24 md:pt-24 lg:pt-24 xl:pt-24 2xl:pt-24 uppercase hover:text-blue-800 w-full h-full font-black">
+                      class="text-white lobster text-center font-bold font-serif italic sm:text-4xl text-5xl md:text-2xl lg:text-5xl xl:text-5xl 2xl:text-5xl  mix-blend-multiply pt-24 md:pt-24 lg:pt-24 xl:pt-24 2xl:pt-24 capitalize hover:text-blue-800 w-full h-full font-black">
                       salud y belleza</p>
 
                   </div>
@@ -287,7 +288,7 @@
                   <div
                     class=" h-full  w-full absolute  bg-blend-darken left-0 top-0 opacity-75 hover:opacity-85  bg-blue-600 hover:bg-yellow-600">
                     <p
-                      class="text-white text-center font-bold font-serif italic text-5xl md:text-2xl lg:text-4xl xl:text-4xl 2xl:text-4xl mix-blend-multiply pt-24 md:pt-24 lg:pt-24 xl:pt-24 2xl:pt-24 uppercase hover:text-blue-800 w-full h-full font-black">
+                      class="text-white lobster text-center font-bold font-serif italic sm:text-4xl text-5xl md:text-2xl lg:text-5xl xl:text-5xl 2xl:text-5xl  mix-blend-multiply pt-24 md:pt-24 lg:pt-24 xl:pt-24 2xl:pt-24 capitalize hover:text-blue-800 w-full h-full font-black">
                       papeleria</p>
 
                   </div>
@@ -304,7 +305,7 @@
     </div>
   </div>
 
-  <div class="col-span-12 grid gap-4 grid-cols-6 py-4 px-36 md:px-16 lg:px-16 2xl:px-16 xl:px-16 ">
+  <div class="col-span-12 grid gap-4 grid-cols-6 py-4 xs:px-6 sm:px-16 md:px-16 lg:px-16 2xl:px-16 xl:px-16 ">
 
     <div></div>
     <div class="col-span-2">
@@ -317,7 +318,7 @@
 
 
   </div>
-  <div class="col-span-12 grid gap-4 grid-cols-6 py-4 px-36 md:px-16 lg:px-16 2xl:px-16 xl:px-16 ">
+  <div class="col-span-12 grid gap-4 grid-cols-6 py-4 xs:px-6 sm:px-16 md:px-16 lg:px-16 2xl:px-16 xl:px-16 ">
 
     <div class="col-span-1">
       <img src="/uploads/SOCIOS/ban-amor.png" alt="" srcset="">

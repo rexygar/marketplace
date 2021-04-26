@@ -18,7 +18,6 @@ $(document).ready(function() {
 
                     $('._Diseño').toggleClass('hidden', false);
                     $('._Casa').toggleClass('hidden', true);
-                    toggleClass("border-blue-300 border-b-2");
                     $('._Gastronomia').toggleClass('hidden', true);
                     $('._Naturaleza').toggleClass('hidden', true);
                     $('._Salud').toggleClass('hidden', true);

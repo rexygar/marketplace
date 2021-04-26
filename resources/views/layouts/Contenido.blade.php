@@ -18,13 +18,44 @@
     <link href="{{ asset('css/componentes.css') }}" rel="stylesheet">
     <link href="{{ asset('css/layouts.css') }}" rel="stylesheet">
     <link href="{{ asset('css/hero-backgrounds.css') }}" rel="stylesheet">
-
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lobster+Two&family=Poppins:wght@300&family=Varela+Round&display=swap');
+    </style>
     <link href="{{ asset('css/Megamenu.css') }}" rel="stylesheet">
     <link href="{{ asset('css/animate.min.css') }}" rel="stylesheet">
     <script src="{{ asset('js/jquery-3.6.0.min.js') }}"></script>
     <style>
         body {
             font-family: 'Nunito';
+        }
+
+
+        @font-face {
+            font-family: 'Lobster Two';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url('/public/fonts/LobsterTwo-Regular.ttf') format('ttf');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+
+
+        }
+
+        .lobster {
+
+            font-family: 'Lobster Two',
+                cursive !important;
+        }
+
+        .poppins {
+            font-family: 'Poppins',
+                sans-serif;
+
+        }
+
+        .valera {
+            font-family: 'Varela Round',
+                sans-serif;
         }
     </style>
 </head>
@@ -38,7 +69,7 @@
         {{-- @include('componentes.Header') --}}
     </div>
     {{-- Contenido --}}
-    <main class="">
+    <main class="bg-repeat bg-contain bg-center" style="background-image:url('{{ url('/img/FONDO.jpg') }}')">
         @yield('content')
     </main>
     {{-- Contenido --}}

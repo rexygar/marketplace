@@ -5,7 +5,8 @@
     padding-left: 3px;
   }
 </style>
-<footer class="w-full col-span-12 bk-rndm   pt-16 lg:pt-16 md:pt-16 xl:pt-16 2xl:pt-16 pb-6 ">
+<footer class="w-full col-span-12   pt-16 lg:pt-16 md:pt-16 xl:pt-16 2xl:pt-16 pb-6 "
+  style="background-image:url('{{ url('/img/FOOT.png') }}');background-repeat: no-repeat;background-size: cover;">
 
   <div class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
     style="height: 80px; transform: translateZ(0px);">

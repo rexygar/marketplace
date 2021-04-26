@@ -3,6 +3,8 @@
 @section('content')
 @include('componentes.hero-index')
 <div class="w-full">
-    @include('componentes.cats')
+
+   
+    @include('componentes.Productos',compact('tienda'),compact('vacia'))
 </div>
 @endsection

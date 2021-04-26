@@ -2,10 +2,10 @@
   input[type="radio"],
   input[type="checkbox"] {
     position: relative;
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    appearance: none;
-    outline: none;
+    -moz-appearance: none !important;
+    -webkit-appearance: none !important;
+    appearance: none !important;
+    outline: none !important;
   }
 
   input[type="checkbox"]+span:before {
@@ -34,7 +34,8 @@
       <label class="full col-span-2 py-3 px-2 lx:px-6 md:inline-block align-middle " for="star6">
         <div class="col-span-2  text-center ">
           <strong class="uppercase  md:inline-block align-middle">
-            <input type="radio" name="Categoria_radio" id="star6" value="6" />Textil
+            <input type="radio" style="appearance: none !important;   -moz-appearance: none !important;
+    -webkit-appearance: none !important;" name="Categoria_radio" id="star6" value="6" />Textil
           </strong>
           <div class="_Textil">
             @include('componentes.Categorias_productos.Cats_selected')
@@ -47,7 +48,8 @@
         for="star5">
         <div class="col-span-2  text-center ">
           <strong class="uppercase  md:inline-block align-middle">
-            <input type="radio" name="Categoria_radio" id="star5" value="5" />Gastronomia
+            <input type="radio" style="appearance: none !important;   -moz-appearance: none !important;
+    -webkit-appearance: none !important;" name="Categoria_radio" id="star5" value="5" />Gastronomia
           </strong>
           <div class="_Gastronomia">
             @include('componentes.Categorias_productos.Cats_selected')
@@ -60,7 +62,8 @@
         for="star4">
         <div class="col-span-2  text-center ">
           <strong class="uppercase  md:inline-block align-middle">
-            <input type="radio" name="Categoria_radio" id="star4" value="4" />Casa y
+            <input type="radio" style="appearance: none !important;   -moz-appearance: none !important;
+    -webkit-appearance: none !important;" name="Categoria_radio" id="star4" value="4" />Casa y
             Decoración
           </strong>
           <div class="_Casa">
@@ -74,7 +77,8 @@
         for="star3">
         <div class="col-span-2  text-center ">
           <strong class="uppercase">
-            <input type="radio" name="Categoria_radio" id="star3" value="3" />Naturaleza
+            <input type="radio" style="appearance: none !important;   -moz-appearance: none !important;
+    -webkit-appearance: none !important;" name="Categoria_radio" id="star3" value="3" />Naturaleza
           </strong>
           <div class="_Naturaleza">
             @include('componentes.Categorias_productos.Cats_selected')
@@ -87,7 +91,8 @@
         for="star2">
         <div class="col-span-2  text-center ">
           <strong class="uppercase">
-            <input type="radio" name="Categoria_radio" id="star2" value="2" />
+            <input type="radio" style="appearance: none !important;   -moz-appearance: none !important;
+    -webkit-appearance: none !important;" name="Categoria_radio" id="star2" value="2" />
             Salud y
             Belleza
           </strong>
@@ -102,7 +107,8 @@
         for="star1">
         <div class="col-span-2  text-center ">
           <strong class="uppercase">
-            <input type="radio" name="Categoria_radio" id="star1" value="1" />Diseño
+            <input type="radio" style="appearance: none !important;   -moz-appearance: none !important;
+    -webkit-appearance: none !important;" name="Categoria_radio" id="star1" value="1" />Diseño
           </strong>
           <div class="_Diseño">
             @include('componentes.Categorias_productos.Cats_selected')
@@ -117,12 +123,14 @@
 
   {{--  --}}
   {{-- CATS --}}
-  @include('componentes.Categorias_productos.Cats_Casa')
-  @include('componentes.Categorias_productos.Cats_Diseño')
-  @include('componentes.Categorias_productos.Cats_Gastronomia')
-  @include('componentes.Categorias_productos.Cats_Naturaleza')
-  @include('componentes.Categorias_productos.Cats_Salud')
-  @include('componentes.Categorias_productos.Cats_Textil')
+  @include('componentes.Categorias_productos.Cats_Casa',
+  compact('tiendas_Casa'))
+  @include('componentes.Categorias_productos.Cats_Diseño',
+  compact('tiendas_Diseño'))
+  @include('componentes.Categorias_productos.Cats_Gastronomia',compact('t_Gas'))
+  @include('componentes.Categorias_productos.Cats_Naturaleza', compact('tiendas_Naturaleza'))
+  @include('componentes.Categorias_productos.Cats_Salud',compact('tiendas_Salud'))
+  @include('componentes.Categorias_productos.Cats_Textil', compact('tiendas_Textil'))
 
   {{--  --}}
 

@@ -46,3 +46,16 @@ Route::get('/tests3', function () {
 Route::get('/tests4', function () {
     return view('Vistas.productos');
 });
+
+
+//User
+Route::get('/Categorias', [App\Http\Controllers\MainController::class, 'show_Tiendas']);
+Route::get('/Tienda/{id}', [App\Http\Controllers\MainController::class, 'show_Tienda']);
+Route::get('/Product/{sku}', [App\Http\Controllers\MainController::class, 'getProduct']);
+
+// Route::POST('/producto{}', [App\Http\Controllers\AdminController::class, 'deleteProducto'])->name('delete.producto');
+// Route::get('/ADM', [App\Http\Controllers\AdminController::class, 'getCategoria'])->name('admin.index');
+// Route::POST('/productoEliminado', [App\Http\Controllers\AdminController::class, 'deleteProducto'])->name('delete.producto');
+// Route::get('/ADM', [App\Http\Controllers\AdminController::class, 'getCategoria'])->name('admin.index');
+// Route::POST('/productoEliminado', [App\Http\Controllers\AdminController::class, 'deleteProducto'])->name('delete.producto');
+// Route::get('/ADM', [App\Http\Controllers\AdminController::class, 'getCategoria'])->name('admin.index');
