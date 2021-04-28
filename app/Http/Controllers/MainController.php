@@ -46,7 +46,6 @@ class MainController extends Controller
         $t_Gas = Tienda::where('id_categoria', 5)->get();
 
         $tiendas_Naturaleza = Tienda::where('id_categoria', 6)->get();
-        // return dd($tiendas_Salud);
 
         return View('Vistas.Cats')->with(
             'tiendas_Casa',
@@ -82,7 +81,7 @@ class MainController extends Controller
             ->get();
         if ($publicacion) {
             $vacia = false;
-            // dd($tienda);
+             
             return View('Vistas.Tienda')->with(
                 'tienda',
                 $publicacion
@@ -92,8 +91,6 @@ class MainController extends Controller
             );
         } else {
             $vacia = true;
-
-            dd($vacia);
             return View('Vistas.Tienda')->with(
                 'tienda',
                 $publicacion
