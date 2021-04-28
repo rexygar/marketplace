@@ -84,7 +84,7 @@ class MainController extends Controller
         if ($publicacion) {
             $vacia = false;
             // dd($tienda);
-            return View('Vistas.Tienda')->with(
+            return View('vistas.Tienda')->with(
                 'tienda',
                 $publicacion
             )->with(
@@ -95,7 +95,7 @@ class MainController extends Controller
             $vacia = true;
 
             dd($vacia);
-            return View('Vistas.Tienda')->with(
+            return View('vistas.Tienda')->with(
                 'tienda',
                 $publicacion
             )->with(
@@ -137,7 +137,7 @@ class MainController extends Controller
 
         // return dd($tiendas_Salud);
 
-        return View('Vistas.Categorias')->with(
+        return View('vistas.Categorias')->with(
             'tiendas',
             $tiendas
         )->with(
