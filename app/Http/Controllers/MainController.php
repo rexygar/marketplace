@@ -24,9 +24,9 @@ class MainController extends Controller
 
     public function index2()
     {
-        if(Auth::user()->rol = "Admin"){
+        if (Auth::user()->rol = "Admin") {
             return view('dashboard.dashboard');
-        } else{
+        } else {
             return view('vistas.index');
         }
         return redirect('/');
@@ -73,15 +73,17 @@ class MainController extends Controller
         $tienda = Tienda::find($id_tienda)->producto();
         $publicacion = DB::table('tienda')->where('tienda.id', $id_tienda)
             ->leftJoin('producto', 'tienda.id', '=', 'producto.id_tienda')
+            ->leftJoin('enlace_compra', 'producto.enlace_compra', '=', 'enlace_compra.id')
             ->select(
                 'tienda.*',
                 'producto.*',
+                'enlace_compra.link',
             )
             ->orderBy('producto.id', 'DESC')
             ->get();
         if ($publicacion) {
             $vacia = false;
-             
+
             return View('Vistas.Tienda')->with(
                 'tienda',
                 $publicacion
@@ -146,5 +148,4 @@ class MainController extends Controller
 
         return redirect('/');
     }
-
 }

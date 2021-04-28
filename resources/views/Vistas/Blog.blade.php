@@ -3,6 +3,6 @@
 @section('content')
 @include('componentes.hero-index')
 <div class="w-full">
-    @include('componentes.Cats_indx')
+    @include('componentes.Blog')
 </div>
 @endsection

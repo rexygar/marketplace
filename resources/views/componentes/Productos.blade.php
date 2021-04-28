@@ -117,7 +117,7 @@
     {{--  --}}
     <div class=" mb-10 md:container md:mx-auto px-4 md:px-0 col-span-1">
 
-      <a href="{{ URL('/') }}/Tienda/{{$productos->id}}">
+      <a target="_blank"  href="{{$productos->link}} ">
         <div class="content">
 
           <div class="w-full max-w-6xl rounded md:mb-0  ">

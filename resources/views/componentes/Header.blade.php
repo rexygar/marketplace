@@ -53,7 +53,7 @@
                     <span class="font-bold text-white text-xl lg:px-2 xl:px-2 2xl:px-2"><a
                             href="{{ __('/Categorias') }}">PRODUCTOS
                         </a></span>
-                    <span class="font-bold text-white text-xl lg:px-2 xl:px-2 2xl:px-2"><a href="">BLOG</a></span>
+                    <span class="font-bold text-white text-xl lg:px-2 xl:px-2 2xl:px-2"><a href="{{__('/Blog') }}">BLOG</a></span>
                 </div>
             </div>
 
