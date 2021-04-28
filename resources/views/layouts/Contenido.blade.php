@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-   
+
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Marketplace Quillota</title>
 
@@ -39,6 +39,22 @@
             unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 
 
+        }
+
+        @media screen and (min-width: 0px) and (max-width: 650px) {
+            .esconder {
+                display: none !important;
+            }
+
+            /* show it on small screens */
+        }
+
+        @media screen and (min-width: 1024px) {
+            .no_mostrar_xl {
+                display: none !important;
+            }
+
+            /* show it on small screens */
         }
 
         .lobster {

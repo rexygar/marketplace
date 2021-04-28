@@ -3,7 +3,13 @@
     <nav class="font-sans grid  grid-cols-12 text-center content-center sm:flex-row sm:text-left sm:justify-between py-2 px-6 sm:items-baseline w-full"
         style="background-color: #44b0e8">
         <div class="grid grid-cols-12  col-span-12 md:grid-cols-12 lg:py-2">
-            <div class="col-span-2 sm:col-span-10 md:col-span-6 lg:col-span-6 xl:col-span-6 2xl:col-span-6"></div>
+            <div class="col-span-2 sm:col-span-10 md:col-span-6 lg:col-span-6 xl:col-span-6 2xl:col-span-6">
+                <div class="col-span-12 -mr-10">
+                    <a class="navbar-brand lg:w-1/3 lg:mx-auto md:w-5/6" href=" {{ __('/') }}">
+                        <H1 class="text-4xl lobster font-bold" style="color: darkmagenta">MARKETPLACE</H1>
+                    </a>
+                </div>
+            </div>
             {{-- <div class="md:col-span-5 lg:col-span-6 sm:col-span-7 xl:col-span-6 col-span-6  
                 2xl:col-span-6  sm:hidden md:block">
                 <form action="" method="GET">
@@ -41,9 +47,11 @@
                         </button></span>
                     <span class="font-bold text-white text-xl lg:px-2 xl:px-2 2xl:px-2"><a href="{{__('/') }}">INICIO
                         </a></span>
-                    <span class="font-bold text-white text-xl lg:px-2 xl:px-2 2xl:px-2"><a href="{{ __('/About') }}">QUIENES
+                    <span class="font-bold text-white text-xl lg:px-2 xl:px-2 2xl:px-2"><a
+                            href="{{ __('/About') }}">QUIENES
                             SOMOS</a></span>
-                    <span class="font-bold text-white text-xl lg:px-2 xl:px-2 2xl:px-2"><a href="{{ __('/Categorias') }}">PRODUCTOS
+                    <span class="font-bold text-white text-xl lg:px-2 xl:px-2 2xl:px-2"><a
+                            href="{{ __('/Categorias') }}">PRODUCTOS
                         </a></span>
                     <span class="font-bold text-white text-xl lg:px-2 xl:px-2 2xl:px-2"><a href="">BLOG</a></span>
                 </div>
@@ -51,7 +59,7 @@
 
         </div>
     </nav>
-    <div class="relative w-full bg-white shadow-xl  md:hidden" :class="{' hidden': searchy, 'block': !searchy}"
+    <div class="relative px-24 bg-white shadow-xl block" :class="{' hidden': searchy, 'block': !searchy}"
         id="search-content">
         <div class="container mx-auto py-4 text-black">
             <form action="" method="GET">
@@ -77,17 +85,17 @@
     }
 </style>
 <div class="block sm:hidden" x-data="{ searchy : true}">
-    <nav
-        class="font-sans grid  text-center content-center sm:flex-row sm:text-left sm:justify-between py-2 px-6 bg-black shadow sm:items-baseline w-full">
-        <div class="grid grid-cols-12 md:grip-cols-10 grip-cols-12 lg:py-2 ">
-            <div class="md:col-span-2 col-span-2 -mr-10">
+    <nav style="background-color: #44b0e8"
+        class="font-sans grid grid-cols-12 text-center content-center sm:flex-row sm:text-left sm:justify-between py-2 px-6 bg-black shadow sm:items-baseline w-full">
+        <div class="grid col-span-12  grid-cols-12 lg:py-2 ">
+            <div class="col-span-2 -mr-10">
                 <a class="navbar-brand lg:w-1/3 lg:mx-auto md:w-5/6" href=" {{ __('/') }}">
-                    <img class="branding__logo img-fluid" src=" {{asset('/img/logo.png')}}" max-width="95px" alt="">
+                    <H1 class="text-xl lobster font-bold" style="color: darkmagenta">MARKETPLACE</H1>
                 </a>
             </div>
 
-            <div class="md:col-span-8  sm:col-span-8 col-span-10 grid grid-cols-12 md:-ml-16">
-                <div class="md:col-span-3 col-span-2 md:-ml-10 block md:hidden">
+            <div class="col-span-6 grid px-3 col-start-6 grid-cols-12">
+                <div class="col-span-6  col-start-4 md:-ml-10 block md:hidden">
                     <div class="  p-4 lg:p-6 col-span-1 mx-auto">
                         <button type="button" @click="searchy = !searchy"
                             class="text-gray-500 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400 focus:outline-none px-10 focus:text-gray-600 dark:focus:text-gray-400"
@@ -96,9 +104,7 @@
                         </button>
                     </div>
                 </div>
-                <div class="col-span-10">
 
-                </div>
             </div>
 
         </div>

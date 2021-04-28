@@ -4,8 +4,16 @@
     font-size: 1em;
     padding-left: 3px;
   }
+
+  @media screen and (min-width: 0px) and (max-width:769px) {
+    .no_mostrar {
+      display: none !important;
+    }
+
+    /* show it on small screens */
+  }
 </style>
-<footer class="w-full col-span-12   pt-16 lg:pt-16 md:pt-16 xl:pt-16 2xl:pt-16 pb-6 "
+<footer class="w-full col-span-12 no_mostrar  pt-16 lg:pt-16 md:pt-16 xl:pt-16 2xl:pt-16 pb-6  sm:block hidden"
   style="background-image:url('{{ url('/img/FOOT.png') }}');background-repeat: no-repeat;background-size: cover;">
 
   <div class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
@@ -154,7 +162,15 @@
     <div class="flex flex-wrap items-center md:justify-between  ">
       <div class="w-full md:w-4/12 px-4 mx-auto text-center">
         <div class="text-sm text-gray-600 font-semibold py-1">
-          {{-- <a href="https://www.Tecnobuy.cl" class="text-gray-600 hover:text-gray-900">https://www.Tecnobuy.cl</a>. --}}
+          <div class="grid grid-cols-12  col-span-12 md:grid-cols-12 lg:py-2">
+            <div class="col-span-2 sm:col-span-10 md:col-span-6 lg:col-span-6 xl:col-span-6 2xl:col-span-6">
+              <div class="col-span-12 -mr-10">
+                <a class="navbar-brand lg:w-1/3 lg:mx-auto md:w-5/6" href=" {{ __('/') }}">
+                  <H1 class="text-4xl lobster font-bold" style="color: darkmagenta">MARKETPLACE</H1>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -170,3 +186,5 @@
 <script>
   new WOW().init();
 </script>
+
+@include('layouts.Footer-mobile')

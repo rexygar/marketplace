@@ -5,7 +5,7 @@
   </div>
 
   <div class="col-span-12 grid grid-cols-7 py-4">
-    <div class="col-span-7 grid grid-cols-3  gap-2 lg:gap-4">
+    <div class="col-span-7 grid md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3 grid-cols-2 sm:gap-0  gap-6 lg:gap-4">
       {{--  --}}
       <div class="mb-10 md:container md:mx-auto px-4 md:px-0 col-span-1">
 

@@ -143,7 +143,7 @@
                   <div
                     class=" h-full  w-full absolute  bg-blend-darken left-0 top-0 opacity-75 hover:opacity-85  bg-blue-600 hover:bg-yellow-600">
                     <p
-                      class="text-white sm:text-2xl lobster text-center font-bold font-serif italic sm:text-4xl text-5xl md:text-2xl lg:text-5xl xl:text-5xl 2xl:text-5xl  mix-blend-multiply pt-5 md:pt-24 lg:pt-24 xl:pt-24 2xl:pt-24 capitalize hover:text-blue-800 w-full h-full font-black">
+                      class="text-white sm:text-2xl lobster text-center font-bold font-serif italic sm:text-4xl text-3xl md:text-2xl lg:text-5xl xl:text-5xl 2xl:text-5xl  mix-blend-multiply pt-5 md:pt-24 lg:pt-24 xl:pt-24 2xl:pt-24 capitalize hover:text-blue-800 w-full h-full font-black">
                       textil</p>
 
                   </div>
@@ -172,7 +172,7 @@
                   <div
                     class=" h-full  w-full absolute  bg-blend-darken left-0 top-0 opacity-75 hover:opacity-85  bg-blue-600 hover:bg-yellow-600">
                     <p
-                      class="text-white sm:text-2xl lobster text-center font-bold font-serif italic sm:text-4xl text-5xl md:text-2xl lg:text-5xl xl:text-5xl 2xl:text-5xl  mix-blend-multiply pt-5 md:pt-24 lg:pt-24 xl:pt-24 2xl:pt-24 capitalize hover:text-blue-800 w-full h-full font-black">
+                      class="text-white sm:text-2xl lobster text-center font-bold font-serif italic sm:text-4xl text-3xl md:text-2xl lg:text-5xl xl:text-5xl 2xl:text-5xl  mix-blend-multiply pt-5 md:pt-24 lg:pt-24 xl:pt-24 2xl:pt-24 capitalize hover:text-blue-800 w-full h-full font-black">
                       gastronomia</p>
 
                   </div>
@@ -201,7 +201,7 @@
                   <div
                     class=" h-full  w-full absolute  bg-blend-darken left-0 top-0 opacity-75 hover:opacity-85  bg-blue-600 hover:bg-yellow-600">
                     <p
-                      class="text-white sm:text-2xl lobster text-center font-bold font-serif italic sm:text-4xl text-5xl md:text-2xl lg:text-5xl xl:text-5xl 2xl:text-5xl  mix-blend-multiply pt-5 md:pt-24 lg:pt-24 xl:pt-24 2xl:pt-24 capitalize hover:text-blue-800 w-full h-full font-black">
+                      class="text-white sm:text-2xl lobster text-center font-bold font-serif italic sm:text-4xl text-3xl md:text-2xl lg:text-5xl xl:text-5xl 2xl:text-5xl  mix-blend-multiply pt-5 md:pt-24 lg:pt-24 xl:pt-24 2xl:pt-24 capitalize hover:text-blue-800 w-full h-full font-black">
                       decoracion</p>
 
                   </div>
@@ -230,7 +230,7 @@
                   <div
                     class=" h-full  w-full absolute  bg-blend-darken left-0 top-0 opacity-75 hover:opacity-85  bg-blue-600 hover:bg-yellow-600">
                     <p
-                      class="text-white sm:text-2xl lobster text-center font-bold font-serif italic sm:text-4xl text-5xl md:text-2xl lg:text-5xl xl:text-5xl 2xl:text-5xl  mix-blend-multiply pt-5 md:pt-24 lg:pt-24 xl:pt-24 2xl:pt-24 capitalize hover:text-blue-800 w-full h-full font-black">
+                      class="text-white sm:text-2xl lobster text-center font-bold font-serif italic sm:text-4xl text-3xl md:text-2xl lg:text-5xl xl:text-5xl 2xl:text-5xl  mix-blend-multiply pt-5 md:pt-24 lg:pt-24 xl:pt-24 2xl:pt-24 capitalize hover:text-blue-800 w-full h-full font-black">
                       naturaleza</p>
 
                   </div>
@@ -259,7 +259,7 @@
                   <div
                     class=" h-full  w-full absolute  bg-blend-darken left-0 top-0 opacity-75 hover:opacity-85  bg-blue-600 hover:bg-yellow-600">
                     <p
-                      class="text-white sm:text-2xl lobster text-center font-bold font-serif italic sm:text-4xl text-5xl md:text-2xl lg:text-5xl xl:text-5xl 2xl:text-5xl  mix-blend-multiply pt-5 md:pt-24 lg:pt-24 xl:pt-24 2xl:pt-24 capitalize hover:text-blue-800 w-full h-full font-black">
+                      class="text-white sm:text-2xl lobster text-center font-bold font-serif italic sm:text-4xl text-3xl md:text-2xl lg:text-5xl xl:text-5xl 2xl:text-5xl  mix-blend-multiply pt-5 md:pt-24 lg:pt-24 xl:pt-24 2xl:pt-24 capitalize hover:text-blue-800 w-full h-full font-black">
                       salud y belleza</p>
 
                   </div>
@@ -288,7 +288,7 @@
                   <div
                     class=" h-full  w-full absolute  bg-blend-darken left-0 top-0 opacity-75 hover:opacity-85  bg-blue-600 hover:bg-yellow-600">
                     <p
-                      class="text-white sm:text-2xl lobster text-center font-bold font-serif italic sm:text-4xl text-5xl md:text-2xl lg:text-5xl xl:text-5xl 2xl:text-5xl  mix-blend-multiply pt-5 md:pt-24 lg:pt-24 xl:pt-24 2xl:pt-24 capitalize hover:text-blue-800 w-full h-full font-black">
+                      class="text-white sm:text-2xl lobster text-center font-bold font-serif italic sm:text-4xl text-3xl md:text-2xl lg:text-5xl xl:text-5xl 2xl:text-5xl  mix-blend-multiply pt-5 md:pt-24 lg:pt-24 xl:pt-24 2xl:pt-24 capitalize hover:text-blue-800 w-full h-full font-black">
                       Diseño</p>
 
                   </div>
@@ -304,20 +304,22 @@
 
     </div>
   </div>
+  <div
+    class="col-span-12 grid gap-4 grid-cols-12 py-4 xs:px-6 block sm:hidden md:hidden lg:hidden sm:px-16 md:px-16 lg:px-16 2xl:px-16 xl:px-16 ">
 
-  <div class="col-span-12 grid gap-4 grid-cols-6 py-4 xs:px-6 sm:px-16 md:px-16 lg:px-16 2xl:px-16 xl:px-16 ">
 
-    <div></div>
-    <div class="col-span-2">
+    <div class="col-span-4 col-start-2 -mx-5">
       <button class="rounded-full py-3 px-6 font-black text-white w-full bg-yellow-500 uppercase"> informacion</button>
     </div>
-    <div class="col-span-2">
+    <div></div>
+    <div class="col-span-4 -mx-5">
       <button class="rounded-full py-3 px-6 font-black text-white w-full bg-indigo-500 uppercase"> informacion</button>
     </div>
-    <div></div>
+
 
 
   </div>
+   
   <div class="col-span-12 grid gap-4 grid-cols-6 py-4 xs:px-6 sm:px-16 md:px-16 lg:px-16 2xl:px-16 xl:px-16 ">
 
     <div class="col-span-1">
