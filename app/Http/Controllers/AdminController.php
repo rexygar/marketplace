@@ -18,7 +18,7 @@ class AdminController extends Controller
         if(Auth::user()->rol = "Admin"){
             return view('dashboard.dashboard');
         } else{
-            return view('vistas.index');
+            return view('vistas.Index');
         }
     }
     
@@ -80,7 +80,7 @@ class AdminController extends Controller
             ->make(true);
         }
 
-        return view('dashboard.lista_producto');
+        return view('dashboard.lista_Producto');
     }
 
     public function createProduct(Request $request){
