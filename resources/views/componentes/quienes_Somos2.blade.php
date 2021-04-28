@@ -24,8 +24,8 @@
     justify-content: center;
   }
 </style>
-<div
-  class="col-span-12 grid grid-cols-12 h-full md:px-6 lg:px-16 xl:px-16 2xl:px-16 "style="background-color: blueviolet;">
+<div class="col-span-12 grid grid-cols-12 h-full md:px-6 lg:px-16 xl:px-16 2xl:px-16 "
+  style="background-color: blueviolet;">
 
   <div
     class="col-span-12 lg:col-span-12 md:col-span-12 xl:col-span-12 2xl:col-span-12 grid grid-cols-12  py-6 md:grid-flow-row row-span-2">
@@ -35,7 +35,7 @@
           <img class="is-rounded" src="https://bulma.io/images/placeholders/128x128.png">
         </figure>
       </div>
-      <div class="col-span-3 -mt-16">
+      <div class="col-span-3 lg:-mt-16 xl:-mt-16 2xl:-mt-16">
         <article class="media">
 
           <div class="media-content">

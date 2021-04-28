@@ -35,8 +35,8 @@
       class="col-span-12 lg:col-span-12 md:col-span-12 xl:col-span-12 2xl:col-span-12 grid grid-cols-12  md:grid-flow-row row-span-2">
       <div
         class="col-span-12  lg:col-span-12 md:col-span-12 xl:col-span-12 2xl:col-span-12 grid grid-cols-3  px-2  py-6">
-        <div class="col-span-3 pl-16">
-          <div class="col-span-12 -ml-36 font-black text-3xl">
+        <div class="col-span-3 ">
+          <div class="col-span-12 font-black text-3xl">
             <h1 class="col-span-12 text-center py-5 font-black text-6xl">Post Nro 1</h1>
           </div>
           <img class="col-span-12 " src="{{ asset('img/BLOG/BLOG.png') }}" alt="">
