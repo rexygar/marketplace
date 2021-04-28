@@ -10,10 +10,17 @@ use App\Models\Tienda;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use DataTables;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Redirect;
 
 class AdminController extends Controller
 {
+    
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     public function index(){
         if(Auth::user()->rol = "Admin"){
             return view('dashboard.dashboard');
@@ -155,6 +162,13 @@ class AdminController extends Controller
 
         $producto->delete();
         return redirect()->route('list.producto');
+    }
+
+    public function allClear(){
+        \Artisan::call('route:clear');
+        \Artisan::call('view:clear');
+        \Artisan::call('config:clear');
+        \Artisan::call('cache:clear');
     }
 
 }

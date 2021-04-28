@@ -19,17 +19,16 @@ class MainController extends Controller
 
     public function index()
     {
-        if (Auth::check()) {
-            $rol = Auth::user();
-            if ($rol->rol == 'Admin') {
-                return view('dashboard.dashboard');
-            }
-        }
         return view('home');
     }
 
     public function index2()
     {
+        if(Auth::user()->rol = "Admin"){
+            return view('dashboard.dashboard');
+        } else{
+            return view('vistas.index');
+        }
         return redirect('/');
     }
 
@@ -84,7 +83,7 @@ class MainController extends Controller
         if ($publicacion) {
             $vacia = false;
             // dd($tienda);
-            return View('vistas.Tienda')->with(
+            return View('Vistas.Tienda')->with(
                 'tienda',
                 $publicacion
             )->with(
@@ -95,7 +94,7 @@ class MainController extends Controller
             $vacia = true;
 
             dd($vacia);
-            return View('vistas.Tienda')->with(
+            return View('Vistas.Tienda')->with(
                 'tienda',
                 $publicacion
             )->with(
@@ -137,7 +136,7 @@ class MainController extends Controller
 
         // return dd($tiendas_Salud);
 
-        return View('vistas.Categorias')->with(
+        return View('Vistas.Categorias')->with(
             'tiendas',
             $tiendas
         )->with(
@@ -150,4 +149,5 @@ class MainController extends Controller
 
         return redirect('/');
     }
+
 }

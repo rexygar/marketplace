@@ -30,7 +30,8 @@ Route::POST('/ADM/proudctoAgregado', [App\Http\Controllers\AdminController::clas
 Route::get('/ADM/editarTienda', [App\Http\Controllers\AdminController::class, 'editTienda'])->name('edit.tienda');
 Route::POST('/ADM/tiendaEditada', [App\Http\Controllers\AdminController::class, 'updateTienda'])->name('update.tienda');
 Route::POST('/ADM/productoEliminado', [App\Http\Controllers\AdminController::class, 'deleteProducto'])->name('delete.producto');
-Route::get('/ADM', [App\Http\Controllers\AdminController::class, 'getCategoria'])->name('admin.index');
+Route::get('/ADM', [App\Http\Controllers\AdminController::class, 'index'])->name('admin.index');
+Route::get('/ADM/allClear', [App\Http\Controllers\AdminController::class, 'allClear']);
 
 Route::get('/tests1', function () {
     return view('Vistas.index');
