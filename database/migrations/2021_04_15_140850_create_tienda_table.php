@@ -21,8 +21,8 @@ class CreateTiendaTable extends Migration
             $table->string('instagram')->nullable();
             $table->string('facebook')->nullable();
             $table->bigInteger('id_categoria')->unsigned();
+            $table->bigInteger('enlace_compra')->unsigned()->nullable();
             $table->foreign('id_categoria')->references('id')->on('categorias');
-            $table->bigInteger('enlace_compra')->unsigned();
             $table->foreign('enlace_compra')->references('id')->on('enlace_compra');
             $table->timestamps();
         });

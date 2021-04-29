@@ -113,11 +113,9 @@
 
     </div>
     <div class="col-span-12 text-center">
-      <p class="py-3 px-6 font-black text-base text-gray-700  w-full capitalize "> el marketplace de quillota que busca
-        posicionar los
-        emprendedores locales y fomentar su negocio ... Velit ea aliqua et minim. Labore eu reprehenderit elit irure
-        pariatur. Pariatur elit magna non eiusmod. Tempor mollit incididunt nisi aute deserunt minim nostrud quis do et
-        anim occaecat laborum. Ea voluptate duis incididunt esse eiusmod minim et adipisicing. </p>
+      <p class="py-3 px-6 font-black text-base text-gray-700  w-full capitalize "> Impulsa tu Negocio es un programa de capacitación destinado a potenciar 45 emprendimientos que nace a raíz de la iniciativa de la Municipalidad de Quillota, en conjunto con la empresa Colbún, Fundación BanAmor, Fundación La Semilla y Marca Consciente.
+        Conoce los productos y servicios que los emprendedores de Quillota tienen para ti.
+         </p>
     </div>
     <div></div>
 
@@ -138,7 +136,7 @@
             <div class="w-full max-w-6xl rounded md:mb-0  ">
               <div class="relative panel-wrapper">
                 <div
-                  style="background-image:url('{{ url('uploads/CASA Y DECORACIÓN/Creaciones Luisa/Sin título-1-10-min.jpg') }}');background-repeat: no-repeat;background-size: contain;"
+                  style="background-image:url('{{ asset('img/CATEGORIAS/TEXTIL.jpg') }}');background-repeat: no-repeat;background-size: contain;"
                   class="image is-3by4 rounded-3xl w-full h-48 object-cover overflow-hidden">
                   <div
                     class=" h-full  w-full absolute  bg-blend-darken left-0 top-0 opacity-75 hover:opacity-85  bg-blue-600 hover:bg-yellow-600">
@@ -167,7 +165,7 @@
             <div class="w-full max-w-6xl rounded md:mb-0  ">
               <div class="relative panel-wrapper">
                 <div
-                  style="background-image:url('{{ url('uploads/CASA Y DECORACIÓN/Creaciones Luisa/Sin título-1-10-min.jpg') }}');background-repeat: no-repeat;background-size: contain;"
+                  style="background-image:url('{{ asset('img/CATEGORIAS/GASTRONOMIA.jpg') }}');background-repeat: no-repeat;background-size: contain;"
                   class="image is-3by4 rounded-3xl w-full h-48 object-cover overflow-hidden">
                   <div
                     class=" h-full  w-full absolute  bg-blend-darken left-0 top-0 opacity-75 hover:opacity-85  bg-blue-600 hover:bg-yellow-600">
@@ -196,13 +194,13 @@
             <div class="w-full max-w-6xl rounded md:mb-0  ">
               <div class="relative panel-wrapper">
                 <div
-                  style="background-image:url('{{ url('uploads/CASA Y DECORACIÓN/Creaciones Luisa/Sin título-1-10-min.jpg') }}');background-repeat: no-repeat;background-size: contain;"
+                  style="background-image:url('{{ asset('img/CATEGORIAS/DECORACION.jpg') }}');background-repeat: no-repeat;background-size: contain;"
                   class="image is-3by4 rounded-3xl w-full h-48 object-cover overflow-hidden">
                   <div
                     class=" h-full  w-full absolute  bg-blend-darken left-0 top-0 opacity-75 hover:opacity-85  bg-blue-600 hover:bg-yellow-600">
                     <p
                       class="text-white sm:text-2xl lobster text-center font-bold font-serif italic sm:text-4xl text-3xl md:text-2xl lg:text-5xl xl:text-5xl 2xl:text-5xl  mix-blend-multiply pt-5 md:pt-24 lg:pt-24 xl:pt-24 2xl:pt-24 capitalize hover:text-blue-800 w-full h-full font-black">
-                      decoracion</p>
+                      Casa y Decoración</p>
 
                   </div>
                 </div>
@@ -225,7 +223,7 @@
             <div class="w-full max-w-6xl rounded md:mb-0  ">
               <div class="relative panel-wrapper">
                 <div
-                  style="background-image:url('{{ url('uploads/CASA Y DECORACIÓN/Creaciones Luisa/Sin título-1-10-min.jpg') }}');background-repeat: no-repeat;background-size: contain;"
+                  style="background-image:url('{{ asset('img/CATEGORIAS/NATURALEZA.jpg') }}');background-repeat: no-repeat;background-size: contain;"
                   class="image is-3by4 rounded-3xl w-full h-48 object-cover overflow-hidden">
                   <div
                     class=" h-full  w-full absolute  bg-blend-darken left-0 top-0 opacity-75 hover:opacity-85  bg-blue-600 hover:bg-yellow-600">
@@ -254,7 +252,7 @@
             <div class="w-full max-w-6xl rounded md:mb-0  ">
               <div class="relative panel-wrapper">
                 <div
-                  style="background-image:url('{{ url('uploads/CASA Y DECORACIÓN/Creaciones Luisa/Sin título-1-10-min.jpg') }}');background-repeat: no-repeat;background-size: contain;"
+                  style="background-image:url('{{ asset('img/CATEGORIAS/BELLEZA Y CUIDADO.jpg') }}');background-repeat: no-repeat;background-size: contain;"
                   class="image is-3by4 rounded-3xl w-full h-48 object-cover overflow-hidden">
                   <div
                     class=" h-full  w-full absolute  bg-blend-darken left-0 top-0 opacity-75 hover:opacity-85  bg-blue-600 hover:bg-yellow-600">
@@ -283,7 +281,7 @@
             <div class="w-full max-w-6xl rounded md:mb-0  ">
               <div class="relative panel-wrapper">
                 <div
-                  style="background-image:url('{{ url('uploads/CASA Y DECORACIÓN/Creaciones Luisa/Sin título-1-10-min.jpg') }}');background-repeat: no-repeat;background-size: contain;"
+                  style="background-image:url('{{ asset('img/CATEGORIAS/DISEÑO.jpg') }}');background-repeat: no-repeat;background-size: contain;"
                   class="image is-3by4 rounded-3xl w-full h-48 object-cover overflow-hidden">
                   <div
                     class=" h-full  w-full absolute  bg-blend-darken left-0 top-0 opacity-75 hover:opacity-85  bg-blue-600 hover:bg-yellow-600">

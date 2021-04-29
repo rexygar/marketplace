@@ -46,6 +46,10 @@
               <a href="{{ route('list.producto') }}"><i class="fas fa-shopping-basket"></i><span class="ml-2 font-bold">Listar Productos</span>
               </a>
             </li>
+            <li class="mb-2 px-4 py-4 text-gray-100 flex flex-row  border-gray-300 hover:text-white   hover:bg-blue-500  hover:font-bold rounded rounded-lg">
+              <a href="{{ route('list.blog') }}"><i class="fas fa-shopping-basket"></i><span class="ml-2 font-bold">Listar Blog</span>
+              </a>
+            </li>
           </ul>
         </div>
       </nav>

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\blog;
 use App\Models\Categoria;
 use App\Models\EnlaceCompra;
 use App\Models\Images;
@@ -150,7 +151,7 @@ class AdminController extends Controller
 
         $tienda->razon_social = $request->nombre;
         $tienda->descripcion = $request->descripcion;
-        $tienda->logo = $request->logo;
+        $tienda->logo = $imagen;
         $tienda->instagram = $request->instagram;
         $tienda->facebook = $request->facebook;
         $tienda->save();
@@ -173,4 +174,55 @@ class AdminController extends Controller
         \Artisan::call('cache:clear');
     }
 
+    public function list_blog(Request $request){
+        if($request->ajax()){
+            $data = blog::latest()->get();
+            return Datatables::of($data)->addIndexColumn()
+            ->addColumn('action', function($row){
+                $url = route('edit.blog');
+                $btn = '<form action="'. $url .'" method="GET">
+                <input type="hidden" name="id" value="' . $row->id . '">
+                <button type="submit" class="bg-blue-500 flex justify-center items-center w-full text-white px-4 py-3 rounded-md focus:outline-none">Editar</button>
+                </form>';
+                return $btn;
+            })
+            ->rawColumns(['action'])
+            ->make(true);
+        }
+
+        return view('dashboard.list_blog');
+    }
+
+    public function createBlog(Request $request){
+        if(!isset($request->id)){
+            $blog = blog::get();
+            return view('dashboard.create_blog')->with(['blog' => $blog]);
+        }
+
+        $blog = blog::where('id', $request->id)->first();
+
+        return view('dashboard.create_blog')->with(['blog' => $blog]);
+    }
+
+    public function addBlog(Request $request){
+        $blog = blog::where('id', $request->id)->first();
+
+        if($blog == null || !isset($blog->id)){
+            $blog = new blog();
+        }
+
+        $file = $request->file('logo');
+
+        $imagen = time()."_".$file->getClientOriginalName();
+        $imagen = str_replace(' ','', $imagen);
+        \Storage::disk('local')->put($imagen, \File::get($file));
+
+        $blog->titulo = $request->titulo;
+        $blog->descripcion = $request->descripcion;
+        $blog->img = $imagen;
+        $blog->save();
+
+        return Redirect()->back();
+
+    }
 }
