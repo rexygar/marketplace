@@ -111,7 +111,7 @@
       class="col-span-9 lg:col-span-9 md:col-span-8 xl:col-span-9 2xl:col-span-9 grid grid-cols-3  md:grid-flow-row row-span-2">
       <div></div>
       <div class="col-span-2 lg:col-span-2 xl:col-span-2  2xl:col-span-2  md:col-span-2 md:col-start-2 rounded-3xl">
-        <img class="rounded-3xl w-8/12" src="{{ asset('img/map.PNG') }}" alt="">
+        <img class="rounded-3xl w-8/12" src="{{ asset('img/map.png') }}" alt="">
       </div>
       <div class="col-span-3  md:col-span-3 lg:col-span-3 xl:col-span-3 2xl:col-span-3 md:col-start-2">
         <div class="col-span-12 ">
