@@ -49,7 +49,7 @@
         <div class="col-span-2  text-center ">
           <strong class="uppercase  md:inline-block align-middle">
             <input type="radio" style="appearance: none !important;   -moz-appearance: none !important;
-    -webkit-appearance: none !important;" name="Categoria_radio" id="star5" value="5" />Gastronomia
+    -webkit-appearance: none !important;" name="Categoria_radio" id="star5" value="5" />Gastronomía
           </strong>
           <div class="_Gastronomia">
             @include('componentes.Categorias_productos.Cats_selected')
