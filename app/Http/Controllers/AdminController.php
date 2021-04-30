@@ -13,6 +13,7 @@ use Illuminate\Support\Facades\DB;
 use DataTables;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Redirect;
+use Illuminate\Support\Facades\Storage;
 
 class AdminController extends Controller
 {
@@ -118,15 +119,18 @@ class AdminController extends Controller
         if($producto == null || !isset($producto->id)){
             $producto = new Producto();
         }
-        $file = $request->file('img');
 
-        $imagen = time()."_".$file->getClientOriginalName();
-        $imagen = str_replace(' ','', $imagen);
-        \Storage::disk('local')->put($imagen, \File::get($file));
+        if($request->hasFile('img')){
+            $file = $request->file('img');
 
+            $imagen = time()."_".$file->getClientOriginalName();
+            $imagen = str_replace(' ','', $imagen);
+            \Storage::disk('local')->put($imagen, \File::get($file));
+            $producto->img = $imagen;
+        }
+        
         $producto->titulo = $request->titulo;
         $producto->descripcion = $request->descripcion;
-        $producto->img = $imagen;
         $producto->enlace_compra = $enlace->id;
         $producto->id_tienda = $request->tienda;
         $producto->save();
@@ -143,15 +147,17 @@ class AdminController extends Controller
     public function updateTienda(Request $request){
         $tienda = Tienda::where('id', $request->id)->first();
 
-        $file = $request->file('logo');
+        if ($request->hasFile('logo')) {
+            $file = $request->file('logo');
 
-        $imagen = time()."_".$file->getClientOriginalName();
-        $imagen = str_replace(' ','', $imagen);
-        \Storage::disk('local')->put($imagen, \File::get($file));
+            $imagen = time()."_".$file->getClientOriginalName();
+            $imagen = str_replace(' ','', $imagen);
+            \Storage::disk('local')->put($imagen, \File::get($file));
+            $tienda->logo = $imagen;
+        }
 
         $tienda->razon_social = $request->nombre;
         $tienda->descripcion = $request->descripcion;
-        $tienda->logo = $imagen;
         $tienda->instagram = $request->instagram;
         $tienda->facebook = $request->facebook;
         $tienda->save();
@@ -211,15 +217,19 @@ class AdminController extends Controller
             $blog = new blog();
         }
 
-        $file = $request->file('logo');
+        if ($request->hasFile('logo')) {
+            $file = $request->file('logo');
 
-        $imagen = time()."_".$file->getClientOriginalName();
-        $imagen = str_replace(' ','', $imagen);
-        \Storage::disk('local')->put($imagen, \File::get($file));
+            $imagen = time()."_".$file->getClientOriginalName();
+            $imagen = str_replace(' ','', $imagen);
+            \Storage::disk('local')->put($imagen, \File::get($file));
+            $blog->img = $imagen;
+        }
+
+        
 
         $blog->titulo = $request->titulo;
         $blog->descripcion = $request->descripcion;
-        $blog->img = $imagen;
         $blog->save();
 
         return Redirect()->back();

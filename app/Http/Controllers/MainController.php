@@ -147,7 +147,7 @@ class MainController extends Controller
     public static function show_Blog()
     { //mostrar todas las tiendas ->with('producto ,$(product')->producto()
 
-        $blogs = blog::all();
+        $blogs = blog::all()->sortByDesc('created_at');
 
         return View('Vistas.Blog')->with(
             'blogs',
