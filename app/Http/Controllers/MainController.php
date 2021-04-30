@@ -84,7 +84,7 @@ class MainController extends Controller
             ->get();
         if ($publicacion) {
             $vacia = false;
-           
+
             return View('Vistas.Tienda')->with(
                 'tienda',
                 $publicacion
@@ -112,21 +112,27 @@ class MainController extends Controller
         switch ($id_tienda) {
             case  1:
                 $portada = '\img\cats\textil.png';
+                $fondo = '/TEXTIL-min.jpg';
                 break;
             case 2:
                 $portada = '\img\cats\diseño.png';
+                $fondo = '/DISEÑO-min.jpg';
                 break;
             case 3:
                 $portada = '\img\cats\salud.png';
+                $fondo = '/BELLEZA Y CUIDADO-min.jpg';
                 break;
             case  4:
                 $portada = '\img\cats\casa.png';
+                $fondo = '/DECORACION-min.jpg';
                 break;
             case  5:
                 $portada = '\img\cats\gastro.png';
+                $fondo = '/GASTRONOMIA-min.jpg';
                 break;
             case  6:
                 $portada = '\img\cats\naturaleza.png';
+                $fondo = '/NATURALEZA-min.jpg';
                 break;
 
             default:
@@ -142,6 +148,9 @@ class MainController extends Controller
         )->with(
             'portada',
             $portada
+        )->with(
+            'fondo',
+            $fondo
         );
     }
     public static function show_Blog()

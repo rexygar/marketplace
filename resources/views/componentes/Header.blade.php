@@ -12,30 +12,32 @@
                 </div>
             </div>
             <div
-                class="md:col-span-9 lg:col-span-9 sm:col-span-9 xl:col-span-9 2xl:col-span-9 grid grid-cols-2 lg:ml-16 md:ml-6 sm:ml-6 xl::ml-24 2xl::ml-36">
+                class="md:col-span-9 lg:col-span-9 sm:col-span-9 xl:col-span-9 2xl:col-span-9 grid grid-cols-12 lg:ml-16 md:ml-6 sm:ml-6 xl::ml-24 2xl::ml-36">
 
-                <div class="col-span-12 ">
+                <div class="col-span-12 grid grid-cols-12  ">
+                    <div class="col-span-1 "></div>
+                    <div class="col-span-12"><span class="font-bold text-white text-xl"><button type="button"
+                                @click="searchy = !searchy"
+                                class="text-white dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400 focus:outline-none sm:px-2 md:px-4 lg:px-10 xl:px-10 2xl:px-10 focus:text-gray-600 dark:focus:text-gray-400"
+                                aria-label="toggle menu">
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                            </button></span>
+                        <span
+                            class="font-bold text-white text-xl sm:text-base md:text-xl lg:text-xl xl:text-xl 2xl:text-2xl lg:px-2 xl:px-2 2xl:px-2"><a
+                                href="{{__('/') }}">INICIO
+                            </a></span>
+                        <span
+                            class="font-bold text-white text-xl sm:text-base md:text-xl lg:text-xl xl:text-xl 2xl:text-2xl lg:px-2 xl:px-2 2xl:px-2"><a
+                                href="{{ __('/About') }}">QUIENES
+                                SOMOS</a></span>
+                        <span
+                            class="font-bold text-white text-xl sm:text-base md:text-xl lg:text-xl xl:text-xl 2xl:text-2xl lg:px-2 xl:px-2 2xl:px-2"><a
+                                href="{{ __('/Categorias') }}">PRODUCTOS
+                            </a></span>
+                        <span
+                            class="font-bold text-white text-xl sm:text-base md:text-xl lg:text-xl xl:text-xl 2xl:text-2xl lg:px-2 xl:px-2 2xl:px-2"><a
+                                href="{{__('/Blog') }}">BLOG</a></span></div>
 
-                    <span class="font-bold text-white text-xl"><button type="button" @click="searchy = !searchy"
-                            class="text-white dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400 focus:outline-none sm:px-2 md:px-4 lg:px-10 xl:px-10 2xl:px-10 focus:text-gray-600 dark:focus:text-gray-400"
-                            aria-label="toggle menu">
-                            <i class="fa fa-search" aria-hidden="true"></i>
-                        </button></span>
-                    <span
-                        class="font-bold text-white text-xl sm:text-base md:text-xl lg:text-xl xl:text-xl 2xl:text-2xl lg:px-2 xl:px-2 2xl:px-2"><a
-                            href="{{__('/') }}">INICIO
-                        </a></span>
-                    <span
-                        class="font-bold text-white text-xl sm:text-base md:text-xl lg:text-xl xl:text-xl 2xl:text-2xl lg:px-2 xl:px-2 2xl:px-2"><a
-                            href="{{ __('/About') }}">QUIENES
-                            SOMOS</a></span>
-                    <span
-                        class="font-bold text-white text-xl sm:text-base md:text-xl lg:text-xl xl:text-xl 2xl:text-2xl lg:px-2 xl:px-2 2xl:px-2"><a
-                            href="{{ __('/Categorias') }}">PRODUCTOS
-                        </a></span>
-                    <span
-                        class="font-bold text-white text-xl sm:text-base md:text-xl lg:text-xl xl:text-xl 2xl:text-2xl lg:px-2 xl:px-2 2xl:px-2"><a
-                            href="{{__('/Blog') }}">BLOG</a></span>
                 </div>
             </div>
 

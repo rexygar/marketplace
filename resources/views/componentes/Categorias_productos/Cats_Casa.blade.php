@@ -44,7 +44,7 @@
             <div class="relative panel-wrapper">
               <div
                 style="background-image:url('{{$ruta }}{{$img }}');background-repeat: no-repeat;background-size: contain;background-position: center;"
-                class="image is-3by4 border-4 border-blue-400 hover:border-yellow-500 w-full h-48 object-cover overflow-hidden">
+                class="image is-1by1 border-4 border-blue-400 hover:border-yellow-500 w-full h-48 object-cover overflow-hidden">
                 <div
                   class="px-6 py-4 h-full  w-full absolute  bg-blend-darken left-0 top-0 opacity-50 hover:opacity-95 bg-blue-500 hover:bg-yellow-500">
                   <p
