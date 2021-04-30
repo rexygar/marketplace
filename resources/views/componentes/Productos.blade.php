@@ -169,17 +169,20 @@
 
 
 </div>
+
 <div class="col-span-12 grid gap-4 grid-cols-6 py-4 xs:px-6 sm:px-16 md:px-16 lg:px-16 2xl:px-16 xl:px-16 ">
 
-  <div></div>
-
-  <div></div>
-  <div class="col-span-2">
-    <button class="rounded-full py-3 px-6 font-black text-white w-full bg-yellow-500 uppercase"> visitar</button>
-  </div>
-
-  <div></div>
-
-
+  @for ($i = 0; $i < 1; $i++) <div>
 </div>
+<div>
+</div>
+<div class="col-span-2">
+  <a target="_blank" href="/{{$productos->link}} ">
+
+    <button class="rounded-full py-3 px-6 font-black text-white w-full bg-yellow-500 uppercase"> visitar</button>
+
+  </a>
+</div>
+<div></div>
+@endfor
 </div>
