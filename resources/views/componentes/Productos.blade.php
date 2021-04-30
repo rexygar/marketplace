@@ -119,7 +119,7 @@
   </div>
 
   <div class="col-span-12 text-justify">
-    <p class="py-3 px-6 font-black text-base text-gray-700  w-full capitalize ">{{$tienda[0]->desc}}</p>
+    <p class="py-3 px-6 font-black text-base text-gray-700  w-full capitalize ">{{$tienda[0]->descr}}</p>
   </div>
   @endfor
   <div></div>
@@ -128,15 +128,13 @@
 </div>
 <div
   class="col-span-7 grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3 md:grid-cols-3 px-36 md:px-6 sm:px-16 lg:px-16 xl:px-36 2xl:px-36  gap-6 lg:gap-4 py-10">
-  @if ($tienda[0]->id == null)
+  @foreach ($tienda as $productos)
+  @if (!isset($productos->id))
   <div class=" mb-10 md:container md:mx-auto px-4 md:px-0 col-span-1">
     NADA QUE MOSTRAR
 
   </div>
-
   @else
-  @foreach ($tienda as $productos)
-  {{--  --}}
   <div class=" md:mb-10 xl:mb-10 xl:mb-10 2xl:mb-10 md:container md:mx-auto px-4 md:px-0 col-span-1">
 
     <a target="_blank" href="{{$productos->link}} ">
@@ -162,22 +160,24 @@
     </a>
 
   </div>
+  @endif
+  {{--  --}}
 
   {{--  --}}
   @endforeach
-  @endif
 
 
 </div>
 
 <div class="col-span-12 grid gap-4 grid-cols-6 py-4 xs:px-6 sm:px-16 md:px-16 lg:px-16 2xl:px-16 xl:px-16 ">
 
-  @for ($i = 0; $i < 1; $i++) <div>
+  @for ($i = 0; $i < 1; $i++) 
+  <div>
 </div>
 <div>
 </div>
 <div class="col-span-2">
-  <a target="_blank" href="/{{$productos->link}} ">
+  <a target="_blank" href="{{$tienda[0]->link}} ">
 
     <button class="rounded-full py-3 px-6 font-black text-white w-full bg-yellow-500 uppercase"> visitar</button>
 
