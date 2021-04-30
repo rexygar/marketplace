@@ -84,7 +84,7 @@ class MainController extends Controller
             ->get();
         if ($publicacion) {
             $vacia = false;
-
+           
             return View('Vistas.Tienda')->with(
                 'tienda',
                 $publicacion

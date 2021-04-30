@@ -117,13 +117,11 @@
     </div>
 
   </div>
-  @endfor
+
   <div class="col-span-12 text-justify">
-    <p class="py-3 px-6 font-black text-base text-gray-700  w-full capitalize "> Velit ea aliqua et minim. Labore eu
-      reprehenderit elit irure
-      pariatur. Pariatur elit magna non eiusmod. Tempor mollit incididunt nisi aute deserunt minim nostrud quis do et
-      anim occaecat laborum. Ea voluptate duis incididunt esse eiusmod minim et adipisicing. </p>
+    <p class="py-3 px-6 font-black text-base text-gray-700  w-full capitalize ">{{$tienda[0]->descripcion}}</p>
   </div>
+  @endfor
   <div></div>
 
 

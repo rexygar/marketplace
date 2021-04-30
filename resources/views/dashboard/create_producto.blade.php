@@ -28,6 +28,7 @@
                   <input type="hidden" name="id" value="@if (isset($producto->id)){{ $producto->id }} @endif">
                   <span
                     class="text-xl leading-relaxed text-center sm:text-left  w-full font-bold text-gray-700">Titulo</span>
+                  <br>
                   <input type="text" required
                     class="text-sm pl-4 w-full inline-block  text-justify align-middle  rounded-2xl md:p-2 bg-white border-2 border-gray-300  placeholder-gray-600 shadow-md focus:placeholder-gray-500  focus:border-gray-600 focus:outline-none"
                     name="titulo" value="@if (isset($producto->titulo)){{ $producto->titulo }} @endif">
@@ -36,22 +37,25 @@
                   </div>
                   <span
                     class="text-xl leading-relaxed text-center sm:text-left  w-full font-bold text-gray-700">Descripción</span>
-                  <input type="text" required class="mr-16 border border-gray-700" name="descripcion"
-                    value="@if (isset($producto->descripcion)){{ $producto->descripcion }} @endif">
+                  <br>
+                  <input type="text" required
+                    class="text-sm pl-4 w-full inline-block  text-justify align-middle  rounded-2xl md:p-2 bg-white border-2 border-gray-300  placeholder-gray-600 shadow-md focus:placeholder-gray-500  focus:border-gray-600 focus:outline-none"
+                    name="descripcion" value="@if (isset($producto->descripcion)){{ $producto->descripcion }} @endif">
                   <div class="mt-8">
 
                   </div>
                   <label class="leading-loose">Imagen del producto</label>
                   <input type="file" required name="img" accept="image/*"
                     value="@if (isset($producto->img)){{ $producto->img }} @endif"
-                    class="px-4 py-2 border focus:ring-gray-500 focus:border-gray-900 w-full sm:text-sm border-gray-300 rounded-md focus:outline-none text-gray-600"
+                    class="text-sm pl-4 w-full inline-block  text-justify align-middle  rounded-2xl md:p-2 bg-white border-2 border-gray-300  placeholder-gray-600 shadow-md focus:placeholder-gray-500  focus:border-gray-600 focus:outline-none"
                     placeholder="Event title">
                   <div class="mt-8">
 
                   </div>
                   <span class="text-xl leading-relaxed text-center sm:text-left  w-full font-bold text-gray-700">Tienda
-                    del Producto</span>
-                  <select name="tienda">
+                    del Producto</span> <br>
+                  <select name="tienda"
+                    class="text-sm pl-4 w-full inline-block  text-justify align-middle  rounded-2xl md:p-2 bg-white border-2 border-gray-300  placeholder-gray-600 shadow-md focus:placeholder-gray-500  focus:border-gray-600 focus:outline-none">
                     @foreach ($tienda as $t)
                     @if(!isset($producto->id_tienda))
                     <option value="{{ $t->id }}">{{ $t->razon_social }}</option>
@@ -64,8 +68,10 @@
                   </select>
                   <div class="mt-8"></div>
                   <span class="text-xl leading-relaxed text-center sm:text-left  w-full font-bold text-gray-700">Enlace
-                    al Vendedor</span>
-                  <input type="text" name="enlace" value="@if (isset($enlace->id)){{ $enlace->link }} @endif">
+                    al Vendedor</span> <br>
+                  <input type="text" name="enlace"
+                    class="text-sm pl-4 w-full inline-block  text-justify align-middle  rounded-2xl md:p-2 bg-white border-2 border-gray-300  placeholder-gray-600 shadow-md focus:placeholder-gray-500  focus:border-gray-600 focus:outline-none"
+                    value="@if (isset($enlace->id)){{ $enlace->link }} @endif">
                   <div class="mt-8">
 
                   </div>
