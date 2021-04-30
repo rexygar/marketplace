@@ -157,7 +157,7 @@ class AdminController extends Controller
         }
 
         $tienda->razon_social = $request->nombre;
-        $tienda->descripcion = $request->descripcion;
+        $tienda->desc = $request->descripcion;
         $tienda->instagram = $request->instagram;
         $tienda->facebook = $request->facebook;
         $tienda->save();

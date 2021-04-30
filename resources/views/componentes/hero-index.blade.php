@@ -2,7 +2,7 @@
 
 
 
-  <img class="col-span-12 " src="{{ asset('/img/bnnr-indx.png') }}" alt="">
+  <img class="col-span-12 " src="{{ asset('/img/head.png') }}" alt="">
 
 
 

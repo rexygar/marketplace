@@ -119,7 +119,7 @@
   </div>
 
   <div class="col-span-12 text-justify">
-    <p class="py-3 px-6 font-black text-base text-gray-700  w-full capitalize ">{{$tienda[0]->descripcion}}</p>
+    <p class="py-3 px-6 font-black text-base text-gray-700  w-full capitalize ">{{$tienda[0]->desc}}</p>
   </div>
   @endfor
   <div></div>
