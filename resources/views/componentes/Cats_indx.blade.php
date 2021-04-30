@@ -137,7 +137,7 @@
             <div class="w-full max-w-6xl rounded md:mb-0  ">
               <div class="relative panel-wrapper">
                 <div
-                  style="background-image:url('{{ asset('img/CATEGORIAS/TEXTIL.jpg') }}');background-repeat: no-repeat;background-size: contain;background-position: center;"
+                  style="background-image:url('{{ asset('img/CATEGORIAS/TEXTIL-min.jpg') }}');background-repeat: no-repeat;background-size: contain;background-position: center;"
                   class="image is-3by4 rounded-3xl w-full h-48 object-cover overflow-hidden">
                   <div
                     class=" h-full  w-full absolute  bg-blend-darken left-0 top-0 opacity-75 hover:opacity-95  bg-blue-600 hover:bg-yellow-600">
@@ -166,7 +166,7 @@
             <div class="w-full max-w-6xl rounded md:mb-0  ">
               <div class="relative panel-wrapper">
                 <div
-                  style="background-image:url('{{ asset('img/CATEGORIAS/GASTRONOMIA.jpg') }}');background-repeat: no-repeat;background-size: contain;background-position: center;"
+                  style="background-image:url('{{ asset('img/CATEGORIAS/GASTRONOMIA-min.jpg') }}');background-repeat: no-repeat;background-size: contain;background-position: center;"
                   class="image is-3by4 rounded-3xl w-full h-48 object-cover overflow-hidden">
                   <div
                     class=" h-full  w-full absolute  bg-blend-darken left-0 top-0 opacity-75 hover:opacity-95  bg-blue-600 hover:bg-yellow-600">
@@ -195,7 +195,7 @@
             <div class="w-full max-w-6xl rounded md:mb-0  ">
               <div class="relative panel-wrapper">
                 <div
-                  style="background-image:url('{{ asset('img/CATEGORIAS/DECORACION.jpg') }}');background-repeat: no-repeat;background-size: contain;background-position: center;"
+                  style="background-image:url('{{ asset('img/CATEGORIAS/DECORACION-min.jpg') }}');background-repeat: no-repeat;background-size: contain;background-position: center;"
                   class="image is-3by4 rounded-3xl w-full h-48 object-cover overflow-hidden">
                   <div
                     class=" h-full  w-full absolute  bg-blend-darken left-0 top-0 opacity-75 hover:opacity-95  bg-blue-600 hover:bg-yellow-600">
@@ -224,7 +224,7 @@
             <div class="w-full max-w-6xl rounded md:mb-0  ">
               <div class="relative panel-wrapper">
                 <div
-                  style="background-image:url('{{ asset('img/CATEGORIAS/NATURALEZA.jpg') }}');background-repeat: no-repeat;background-size: contain;background-position: center;"
+                  style="background-image:url('{{ asset('img/CATEGORIAS/NATURALEZA-min.jpg') }}');background-repeat: no-repeat;background-size: contain;background-position: center;"
                   class="image is-3by4 rounded-3xl w-full h-48 object-cover overflow-hidden">
                   <div
                     class=" h-full  w-full absolute  bg-blend-darken left-0 top-0 opacity-75 hover:opacity-95  bg-blue-600 hover:bg-yellow-600">
@@ -253,7 +253,7 @@
             <div class="w-full max-w-6xl rounded md:mb-0  ">
               <div class="relative panel-wrapper">
                 <div
-                  style="background-image:url('{{ asset('img/CATEGORIAS/BELLEZA Y CUIDADO.jpg') }}');background-repeat: no-repeat;background-size: contain;background-position: center;"
+                  style="background-image:url('{{ asset('img/CATEGORIAS/BELLEZA Y CUIDADO-min.jpg') }}');background-repeat: no-repeat;background-size: contain;background-position: center;"
                   class="image is-3by4 rounded-3xl w-full h-48 object-cover overflow-hidden">
                   <div
                     class=" h-full  w-full absolute  bg-blend-darken left-0 top-0 opacity-75 hover:opacity-95  bg-blue-600 hover:bg-yellow-600">
@@ -282,7 +282,7 @@
             <div class="w-full max-w-6xl rounded md:mb-0  ">
               <div class="relative panel-wrapper">
                 <div
-                  style="background-image:url('{{ asset('img/CATEGORIAS/DISEÑO.jpg') }}');background-repeat: no-repeat;background-size: contain;background-position: center;"
+                  style="background-image:url('{{ asset('img/CATEGORIAS/DISEÑO-min.jpg') }}');background-repeat: no-repeat;background-size: contain;background-position: center;"
                   class="image is-3by4 rounded-3xl w-full h-48 object-cover overflow-hidden">
                   <div
                     class=" h-full  w-full absolute  bg-blend-darken left-0 top-0 opacity-75 hover:opacity-95  bg-blue-600 hover:bg-yellow-600">
