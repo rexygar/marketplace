@@ -1,6 +1,6 @@
 <div class="sm:block hidden">
 
-    <nav class="font-sans grid grid-cols-12 text-center lg:grid
+    <nav class="font-sans grid grid-cols-12 text-justify lg:grid
     md:grid px-6  shadow w-full md:py-3 lg:py-2" style="background-color: #00008e">
 
         <div class="col-span-4  md:col-span-5 sm:col-span-5 lg:col-span-4 lg:col-start-1 sm:col-start-1 ">

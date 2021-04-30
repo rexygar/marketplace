@@ -56,10 +56,7 @@ Route::get('/tests4', function () {
 Route::get('/About', function () {
     return view('Vistas.About');
 });
-
-Route::get('/Blog', function () {
-    return view('Vistas.Blog');
-});
+ 
 Route::get('/', function () {
     return view('Vistas.Index');
 });
@@ -68,5 +65,6 @@ Route::get('/', function () {
 //User
 Route::get('/Categorias', [App\Http\Controllers\MainController::class, 'show_Tiendas']);
 Route::get('/Categorias/{id}', [App\Http\Controllers\MainController::class, 'show_Categorias']);
+Route::get('/Blog', [App\Http\Controllers\MainController::class, 'show_Blog']);
 Route::get('/Tienda/{id}', [App\Http\Controllers\MainController::class, 'show_Tienda']);
 Route::get('/Product/{sku}', [App\Http\Controllers\MainController::class, 'getProduct']);

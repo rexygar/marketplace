@@ -71,7 +71,7 @@
         
     </style>
 
-    <nav class="text-center">
+    <nav class="text-justify">
         <ul class="menu">
             <li><h4><strong>CATEGORIA</strong></h4></li>
             <li><a href="#">TELEFONO</a>

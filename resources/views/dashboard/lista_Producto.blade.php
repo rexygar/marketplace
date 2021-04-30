@@ -4,63 +4,67 @@
 
 
 @section('content')
-    <div class="col-span-10 col-start-3 px-6 ">
-        <div class="mx-auto container">
-            <div class=" border-b px-6 py-2 items-center grid grid-cols-12">
-              <input type="hidden" id="rutaListar" value="{{ route('list.producto') }}">
-                <div class="col-span-12">
-                    <div class="flex flex-col max-w-full shadow-md m-6">
-                  <!-- Header -->
-                  <div class="flex justify-between items-center bg-gray-100 border-b px-6 py-4">
-                    <p class="text-5xl text-gray-800 font-semibold">Lista de Productos</p>
-                    <div class="flex justify-between items-center bg-gray-100 border-b px-6 py-4">
-                      <a href="{{ route('create.product') }}" type="submit" class="bg-blue-500 flex justify-center items-center w-full text-white px-4 py-3 rounded-md focus:outline-none">Crear Producto</a>
-                    </div>
-                  </div>
-                  <!-- End Header -->
-                
-                  <!-- Table -->
-                  <table class="overflow-x-auto w-full bg-white divide-y divide-gray-200 data-table">
-                    <thead class="bg-gray-50 text-gray-500 text-sm">
-                      <tr class="divide-x divide-gray-300">
-                        <th class="px-3 py-2 text-left text-lg font-medium text-gray-500 uppercase">ID</th>
-                        <th class="px-3 py-2 text-left text-lg font-medium text-gray-500 uppercase">Titulo</th>
-                        <th class="px-3 py-2 text-left text-lg font-medium text-gray-500 uppercase">Descripcion</th>
-                        <th class="px-3 py-2 text-left text-lg font-medium text-gray-500 uppercase">Acciones</th>
-                      </tr>
-                    </thead>
-                    <tbody class="text-gray-500 text-center text-lg divide-y divide-gray-200">
-                    </tbody>
-                  </table>
-                  <!-- End Table -->
-                </div>
-                </div>
+<div class="col-span-10 xl:col-span-10 2xl:col-span-10 lg:col-span-10 sm:col-span-9  md:col-span-9 col-start-3 px-6 ">
+  <div class="mx-auto container">
+    <div class=" border-b px-6 py-2 items-center grid grid-cols-12">
+      <input type="hidden" id="rutaListar" value="{{ route('list.producto') }}">
+      <div class="col-span-12">
+        <div class="flex flex-col max-w-full shadow-md m-6">
+          <!-- Header -->
+          <div class="flex justify-between items-center bg-gray-100 border-b px-6 py-4">
+            <p class="text-5xl text-gray-800 font-semibold">Lista de Productos</p>
+            <div class="flex justify-between items-center bg-gray-100 border-b px-6 py-4">
+              <a href="{{ route('create.product') }}" type="submit"
+                class="bg-blue-500 flex justify-center items-center w-full text-white px-4 py-3 rounded-md focus:outline-none">Crear
+                Producto</a>
             </div>
+          </div>
+          <!-- End Header -->
+
+          <!-- Table -->
+          <table class="overflow-x-auto w-full bg-white divide-y divide-gray-200 data-table">
+            <thead class="bg-gray-50 text-gray-500 text-sm">
+              <tr class="divide-x divide-gray-300">
+                <th class="px-3 py-2 text-left text-lg font-medium text-gray-500 uppercase">ID</th>
+                <th class="px-3 py-2 text-left text-lg font-medium text-gray-500 uppercase">Titulo</th>
+                <th class="px-3 py-2 text-left text-lg font-medium text-gray-500 uppercase">Descripcion</th>
+                <th class="px-3 py-2 text-left text-lg font-medium text-gray-500 uppercase">Acciones</th>
+              </tr>
+            </thead>
+            <tbody class="text-gray-500 text-center text-lg divide-y divide-gray-200">
+            </tbody>
+          </table>
+          <!-- End Table -->
         </div>
-        <div class="main-modal fixed w-full h-100 inset-0 z-50 overflow-hidden flex justify-center items-center animated fadeIn faster"
-                style="background: rgba(0,0,0,.7);">
-                <div
-                  class="border border-teal-500 shadow-lg modal-container bg-white mx-auto rounded z-50 overflow-y-auto">
-                  <div class="modal-content py-4 text-left px-6">
-                    <!--Title-->
-                    <div class="flex justify-between items-center pb-3">
-                      <p class="text-2xl font-bold">Eliminar Producto</p>
-                    </div>
-                    <!--Body-->
-                    <div class="my-5">
-                      <input type="hidden" id="idDelete" value="">
-                      <input type="hidden" id="productos" value="{{ route('delete.producto') }}">
-                      ¿Está seguro que desea Eliminar este registro?
-                    </div>
-                    <!--Footer-->
-                    <div class="flex justify-end pt-2">
-                      <button class="focus:outline-none modal-close px-4 bg-gray-400 p-3 rounded-lg text-black hover:bg-gray-300">Cancelar</button>
-                      <button class="focus:outline-none px-4 bg-green-500 p-3 ml-3 rounded-lg text-white hover:bg-green-400" onclick="eliminar()">Eliminar</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
+      </div>
     </div>
+  </div>
+  <div
+    class="main-modal fixed w-full h-100 inset-0 z-50 overflow-hidden flex justify-center items-center animated fadeIn faster"
+    style="background: rgba(0,0,0,.7);">
+    <div class="border border-teal-500 shadow-lg modal-container bg-white mx-auto rounded z-50 overflow-y-auto">
+      <div class="modal-content py-4 text-left px-6">
+        <!--Title-->
+        <div class="flex justify-between items-center pb-3">
+          <p class="text-2xl font-bold">Eliminar Producto</p>
+        </div>
+        <!--Body-->
+        <div class="my-5">
+          <input type="hidden" id="idDelete" value="">
+          <input type="hidden" id="productos" value="{{ route('delete.producto') }}">
+          ¿Está seguro que desea Eliminar este registro?
+        </div>
+        <!--Footer-->
+        <div class="flex justify-end pt-2">
+          <button
+            class="focus:outline-none modal-close px-4 bg-gray-400 p-3 rounded-lg text-black hover:bg-gray-300">Cancelar</button>
+          <button class="focus:outline-none px-4 bg-green-500 p-3 ml-3 rounded-lg text-white hover:bg-green-400"
+            onclick="eliminar()">Eliminar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 @stop
 
 @section('page-styles')

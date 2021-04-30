@@ -4,7 +4,7 @@ $(document).ready(function() {
     $('._Gastronomia').addClass('hidden');
     $('._Naturaleza').addClass('hidden');
     $('._Salud').addClass('hidden');
-    $('._Textil').addClass('hidden');
+    $('._Textil');
 
     $('[name="Categoria_radio"]').on('change', function() {
 

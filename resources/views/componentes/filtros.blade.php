@@ -52,7 +52,7 @@
                                                     @if ($loop->last)
                                                 
                                                     <h2
-                                                        class="pt-16 md:pt-8 pb-5 font-bold opacity-100 banner-font text-5xl lg:text-9xl md:text-9xl uppercase tracking-wider text-center">{{ $d['name']
+                                                        class="pt-16 md:pt-8 pb-5 font-bold opacity-100 banner-font text-5xl lg:text-9xl md:text-9xl uppercase tracking-wider text-justify">{{ $d['name']
                                                         }}
                                                     </h2>
                                                     @endif
@@ -76,7 +76,7 @@
                                                 @if ($loop->last)
                                             
                                                 <h2
-                                                    class="pt-16 md:pt-8 pb-5 font-bold opacity-100 banner-font text-5xl lg:text-9xl md:text-9xl uppercase tracking-wider text-center">{{ $d['name']
+                                                    class="pt-16 md:pt-8 pb-5 font-bold opacity-100 banner-font text-5xl lg:text-9xl md:text-9xl uppercase tracking-wider text-justify">{{ $d['name']
                                                     }}
                                                 </h2>
                                                 @endif
@@ -94,7 +94,7 @@
                 <div class="border-opacity-25 border-t border-dotted border-1" style="border-color: gray">
 
 
-                    <div class="h-full w-full bg-white tracking-wide text-5xl text-center">
+                    <div class="h-full w-full bg-white tracking-wide text-5xl text-justify">
                         <div class="grid grid-cols-12">
                             <div class="col-span-2 pt-8 pb-5">
                                 <div class="grid grid-cols-12 ">

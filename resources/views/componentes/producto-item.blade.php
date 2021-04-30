@@ -60,7 +60,7 @@
                                                 class="  md:col-span-3 lg:col-span-3 md:row-span-1 lg:row-span-1  col-span-6 float-right md:col-start-4  lg:col-start-4 lg:px-4 md:px-0">
 
                                                 <h3
-                                                    class="lg:text-2xl md:text-2xl text-2xl font-bold text-center sm:text-left text-gray-50 py-16 md:py-0 lg:py-0">
+                                                    class="lg:text-2xl md:text-2xl text-2xl font-bold text-justify sm:text-left text-gray-50 py-16 md:py-0 lg:py-0">
                                                     {{ $product->Descripcion }}</h3>
 
                                             </div>
@@ -76,15 +76,15 @@
                                                     class="md:pr-6 lg:pr-16  md:bg-transparent lg:bg-transparent bg-gray-400 ">
 
                                                     <p
-                                                        class=" text-lg leading-relaxed text-center sm:text-left text-gray-50">
+                                                        class=" text-lg leading-relaxed text-justify sm:text-left text-gray-50">
                                                         {{ $product->SKU }}
                                                     </p>
                                                     <p id="stockdisponible"
-                                                        class=" text-xl leading-relaxed text-center sm:text-left md:w-2/4 lg:w-1/4  py-3 md:py-0 lg:py-0 xl:py-0 2xl:py-0  w-full font-bold bg-yellow-500  text-white">
+                                                        class=" text-xl leading-relaxed text-justify sm:text-left md:w-2/4 lg:w-1/4  py-3 md:py-0 lg:py-0 xl:py-0 2xl:py-0  w-full font-bold bg-yellow-500  text-white">
                                                         STOCK
                                                         DISPONIBLE
                                                     </p>
-                                                    <div class="md:container md:mx-auto text-center sm:text-left  md:bg-transparent lg:bg-transparent bg-gray-400 md:mb-0"
+                                                    <div class="md:container md:mx-auto text-justify sm:text-left  md:bg-transparent lg:bg-transparent bg-gray-400 md:mb-0"
                                                         style="z-index: 99;">
                                                         <span class="material-icons text-xl text-yellow-300">
                                                             grade
@@ -106,7 +106,7 @@
                                                         </span>
                                                     </div>
                                                     <h3
-                                                        class="md:text-5xl lg:text-5xl  text-3xl font-extrabold text-gray-50 pb-4  md:bg-transparent lg:bg-transparent bg-gray-400  text-center sm:text-left">
+                                                        class="md:text-5xl lg:text-5xl  text-3xl font-extrabold text-gray-50 pb-4  md:bg-transparent lg:bg-transparent bg-gray-400  text-justify sm:text-left">
                                                         ${{ number_format($product->Precio, 0, ',', '.') }}
                                                     </h3>
                                                 </div>
@@ -163,7 +163,7 @@
                                                         <div
                                                             class="md:w-1/2 lg:w-1/3 xl:w-1/3 2xl:w-1/3  w-1/3lg:px-6 md:px-0 py-6 md:py-6 ">
                                                             <p
-                                                                class="md:pl-2 text-base md:text-base leading-relaxed md:w-full md:pb-4 md:text-gray-50 lg:text-gray-50 text-gray-600 md:text-left lg:text-left text-center">
+                                                                class="md:pl-2 text-base md:text-base leading-relaxed md:w-full md:pb-4 md:text-gray-50 lg:text-gray-50 text-gray-600 md:text-left lg:text-left text-justify">
                                                                 COLORES DISPONIBLES
                                                             </p>
                                                         </div>
@@ -231,7 +231,7 @@
                                                                     </div>
                                                                     {{-- modal body --}}
                                                                     <div
-                                                                        class="mt-3 text-center sm:mt-0 sm:mx-10 sm:text-left  ">
+                                                                        class="mt-3 text-justify sm:mt-0 sm:mx-10 sm:text-left  ">
                                                                         <article style=""
                                                                             class=" col-start-1 col-end-3">
                                                                             <label class="py-2">
@@ -374,7 +374,7 @@
                                                                     </div>
                                                                     {{-- modal body --}}
                                                                     <div
-                                                                        class="mt-3 text-center sm:mt-0 sm:mx-10 sm:text-left ">
+                                                                        class="mt-3 text-justify sm:mt-0 sm:mx-10 sm:text-left ">
                                                                         <article style=""
                                                                             class=" col-start-1 col-end-3">
 

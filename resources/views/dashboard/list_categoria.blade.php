@@ -4,40 +4,42 @@
 
 
 @section('content')
-    <div class="col-span-10 col-start-3 px-6 ">
-        <div class="mx-auto container">
-            <div class=" border-b px-6 py-2 items-center grid grid-cols-12">
-              <input type="hidden" id="rutaListar" value="{{ route('list.categoria') }}">
-                <div class="col-span-12">
-                    <div class="flex flex-col max-w-full shadow-md m-6">
-                  <!-- Header -->
-                  <div class="flex justify-between items-center bg-gray-100 border-b px-6 py-4">
-                    <p class="text-5xl text-gray-800 font-semibold">Lista de Categorias</p>
-                    <div class="flex justify-between items-center bg-gray-100 border-b px-6 py-4">
-                      <a href="#" hidden type="submit" class="bg-blue-500 hidden flex justify-center items-center w-full text-white px-4 py-3 rounded-md focus:outline-none">Crear Categoria</a>
-                    </div>
-                  </div>
-                  <!-- End Header -->
-                
-                  <!-- Table -->
-                  <table class="overflow-x-auto w-full bg-white divide-y divide-gray-200 data-table">
-                    <thead class="bg-gray-50 text-gray-800 text-sm">
-                      <tr class="divide-x divide-gray-300">
-                        <th class="px-3 py-2 text-left text-xs font-medium text-gray-500 uppercase">ID</th>
-                        <th class="px-3 py-2 text-left text-xs font-medium text-gray-500 uppercase">Nombre de la Tienda</th>
-                        <th class="px-3 py-2 text-left text-xs font-medium text-gray-500 uppercase">Acciones</th>
-                      </tr>
-                    </thead>
-                    <tbody class="text-gray-700 text-xl divide-y divide-gray-200">
-                    </tbody>
-                  </table>
-                  <!-- End Table -->
-                </div>
-                
-                </div>
+<div class="col-span-10 xl:col-span-10 2xl:col-span-10 lg:col-span-10 sm:col-span-9  md:col-span-9 col-start-3 px-6 ">
+  <div class="mx-auto container">
+    <div class=" border-b px-6 py-2 items-center grid grid-cols-12">
+      <input type="hidden" id="rutaListar" value="{{ route('list.categoria') }}">
+      <div class="col-span-12">
+        <div class="flex flex-col max-w-full shadow-md m-6">
+          <!-- Header -->
+          <div class="flex justify-between items-center bg-gray-100 border-b px-6 py-4">
+            <p class="text-5xl text-gray-800 font-semibold">Lista de Categorias</p>
+            <div class="flex justify-between items-center bg-gray-100 border-b px-6 py-4">
+              <a href="#" hidden type="submit"
+                class="bg-blue-500 hidden flex justify-center items-center w-full text-white px-4 py-3 rounded-md focus:outline-none">Crear
+                Categoria</a>
             </div>
+          </div>
+          <!-- End Header -->
+
+          <!-- Table -->
+          <table class="overflow-x-auto w-full bg-white divide-y divide-gray-200 data-table">
+            <thead class="bg-gray-50 text-gray-800 text-sm">
+              <tr class="divide-x divide-gray-300">
+                <th class="px-3 py-2 text-left text-xs font-medium text-gray-500 uppercase">ID</th>
+                <th class="px-3 py-2 text-left text-xs font-medium text-gray-500 uppercase">Nombre de la Tienda</th>
+                <th class="px-3 py-2 text-left text-xs font-medium text-gray-500 uppercase">Acciones</th>
+              </tr>
+            </thead>
+            <tbody class="text-gray-700 text-xl divide-y divide-gray-200">
+            </tbody>
+          </table>
+          <!-- End Table -->
         </div>
+
+      </div>
     </div>
+  </div>
+</div>
 @stop
 
 @section('page-styles')

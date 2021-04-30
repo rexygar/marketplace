@@ -32,49 +32,50 @@
 
 
     <div
-      class="col-span-12 lg:col-span-12 md:col-span-12 xl:col-span-12 2xl:col-span-12 grid grid-cols-12  md:grid-flow-row row-span-2">
-      <div
-        class="col-span-12  lg:col-span-12 md:col-span-12 xl:col-span-12 2xl:col-span-12 grid grid-cols-3  px-2  py-6">
-        <div class="col-span-3 ">
-          <div class="col-span-12 font-black text-3xl">
-            <h1 class="col-span-12 text-center py-5 font-black text-6xl">Post Nro 1</h1>
-          </div>
-          <img class="col-span-12 " src="{{ asset('img/BLOG/BLOG.png') }}" alt="">
-        </div>
-        <div class="col-span-3">
-          <article class="media">
+      class="col-span-12 lg:col-span-12 md:col-span-12 xl:col-span-12 2xl:col-span-12 grid grid-cols-12   md:grid-flow-row row-span-2">
 
-            <div class="media-content">
-              <div class="content">
-                <p class="text-black text-xl pl-16">
+
+      @foreach ($blogs as $blog)
+
+      {{--  --}}
+      <div
+        class="col-span-12  lg:col-span-12 md:col-span-12 xl:col-span-12 2xl:col-span-12 grid grid-cols-3  px-10  py-6 ">
+        <div class="col-span-3 grid grid-cols-12 ">
+          <div class="col-span-12 font-black text-3xl">
+            <h1
+              class="col-span-12 text-justify py-5 font-black 2xl:text-6xl xl:text-6xl lg:text-4xl md:text-3xl sm:text-2xl">
+              {{ $blog->titulo}}</h1>
+          </div>
+          <img class="col-span-12 " src="/storage/{{ $blog->img}}" alt="">
+        </div>
+        <div class="col-span-3 grid grid-cols-12">
+          <article class=" col-span-12  grid grid-cols-12">
+
+            <div class=" col-span-12  grid grid-cols-12">
+              <div class=" col-span-12">
+                <p class="text-black text-xl font-bold">
                   <br>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque
-                  tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
+                  {!! html_entity_decode( $blog->descripcion) !!}
+
                   <br>
-                  <strong>John Smith</strong> <small>@johnsmith</small> <small>31m</small>
+
                 </p>
               </div>
-              <nav class="level is-mobile pl-16">
-                <div class="level-left">
-                  <a class="level-item">
-                    <span class="icon is-small"><i class="fas fa-reply"></i></span>
-                  </a>
-                  <a class="level-item">
-                    <span class="icon is-small"><i class="fas fa-retweet"></i></span>
-                  </a>
-                  <a class="level-item">
-                    <span class="icon is-small"><i class="fas fa-heart"></i></span>
-                  </a>
-                </div>
-              </nav>
+
             </div>
+            <nav class="level is-mobile pl-16">
+              <div class="level-left">
+                {{ $blog->created_at}}
+              </div>
+            </nav>
             <div class="media-right">
               <button class="delete"></button>
             </div>
           </article>
         </div>
       </div>
-
+      {{--  --}}
+      @endforeach
 
 
 
@@ -83,7 +84,7 @@
 
 
 
-    <div class="col-span-12 text-center">
+    <div class="col-span-12 text-justify">
       <p class="py-3 px-6 font-black text-base text-gray-700  w-full capitalize "> el marketplace de quillota que busca
         posicionar los
         emprendedores locales y fomentar su negocio ... Velit ea aliqua et minim. Labore eu reprehenderit elit irure

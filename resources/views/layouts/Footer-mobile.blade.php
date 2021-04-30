@@ -38,7 +38,7 @@
         <article style=" " class="panel is-primary  ">
           <div class=" " style=" ">
             <ul class=" " x-data="{selected:null}">
-              <li class=" ">
+              <li class=" text-center">
                 <div style="background-color: #fba70b" @click="selected !== 0 ? selected = 0 : selected = null"
                   class="flex p-4  text-center">
 
@@ -61,7 +61,7 @@
                   <!-- Success alert -->
 
                   {{-- modal body --}}
-                  <div class="mt-3 text-center px-4 rounded-b-lg">
+                  <div class="mt-3 text-justify px-4 rounded-b-lg">
                     <article style="" class=" col-start-1 col-end-3">
                       <label class="py-2">
                         <!--Card 1-->
@@ -72,22 +72,22 @@
                               <div class="py-2">
 
                                 <input type="text" placeholder=" Nombre completo"
-                                  class="text-sm pl-4 w-full inline-block align-middle  rounded-2xl md:p-2 bg-white border-2 border-gray-300  placeholder-gray-600 shadow-md focus:placeholder-gray-500  focus:border-gray-600 focus:outline-none"
+                                  class="text-sm pl-4 w-full inline-block text-justify align-middle  rounded-2xl md:p-2 bg-white border-2 border-gray-300  placeholder-gray-600 shadow-md focus:placeholder-gray-500  focus:border-gray-600 focus:outline-none"
                                   style="background-color: #f9f9f9">
                               </div>
                               <div class="py-2">
                                 <input type="email" placeholder=" Email"
-                                  class="text-sm pl-4 w-full inline-block align-middle  rounded-2xl md:p-2 bg-white border-2 border-gray-300  placeholder-gray-600 shadow-md focus:placeholder-gray-500  focus:border-gray-600 focus:outline-none"
+                                  class="text-sm pl-4 w-full inline-block text-justify align-middle  rounded-2xl md:p-2 bg-white border-2 border-gray-300  placeholder-gray-600 shadow-md focus:placeholder-gray-500  focus:border-gray-600 focus:outline-none"
                                   style="background-color: #f9f9f9">
                               </div>
                               <div class="py-2">
                                 <input type="text" placeholder=" Url de tu sitio web"
-                                  class="text-sm pl-4 w-full inline-block align-middle  rounded-2xl md:p-2 bg-white border-2 border-gray-300  placeholder-gray-600 shadow-md focus:placeholder-gray-500  focus:border-gray-600 focus:outline-none"
+                                  class="text-sm pl-4 w-full inline-block text-justify align-middle  rounded-2xl md:p-2 bg-white border-2 border-gray-300  placeholder-gray-600 shadow-md focus:placeholder-gray-500  focus:border-gray-600 focus:outline-none"
                                   style="background-color: #f9f9f9">
                               </div>
                               <div class="py-2">
                                 <input type="text" placeholder=" Nombre de la Empresa"
-                                  class="text-sm pl-4 w-full inline-block align-middle  rounded-2xl md:p-2 bg-white border-2 border-gray-300  placeholder-gray-600 shadow-md focus:placeholder-gray-500  focus:border-gray-600 focus:outline-none"
+                                  class="text-sm pl-4 w-full inline-block text-justify align-middle  rounded-2xl md:p-2 bg-white border-2 border-gray-300  placeholder-gray-600 shadow-md focus:placeholder-gray-500  focus:border-gray-600 focus:outline-none"
                                   style="background-color: #f9f9f9">
 
 
@@ -101,12 +101,12 @@
 
                                 <span class="flex w-full  shadow-sm py-3">
                                   <button @click="Despacho = false" style="background-color: #fba70b"
-                                    class="inline-flex justify-center text-base rounded-3xl font-boldpx-6 py-3 text-white  w-full hover:bg-black">
+                                    class="inline-flex justify-center text-base rounded-3xl font-boldpx-6 py-3 text-white text-justify  w-full hover:bg-black">
                                     OBTENGA SU INFORME!
                                   </button>
                                 </span>
 
-                                <span class=" w-full text-base  py-3">Nos pondremos en contacto contigo en un plazo de
+                                <span class=" w-full text-base text-justify py-3">Nos pondremos en contacto contigo en un plazo de
                                   24
                                   horas.</span>
                               </div>
@@ -175,7 +175,7 @@
     </div> --}}
 
     {{--  --}}
-    <div class="col-span-12 grid gap-4 grid-cols-12 py-4 xs:px-6 sm:px-16 md:px-16 lg:px-16 2xl:px-16 xl:px-16 ">
+    <div class="col-span-12 grid gap-4 grid-cols-12 py-4">
 
       <div></div>
       <div class="col-span-12 text-center  grid grid-cols-12">
@@ -260,7 +260,7 @@
         </div>
 
       </div>
-      <div class="col-span-12 text-center">
+      <div class="col-span-12 text-justify">
         <p class="py-3 px-6 font-black text-base text-gray-700  w-full capitalize "> el marketplace de quillota que
           busca
           posicionar los
@@ -276,7 +276,7 @@
 
     <hr class="my-6 border-gray-400 col-span-12 mx-auto" />
     <div class="flex flex-wrap items-center md:justify-between  ">
-      <div class="w-full md:w-4/12 px-4 mx-auto text-center">
+      <div class="w-full md:w-4/12 px-4 mx-auto text-justify">
         <div class="text-sm text-gray-600 font-semibold py-1">
           <div class="grid grid-cols-12  col-span-12 md:grid-cols-12 lg:py-2">
             <div class="col-span-2 sm:col-span-10 md:col-span-6 lg:col-span-6 xl:col-span-6 2xl:col-span-6">

@@ -31,7 +31,7 @@ class CategoriaSeeder extends Seeder
         ]);
 
         DB::table('categorias')->insert([
-            'nombre' => 'Gastronomia'
+            'nombre' => 'Gastronomía'
         ]);
 
         DB::table('categorias')->insert([

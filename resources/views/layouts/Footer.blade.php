@@ -13,7 +13,7 @@
     /* show it on small screens */
   }
 </style>
-<footer class="w-full col-span-12 no_mostrar  pt-16 lg:pt-16 md:pt-16 xl:pt-16 2xl:pt-16 pb-6  sm:block hidden"
+<footer class="w-full col-span-12 no_mostrar  pt-16 lg:pt-16 md:pt-16 xl:pt-16 2xl:pt-16 pb-36 md:pb-48  sm:block hidden"
   style="background-image:url('{{ url('/img/FOOT.png') }}');background-repeat: no-repeat;background-size: cover;">
 
   <div class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
@@ -26,7 +26,7 @@
 
   <!-- <footer> -->
 
-  <div class="grid grid-cols-12 px-16 md:px-6">
+  <div class="grid grid-cols-12 px-16 md:px-6 lg:px-24 xl:px-24 2xl:px-24">
 
 
 
@@ -40,7 +40,7 @@
 
             <div class="text-center w-full">
               <div class="text-black text-center">
-                <h2 class=" font-bold md:text-2xl text-center text-white">
+                <h2 class=" font-bold md:text-2xl text-center  text-white">
                   ESCRIBENOS
                 </h2>
               </div>
@@ -48,7 +48,7 @@
             </div>
           </div>
           {{-- modal body --}}
-          <div class="mt-3 text-center px-4 rounded-b-lg">
+          <div class="mt-3 text-justify px-4 rounded-b-lg">
             <article style="" class=" col-start-1 col-end-3">
               <label class="py-2">
                 <!--Card 1-->
@@ -59,22 +59,22 @@
                       <div class="py-2">
 
                         <input type="text" placeholder=" Nombre completo"
-                          class="text-sm pl-4 w-full inline-block align-middle  rounded-2xl md:p-2 bg-white border-2 border-gray-300  placeholder-gray-600 shadow-md focus:placeholder-gray-500  focus:border-gray-600 focus:outline-none"
+                          class="text-sm pl-4 w-full inline-block  text-justify align-middle  rounded-2xl md:p-2 bg-white border-2 border-gray-300  placeholder-gray-600 shadow-md focus:placeholder-gray-500  focus:border-gray-600 focus:outline-none"
                           style="background-color: #f9f9f9">
                       </div>
                       <div class="py-2">
                         <input type="email" placeholder=" Email"
-                          class="text-sm pl-4 w-full inline-block align-middle  rounded-2xl md:p-2 bg-white border-2 border-gray-300  placeholder-gray-600 shadow-md focus:placeholder-gray-500  focus:border-gray-600 focus:outline-none"
+                          class="text-sm pl-4 w-full inline-block  text-justify align-middle  rounded-2xl md:p-2 bg-white border-2 border-gray-300  placeholder-gray-600 shadow-md focus:placeholder-gray-500  focus:border-gray-600 focus:outline-none"
                           style="background-color: #f9f9f9">
                       </div>
                       <div class="py-2">
                         <input type="text" placeholder=" Url de tu sitio web"
-                          class="text-sm pl-4 w-full inline-block align-middle  rounded-2xl md:p-2 bg-white border-2 border-gray-300  placeholder-gray-600 shadow-md focus:placeholder-gray-500  focus:border-gray-600 focus:outline-none"
+                          class="text-sm pl-4 w-full inline-block  text-justify align-middle  rounded-2xl md:p-2 bg-white border-2 border-gray-300  placeholder-gray-600 shadow-md focus:placeholder-gray-500  focus:border-gray-600 focus:outline-none"
                           style="background-color: #f9f9f9">
                       </div>
                       <div class="py-2">
                         <input type="text" placeholder=" Nombre de la Empresa"
-                          class="text-sm pl-4 w-full inline-block align-middle  rounded-2xl md:p-2 bg-white border-2 border-gray-300  placeholder-gray-600 shadow-md focus:placeholder-gray-500  focus:border-gray-600 focus:outline-none"
+                          class="text-sm pl-4 w-full inline-block  text-justify align-middle  rounded-2xl md:p-2 bg-white border-2 border-gray-300  placeholder-gray-600 shadow-md focus:placeholder-gray-500  focus:border-gray-600 focus:outline-none"
                           style="background-color: #f9f9f9">
 
 
@@ -88,12 +88,13 @@
 
                         <span class="flex w-full  shadow-sm py-3">
                           <button @click="Despacho = false" style="background-color: #fba70b"
-                            class="inline-flex justify-center text-base rounded-3xl font-boldpx-6 py-3 text-white  w-full hover:bg-black">
+                            class="inline-flex justify-center text-justify text-base rounded-3xl font-boldpx-6 py-3 text-white  w-full hover:bg-black">
                             OBTENGA SU INFORME!
                           </button>
                         </span>
 
-                        <span class=" w-full text-base  py-3">Nos pondremos en contacto contigo en un plazo de 24
+                        <span class=" w-full text-base  py-3 text-justify">Nos pondremos en contacto contigo en un plazo
+                          de 24
                           horas.</span>
                       </div>
                     </div>
@@ -102,78 +103,27 @@
                 </div>
               </label>
             </article>
-          </div>
-
-
-
+          </div> 
         </div>
       </div>
     </div>
     <div
-      class="col-span-9 lg:col-span-9 md:col-span-8 xl:col-span-9 2xl:col-span-9 grid grid-cols-12  md:grid-flow-row row-span-2">
-      <div class="col-span-6  lg:col-span-6 md:col-span-12 xl:col-span-6 2xl:col-span-6 grid grid-cols-3  px-2 ">
-        <div class="col-span-1 pl-16">
-          <figure class="image is-128x128 ">
-            <img class="is-rounded" src="https://bulma.io/images/placeholders/128x128.png">
-          </figure>
-        </div>
-        <div class="col-span-3">
-          <article class="media">
-
-            <div class="media-content">
-              <div class="content">
-                <p class="text-white text-xl pl-16">
-                  <br>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque
-                  tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
-                  <br>
-                  <strong>John Smith</strong> <small>@johnsmith</small> <small>31m</small>
-                </p>
-              </div>
-              <nav class="level is-mobile pl-16">
-                <div class="level-left">
-                  <a class="level-item">
-                    <span class="icon is-small"><i class="fas fa-reply"></i></span>
-                  </a>
-                  <a class="level-item">
-                    <span class="icon is-small"><i class="fas fa-retweet"></i></span>
-                  </a>
-                  <a class="level-item">
-                    <span class="icon is-small"><i class="fas fa-heart"></i></span>
-                  </a>
-                </div>
-              </nav>
-            </div>
-            <div class="media-right">
-              <button class="delete"></button>
-            </div>
-          </article>
+      class="col-span-9 lg:col-span-9 md:col-span-8 xl:col-span-9 2xl:col-span-9 grid grid-cols-3  md:grid-flow-row row-span-2">
+      <div></div>
+      <div class="col-span-2 lg:col-span-2 xl:col-span-2  2xl:col-span-2  md:col-span-2 md:col-start-2 rounded-3xl">
+        <img class="rounded-3xl w-8/12" src="{{ asset('img/map.PNG') }}" alt="">
+      </div>
+      <div class="col-span-3  md:col-span-3 lg:col-span-3 xl:col-span-3 2xl:col-span-3 md:col-start-2">
+        <div class="col-span-12 ">
+          <a class="navbar-brand lg:w-1/3 lg:mx-auto md:w-5/6 py-5" href=" {{ __('/') }}">
+            <H1 class="text-4xl lobster font-bold" style="color: darkmagenta">MARKETPLACE</H1>
+          </a>
         </div>
       </div>
-      <div class="col-span-6 lg:col-span-6 xl:col-span-6 2xl:col-span-6  md:col-span-8 md:col-start-3 rounded-3xl">
-        <img class="rounded-3xl" src="{{ asset('img/map.PNG') }}" alt="">
-      </div>
-
 
 
     </div>
-
-    <hr class="my-6 border-gray-400 col-span-12 mx-auto" />
-    <div class="flex flex-wrap items-center md:justify-between  ">
-      <div class="w-full md:w-4/12 px-4 mx-auto text-center">
-        <div class="text-sm text-gray-600 font-semibold py-1">
-          <div class="grid grid-cols-12  col-span-12 md:grid-cols-12 lg:py-2">
-            <div class="col-span-2 sm:col-span-10 md:col-span-6 lg:col-span-6 xl:col-span-6 2xl:col-span-6">
-              <div class="col-span-12 -mr-10">
-                <a class="navbar-brand lg:w-1/3 lg:mx-auto md:w-5/6" href=" {{ __('/') }}">
-                  <H1 class="text-4xl lobster font-bold" style="color: darkmagenta">MARKETPLACE</H1>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+ 
   </div>
 
 

@@ -85,7 +85,7 @@
         {{-- @include('componentes.Header') --}}
     </div>
     {{-- Contenido --}}
-    <main class="bg-repeat bg-contain bg-center" style="background-image:url('{{ url('/img/FONDO.jpg') }}')">
+    <main class="bg-cover bg-center" style="background-image:url('{{ url('/img/FONDO.jpg') }}')">
         @yield('content')
     </main>
     {{-- Contenido --}}

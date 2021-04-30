@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
+use App\Models\blog;
 use Illuminate\Support\Facades\Auth;
 use App\Models\Categoria;
 use App\Models\Producto;
@@ -141,6 +142,16 @@ class MainController extends Controller
         )->with(
             'portada',
             $portada
+        );
+    }
+    public static function show_Blog()
+    { //mostrar todas las tiendas ->with('producto ,$(product')->producto()
+
+        $blogs = blog::all();
+
+        return View('Vistas.Blog')->with(
+            'blogs',
+            $blogs
         );
     }
     public static function show_Productos()
