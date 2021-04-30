@@ -119,7 +119,7 @@
   </div>
 
   <div class="col-span-12 text-justify">
-    <p class="py-3 px-6 font-black text-base text-gray-700  w-full capitalize ">{{$tienda[0]->descr}}</p>
+    <p class="py-3 px-6 font-black text-base text-gray-700  w-full ">{{$tienda[0]->descr}}</p>
   </div>
   @endfor
   <div></div>
@@ -143,7 +143,7 @@
         <div class="w-full max-w-6xl rounded md:mb-0  ">
           <div class="relative panel-wrapper">
             <div style="background-image:url('/storage/{{$productos->img}} ');background-repeat: no-repeat;"
-              class="image is-3by4 border-4 border-blue-700 rounded-sm hover:border-yellow-500 w-full h-full  overflow-hidden bg-center bg-contain">
+              class="image is-1by1 border-4 border-blue-700 rounded-sm hover:border-yellow-500 w-full h-full  overflow-hidden bg-center bg-contain">
               <div class="px-6 py-4 h-full  w-full absolute  bg-blend-darken left-0 top-0 opacity-50 ">
                 {{-- <p
                     class="text-white text-justify lobster font-bold text-5xl md:text-2xl lg:text-5xl xl:text-5xl 2xl:text-5xl mix-blend-multiply pt-24 md:pt-12 lg:pt-24 xl:pt-24 2xl:pt-24 uppercase">

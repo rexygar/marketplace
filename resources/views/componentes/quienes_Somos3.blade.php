@@ -41,7 +41,7 @@
 
           <div class="media-content">
             <div class="content">
-              <p class="py-3 px-6 font-black text-2xl text-white text-justify w-full capitalize md:py-10 lg:py-3 xl:py-3 2xl:py-3">Conoce los productos y servicios
+              <p class="py-3 px-6 font-black text-2xl text-white text-justify w-full md:py-10 lg:py-3 xl:py-3 2xl:py-3">Conoce los productos y servicios
                 que los emprendedores de Quillota tienen para ti.</p>
             </div>
              
