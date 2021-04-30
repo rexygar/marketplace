@@ -1,10 +1,11 @@
-<div class="col-span-12 grid grid-cols-7  py-20 p-6 sm:px-10  md:px-16 lg:px-24 2xl:px-36 xl:px-36">
-  <div class="col-span-7 grid md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3 grid-cols-2 sm:gap-1  gap-6 lg:gap-4">
+<div
+  class="col-span-12 grid grid-cols-7  pt-16 lg:pt-16 sm:pt-10   md:pt-16 xl:pt-16 2xl:pt-16 pb-6  xs:px-6 sm:px-16 md:px-16 lg:px-24 2xl:px-36 xl:px-36 ">
+  <div class="col-span-7 grid grid-cols-2  gap-1 md:grid-cols-3  sm:gap-6 lg:gap-8 xl:gap-8 2xl:gap-8 md:gap-4">
 
- 
+
     @if ($tiendas)
 
-    @foreach ($tiendas  as $tiendas_d)
+    @foreach ($tiendas as $tiendas_d)
     {{--  --}}
     <div class=" mb-10 md:container md:mx-auto px-4 md:px-0 col-span-1">
 

@@ -6,6 +6,36 @@
     @if ($t_Gas)
 
     @foreach ($t_Gas as $tiendas_g)
+    
+    <?php
+    $img_producto= "";
+    $img_tienda = $tiendas_g->logo;
+
+    if ( $img_tienda!= null) {
+    foreach ($tiendas_g->producto as $p) {
+    if ($loop->first) {
+    $img_producto = $p->img;
+    }
+    }
+    }
+
+
+
+    if ($img_tienda ==null) {
+    if ($img_producto != null) {
+    $img = $img_producto;
+    $ruta= "/storage";
+    } else {
+    $img = "/GASTRONOMIA-min.jpg";
+    $ruta= "/img/CATEGORIAS";
+    }
+
+
+    }else {
+    $img= $img_tienda;
+    }
+ 
+?>
     {{--  --}}
     <div class=" mb-10 md:container md:mx-auto px-4 md:px-0 col-span-1">
 
@@ -15,7 +45,7 @@
           <div class="w-full max-w-6xl rounded md:mb-0  ">
             <div class="relative panel-wrapper">
               <div
-                style="background-image:url('{{ url('uploads/CASA Y DECORACIÓN/Creaciones Luisa/Sin título-1-10-min.jpg') }}');background-repeat: no-repeat;background-size: contain;"
+                style="background-image:url('{{$ruta }}{{$img }}');background-repeat: no-repeat;background-size: contain;background-position: center;"
                 class="image is-3by4 border-4 border-blue-400 hover:border-yellow-500 w-full h-48 object-cover overflow-hidden">
                 <div
                   class="px-6 py-4 h-full  w-full absolute  bg-blend-darken left-0 top-0 opacity-50 hover:opacity-95 bg-blue-500 hover:bg-yellow-500">
