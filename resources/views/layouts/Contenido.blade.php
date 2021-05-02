@@ -18,7 +18,7 @@
     <link href="{{ asset('css/Style.css') }}" rel="stylesheet">
     <link href="{{ asset('css/componentes.css') }}" rel="stylesheet">
     <link href="{{ asset('css/layouts.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/hero-backgrounds.css') }}" rel="stylesheet">
+    {{-- <link href="{{ asset('css/hero-backgrounds.css') }}" rel="stylesheet"> --}}
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Lobster+Two&family=Poppins:wght@300&family=Varela+Round&display=swap');
     </style>
@@ -100,7 +100,7 @@
     {{-- footer --}}
 </body>
 <script src="{{ asset('js/wow.min.js') }} "></script>
-<script>
+<script defer>
     new WOW().init();
 </script>
 <script>

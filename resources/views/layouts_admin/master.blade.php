@@ -18,7 +18,7 @@
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
     <link href="{{ asset('css/componentes.css') }}" rel="stylesheet">
     <link href="{{ asset('css/layouts.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/hero-backgrounds.css') }}" rel="stylesheet">
+    {{-- <link href="{{ asset('css/hero-backgrounds.css') }}" rel="stylesheet"> --}}
     @yield('page-styles')
 </head>
 
