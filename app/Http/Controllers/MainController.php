@@ -104,54 +104,58 @@ class MainController extends Controller
         }
     }
 
-    public static function show_Categorias($id_tienda)
+    public static function show_Categorias($id_cat)
     { //mostrar todas las tiendas ->with('producto ,$(product')->producto()
+        if ($id_cat > 0 && $id_cat < 7) {
 
-        $tiendas = Tienda::where('id_categoria', $id_tienda)->get();
-        $portada = "";
-        switch ($id_tienda) {
-            case  1:
-                $portada = '\img\cats\textil.png';
-                $fondo = '/TEXTIL-min.jpg';
-                break;
-            case 2:
-                $portada = '\img\cats\diseño.png';
-                $fondo = '/DISEÑO-min.jpg';
-                break;
-            case 3:
-                $portada = '\img\cats\salud.png';
-                $fondo = '/BELLEZA Y CUIDADO-min.jpg';
-                break;
-            case  4:
-                $portada = '\img\cats\casa.png';
-                $fondo = '/DECORACION-min.jpg';
-                break;
-            case  5:
-                $portada = '\img\cats\gastro.png';
-                $fondo = '/GASTRONOMIA-min.jpg';
-                break;
-            case  6:
-                $portada = '\img\cats\naturaleza.png';
-                $fondo = '/NATURALEZA-min.jpg';
-                break;
+            $tiendas = Tienda::where('id_categoria', $id_cat)->get();
+            $portada = "";
+            switch ($id_cat) {
+                case  1:
+                    $portada = '\img\cats\textil.png';
+                    $fondo = '/TEXTIL-min.jpg';
+                    break;
+                case 2:
+                    $portada = '\img\cats\diseño.png';
+                    $fondo = '/DISEÑO-min.jpg';
+                    break;
+                case 3:
+                    $portada = '\img\cats\salud.png';
+                    $fondo = '/BELLEZA Y CUIDADO-min.jpg';
+                    break;
+                case  4:
+                    $portada = '\img\cats\casa.png';
+                    $fondo = '/DECORACION-min.jpg';
+                    break;
+                case  5:
+                    $portada = '\img\cats\gastro.png';
+                    $fondo = '/GASTRONOMIA-min.jpg';
+                    break;
+                case  6:
+                    $portada = '\img\cats\naturaleza.png';
+                    $fondo = '/NATURALEZA-min.jpg';
+                    break;
 
-            default:
-                # code...
-                break;
+                default:
+                    # code...
+                    break;
+            }
+
+            // return dd($tiendas_Salud);
+
+            return View('Vistas.Categorias')->with(
+                'tiendas',
+                $tiendas
+            )->with(
+                'portada',
+                $portada
+            )->with(
+                'fondo',
+                $fondo
+            );
+        } else {
+            return View('componentes.404');
         }
-
-        // return dd($tiendas_Salud);
-
-        return View('Vistas.Categorias')->with(
-            'tiendas',
-            $tiendas
-        )->with(
-            'portada',
-            $portada
-        )->with(
-            'fondo',
-            $fondo
-        );
     }
     public static function show_Blog()
     { //mostrar todas las tiendas ->with('producto ,$(product')->producto()

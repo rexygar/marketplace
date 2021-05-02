@@ -24,7 +24,7 @@
     justify-content: center;
   }
 </style>
-<div class="col-span-12 grid grid-cols-12 h-full md:px-6 lg:px-16 xl:px-16 2xl:px-16"
+<div class="col-span-12 grid grid-cols-12 h-full md:px-6 lg:px-16 xl:px-16 2xl:px-16 "
   style="background-color: blueviolet;">
 
   <div

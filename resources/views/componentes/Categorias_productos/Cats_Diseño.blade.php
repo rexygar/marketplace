@@ -1,47 +1,53 @@
-<div class="col-span-12 grid grid-cols-7 _Diseño py-20 px-36  sm:px-10  md:px-16 lg:px-24 2xl:px-36 xl:px-36">
-  <div class="col-span-7 grid md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3 grid-cols-2 sm:gap-1  gap-6 lg:gap-4">
+<div class="col-span-12 grid grid-cols-7 _Diseño py-20 px-36  sm:px-10  md:px-16 lg:px-24 2xl:px-36 xl:px-36 animate__fadeInUp animate__animated wow">
+  <div
+    class="col-span-7 grid md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3 grid-cols-2 sm:gap-1  gap-6 lg:gap-4">
 
- 
+
     @if ($tiendas_Diseño)
 
-    @foreach ($tiendas_Diseño  as $tiendas_d)
-    
-    <?php
-    $img_producto = null;
-    $img_tienda = $tiendas_d->logo;
+    @foreach ($tiendas_Diseño as $tiendas_d)
 
-    if ( $tiendas_d->producto != null) {
+    @php
+    $img_producto_d = null;
+    $img_tienda_d = null;
+    $img_d= null;
+    $ruta_d = null;
+    @endphp
 
-    foreach ($tiendas_d->producto as $p) {
-    if ($loop->first) {
-    $img_producto = $p->img;
- 
-    }
+    @if ( $tiendas_d->logo != null)
+    @php
+    $img_tienda_d = $tiendas_d->logo;
+    @endphp
+    @endif
 
-    }
+    @if ( $tiendas_d->producto != null && $img_tienda_d == null)
+    @foreach ($tiendas_d->producto as $d)
+    @if ($loop->first)
+    @php
+    $img_producto_d = $d->img;
+    @endphp
+    @endif
+    @endforeach
+    @endif
 
-    }
-
-
-
-
-    if ($img_tienda ==null) {
-    if ($img_producto == null) {
-      $img = "/TEXTIL-min.jpg";
-    $ruta= "/img/CATEGORIAS";
-    } else {
-  
-    $img = $img_producto;
-    $ruta= "/storage/";
-    }
-
-
-    }else {
-      $ruta= "/storage/";
-    $img= $img_tienda;
-    }
- 
-?>
+    @if ($img_tienda_d == null)
+    @if ($img_producto_d == null)
+    @php
+    $img_d = "/DISEÑO-min.jpg";
+    $ruta_d= "/img/CATEGORIAS";
+    @endphp
+    @else
+    @php
+    $img_d = $img_producto_d;
+    $ruta_d= "/storage/";
+    @endphp
+    @endif
+    @else
+    @php
+    $ruta_d = "/storage/";
+    $img_d= $img_tienda_d;
+    @endphp
+    @endif
     {{--  --}}
     <div class=" mb-10 md:container md:mx-auto px-4 md:px-0 col-span-1">
 
@@ -50,13 +56,13 @@
 
           <div class="w-full max-w-6xl rounded md:mb-0  ">
             <div class="relative panel-wrapper">
-              <div
-                style="background-image:url('{{$ruta }}{{$img }}');background-repeat: no-repeat;background-size: contain;background-position: center;"
-                class="image is-1by1 border-4 border-blue-400 hover:border-yellow-500 w-full h-48 object-cover overflow-hidden">
+              <div data-background-image="{{$ruta_d }}{{$img_d }}"
+                style="background-repeat: no-repeat;background-size: contain;background-position: center;"
+                class="image is-1by1 lozad border-4 border-blue-400 hover:border-yellow-500 w-full h-48 object-cover overflow-hidden">
                 <div
                   class="px-6 py-4 h-full  w-full absolute  bg-blend-darken left-0 top-0 opacity-50 hover:opacity-95 bg-blue-500 hover:bg-yellow-500">
                   <p
-                  class="text-black sm:text-2xl text-center lobster font-bold text-2xl md:text-2xl lg:text-2xl xl:text-3xl 2xl:text-5xl mix-blend-multiply pt-5 md:pt-12 lg:pt-12 xl:pt-12 2xl:pt-24 uppercase">
+                    class="text-black sm:text-2xl text-center lobster font-bold text-2xl md:text-2xl lg:text-2xl xl:text-3xl 2xl:text-5xl mix-blend-multiply pt-5 md:pt-12 lg:pt-12 xl:pt-12 2xl:pt-24 uppercase">
                     {{$tiendas_d->razon_social}}</p>
 
                 </div>

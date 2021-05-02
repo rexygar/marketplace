@@ -13,13 +13,12 @@
 
 @yield('meta')
 @stack('before-styles')
-<link href="{{ asset('css/app.css') }}" rel="stylesheet">
+{{-- <link href="{{ asset('css/app.css') }}" rel="stylesheet"> --}}
+<link href="{{ asset('css/diseño.css') }}" rel="stylesheet">
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
     <link href="{{ asset('css/componentes.css') }}" rel="stylesheet">
     <link href="{{ asset('css/layouts.css') }}" rel="stylesheet">
     <link href="{{ asset('css/hero-backgrounds.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/Megamenu.css') }}" rel="stylesheet">
-
     @yield('page-styles')
 </head>
 

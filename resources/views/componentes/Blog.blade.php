@@ -33,20 +33,23 @@
 
     <div
       class="col-span-12 lg:col-span-12 md:col-span-12 xl:col-span-12 2xl:col-span-12 grid grid-cols-12   md:grid-flow-row row-span-2">
-      
-    
+
+
       @foreach ($blogs as $blog)
-        @if (isset($blog->id))
-        <div class="col-span-12  lg:col-span-12 md:col-span-12 xl:col-span-12 2xl:col-span-12 grid grid-cols-3  px-10  py-6 ">
-          <h1 class="col-span-12 text-justify py-5 font-black 2xl:text-6xl xl:text-6xl lg:text-4xl md:text-3xl sm:text-2xl">No hay publicaciones por el momento</h1>
-        </div>
-        @else
-        <div
+      @if ($blog == null)
+      <div
         class="col-span-12  lg:col-span-12 md:col-span-12 xl:col-span-12 2xl:col-span-12 grid grid-cols-3  px-10  py-6 ">
+        <h1
+          class="col-span-12 text-justify py-5 font-black 2xl:text-6xl xl:text-6xl lg:text-4xl md:text-3xl sm:text-2xl">
+          No hay publicaciones por el momento</h1>
+      </div>
+      @else
+      <div
+        class="col-span-12  lg:col-span-12 md:col-span-12 xl:col-span-12 2xl:col-span-12 grid grid-cols-3  px-10  py-6 border-4 border-blue-500 rounded-2xl">
         <div class="col-span-3 grid grid-cols-12 ">
           <div class="col-span-12 font-black text-3xl">
             <h1
-              class="col-span-12 text-justify py-5 font-black 2xl:text-6xl xl:text-6xl lg:text-4xl md:text-3xl sm:text-2xl">
+              class="col-span-12 text-center py-5 font-black 2xl:text-6xl xl:text-6xl lg:text-4xl md:text-3xl sm:text-2xl">
               {{ $blog->titulo}}</h1>
           </div>
           <img class="col-span-12 " src="/storage/{{ $blog->img}}" alt="">
@@ -66,7 +69,7 @@
               </div>
 
             </div>
-            <nav class="level is-mobile pl-16">
+            <nav class="level is-mobile col-span-10">
               <div class="level-left">
                 {{ $blog->created_at}}
               </div>
@@ -76,23 +79,14 @@
             </div>
           </article>
         </div>
-        </div>
-        @endif
+      </div>
+      @endif
       {{--  --}}
       {{--  --}}
       @endforeach
 
 
 
-    </div>
-
-
-
-
-    <div class="col-span-12 text-justify">
-      <p class="py-3 px-6 font-black text-base text-gray-700  w-full "> Impulsa tu Negocio es un programa de capacitación destinado a potenciar 45 emprendimientos que nace a raíz de la iniciativa de la Municipalidad de Quillota, en conjunto con la empresa Colbún, Fundación BanAmor, Fundación La Semilla y Marca Consciente.
-        Conoce los productos y servicios que los emprendedores de Quillota tienen para ti.
-        </p>
     </div>
     <div></div>
 
