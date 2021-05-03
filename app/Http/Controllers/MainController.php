@@ -162,10 +162,19 @@ class MainController extends Controller
 
         $blogs = blog::all()->sortByDesc('created_at');
 
-        return View('Vistas.Blog')->with(
-            'blogs',
-            $blogs
-        );
+        if (sizeof($blogs) > 0) {
+            return View('Vistas.Blog')->with(
+                'blogs',
+                $blogs
+            );
+        } else {
+            $blogs = null;
+            // dd($blogs);
+            return View('Vistas.Blog')->with(
+                'blogs',
+                $blogs
+            );
+        }
     }
     public static function show_Productos()
     { //mostrar todos los productos

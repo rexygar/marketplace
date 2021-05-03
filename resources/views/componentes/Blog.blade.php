@@ -35,8 +35,8 @@
       class="col-span-12 lg:col-span-12 md:col-span-12 xl:col-span-12 2xl:col-span-12 grid grid-cols-12   md:grid-flow-row row-span-2">
 
 
-      @foreach ($blogs as $blog)
-      @if ($blog == null)
+      @if ($blogs == null)
+
       <div
         class="col-span-12  lg:col-span-12 md:col-span-12 xl:col-span-12 2xl:col-span-12 grid grid-cols-3  px-10  py-6 ">
         <h1
@@ -44,6 +44,7 @@
           No hay publicaciones por el momento</h1>
       </div>
       @else
+      @foreach ($blogs as $blog)
       <div
         class="col-span-12  lg:col-span-12 md:col-span-12 xl:col-span-12 2xl:col-span-12 grid grid-cols-3  px-10  py-6 border-4 border-blue-500 rounded-2xl">
         <div class="col-span-3 grid grid-cols-12 ">
@@ -80,10 +81,10 @@
           </article>
         </div>
       </div>
+      @endforeach
       @endif
       {{--  --}}
       {{--  --}}
-      @endforeach
 
 
 
