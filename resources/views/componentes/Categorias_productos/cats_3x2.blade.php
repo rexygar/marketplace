@@ -16,7 +16,7 @@
                 <div
                   class="px-6 py-4 h-full  w-full absolute  bg-blend-darken left-0 top-0 opacity-50 hover:opacity-95 bg-blue-500 hover:bg-yellow-500">
                   <p
-                    class="text-black sm:text-2xl text-center lobster font-bold text-2xl md:text-2xl lg:text-2xl xl:text-3xl 2xl:text-5xl mix-blend-multiply pt-5 md:pt-12 lg:pt-12 xl:pt-12 2xl:pt-24 uppercase">
+                    class="text-black sm:text-2xl text-center lobster font-bold text-2xl md:text-2xl lg:text-2xl xl:text-3xl 2xl:text-5xl  pt-5 md:pt-12 lg:pt-12 xl:pt-12 2xl:pt-24 uppercase">
                     Diseño</p>
 
                 </div>
@@ -42,7 +42,7 @@
                 <div
                   class="px-6 py-4 h-full  w-full absolute  bg-blend-darken left-0 top-0 opacity-50 hover:opacity-95 bg-blue-500 hover:bg-yellow-500">
                   <p
-                    class="text-white text-justify font-bold text-2xl md:text-2xl lg:text-2xl xl:text-5xl 2xl:text-5xl mix-blend-multiply pt-24 md:pt-12 lg:pt-24 xl:pt-24 2xl:pt-24 uppercase">
+                    class="text-white text-justify font-bold text-2xl md:text-2xl lg:text-2xl xl:text-5xl 2xl:text-5xl  pt-24 md:pt-12 lg:pt-24 xl:pt-24 2xl:pt-24 uppercase">
                     Diseño</p>
 
                 </div>
@@ -68,7 +68,7 @@
                 <div
                   class="px-6 py-4 h-full  w-full absolute  bg-blend-darken left-0 top-0 opacity-50 hover:opacity-95 bg-blue-500 hover:bg-yellow-500">
                   <p
-                    class="text-white text-justify font-bold text-2xl md:text-2xl lg:text-2xl xl:text-5xl 2xl:text-5xl mix-blend-multiply pt-24 md:pt-12 lg:pt-24 xl:pt-24 2xl:pt-24 uppercase">
+                    class="text-white text-justify font-bold text-2xl md:text-2xl lg:text-2xl xl:text-5xl 2xl:text-5xl  pt-24 md:pt-12 lg:pt-24 xl:pt-24 2xl:pt-24 uppercase">
                     Diseño</p>
 
                 </div>
@@ -101,7 +101,7 @@
                 <div
                   class="px-6 py-4 h-full  w-full absolute  bg-blend-darken left-0 top-0 opacity-50 hover:opacity-95 bg-blue-500 hover:bg-yellow-500">
                   <p
-                    class="text-white text-justify font-bold text-2xl md:text-2xl lg:text-2xl xl:text-5xl 2xl:text-5xl mix-blend-multiply pt-24 md:pt-12 lg:pt-24 xl:pt-24 2xl:pt-24 uppercase">
+                    class="text-white text-justify font-bold text-2xl md:text-2xl lg:text-2xl xl:text-5xl 2xl:text-5xl  pt-24 md:pt-12 lg:pt-24 xl:pt-24 2xl:pt-24 uppercase">
                     Diseño</p>
 
                 </div>
@@ -127,7 +127,7 @@
                 <div
                   class="px-6 py-4 h-full  w-full absolute  bg-blend-darken left-0 top-0 opacity-50 hover:opacity-95 bg-blue-500 hover:bg-yellow-500">
                   <p
-                    class="text-white text-justify font-bold text-2xl md:text-2xl lg:text-2xl xl:text-5xl 2xl:text-5xl mix-blend-multiply pt-24 md:pt-12 lg:pt-24 xl:pt-24 2xl:pt-24 uppercase">
+                    class="text-white text-justify font-bold text-2xl md:text-2xl lg:text-2xl xl:text-5xl 2xl:text-5xl  pt-24 md:pt-12 lg:pt-24 xl:pt-24 2xl:pt-24 uppercase">
                     Diseño</p>
 
                 </div>

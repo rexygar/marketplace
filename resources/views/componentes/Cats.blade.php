@@ -7,7 +7,14 @@
     appearance: none !important;
     outline: none !important;
   }
-
+  .sombra-txt:hover {
+    color: white;
+    text-shadow: 2px 2px 2px black;
+  }
+  .sombra-txt {
+    color: white;
+     text-shadow: -4px 3px 0 black;
+  }
   input[type="checkbox"]+span:before {
     width: 16px;
     height: 16px;
