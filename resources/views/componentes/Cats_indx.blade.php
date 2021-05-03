@@ -8,6 +8,11 @@
     outline: none;
   }
 
+  .sombra-txt:hover {
+    color: white;
+    text-shadow: 2px 2px 2px black;
+  }
+
   input[type="checkbox"]+span:before {
     width: 16px;
     height: 16px;
@@ -137,12 +142,12 @@
             <div class="w-full max-w-6xl rounded md:mb-0  ">
               <div class="relative panel-wrapper">
                 <div
-                  style="background-image:url('{{ asset('img/CATEGORIAS/TEXTIL-min.jpg') }}');background-repeat: no-repeat;background-size: contain;background-position: center;"
-                  class="image is-3by4 rounded-3xl w-full h-48 object-cover overflow-hidden">
+                  style="background-image:url('{{ asset('img/CATEGORIAS/TEXTIL-min.jpg') }}');background-repeat: no-repeat;background-size: cover;background-position: center;"
+                  class="image is-1by1 rounded-3xl w-full hover:rounded-none  h-48 object-cover overflow-hidden">
                   <div
-                    class=" h-full  w-full absolute  bg-blend-darken left-0 top-0 opacity-75 hover:opacity-95  bg-blue-600 hover:bg-yellow-600">
+                    class=" h-full  w-full absolute  bg-blend-darken left-0 top-0 opacity-75 hover:opacity-95  bg-blue-600 hover:bg-transparent hover:border-black hover:rounded-none  border-4 border-blue-600 ">
                     <p
-                      class="text-black sm:text-2xl text-center lobster font-bold text-2xl md:text-2xl lg:text-2xl xl:text-3xl 2xl:text-5xl mix-blend-multiply pt-24 md:pt-24 lg:pt-24 xl:pt-24 2xl:pt-24 uppercase">
+                      class="text-black sm:text-2xl text-center lobster  sombra-txt font-bold h-full  w-full text-2xl md:text-2xl lg:text-2xl xl:text-3xl 2xl:text-5xl mix-blend-multiply pt-24 md:pt-24 lg:pt-24 xl:pt-24 2xl:pt-24 uppercase">
                       textil</p>
 
                   </div>
@@ -166,12 +171,12 @@
             <div class="w-full max-w-6xl rounded md:mb-0  ">
               <div class="relative panel-wrapper">
                 <div
-                  style="background-image:url('{{ asset('img/CATEGORIAS/GASTRONOMIA-min.jpg') }}');background-repeat: no-repeat;background-size: contain;background-position: center;"
-                  class="image is-3by4 rounded-3xl w-full h-48 object-cover overflow-hidden">
+                  style="background-image:url('{{ asset('img/CATEGORIAS/GASTRONOMIA-min.jpg') }}');background-repeat: no-repeat;background-size: cover;background-position: center;"
+                  class="image is-1by1 rounded-3xl w-full hover:rounded-none  h-48 object-cover overflow-hidden">
                   <div
-                    class=" h-full  w-full absolute  bg-blend-darken left-0 top-0 opacity-75 hover:opacity-95  bg-blue-600 hover:bg-yellow-600">
+                    class=" h-full  w-full absolute  bg-blend-darken left-0 top-0 opacity-75 hover:opacity-95  bg-blue-600 hover:bg-transparent hover:border-black hover:rounded-none  border-4 border-blue-600 ">
                     <p
-                      class="text-black sm:text-2xl text-center lobster font-bold text-2xl md:text-2xl lg:text-2xl xl:text-3xl 2xl:text-5xl mix-blend-multiply pt-24 md:pt-24 lg:pt-24 xl:pt-24 2xl:pt-24 uppercase">
+                      class="text-black sm:text-2xl text-center lobster  sombra-txt font-bold h-full  w-full text-2xl md:text-2xl lg:text-2xl xl:text-3xl 2xl:text-5xl mix-blend-multiply pt-24 md:pt-24 lg:pt-24 xl:pt-24 2xl:pt-24 uppercase">
                       gastronomia</p>
 
                   </div>
@@ -195,12 +200,12 @@
             <div class="w-full max-w-6xl rounded md:mb-0  ">
               <div class="relative panel-wrapper">
                 <div
-                  style="background-image:url('{{ asset('img/CATEGORIAS/DECORACION-min.jpg') }}');background-repeat: no-repeat;background-size: contain;background-position: center;"
-                  class="image is-3by4 rounded-3xl w-full h-48 object-cover overflow-hidden">
+                  style="background-image:url('{{ asset('img/CATEGORIAS/DECORACION-min.jpg') }}');background-repeat: no-repeat;background-size: cover;background-position: center;"
+                  class="image is-1by1 rounded-3xl w-full hover:rounded-none  h-48 object-cover overflow-hidden">
                   <div
-                    class=" h-full  w-full absolute  bg-blend-darken left-0 top-0 opacity-75 hover:opacity-95  bg-blue-600 hover:bg-yellow-600">
+                    class=" h-full  w-full absolute  bg-blend-darken left-0 top-0 opacity-75 hover:opacity-95  bg-blue-600 hover:bg-transparent hover:border-black hover:rounded-none  border-4 border-blue-600 ">
                     <p
-                      class="text-black sm:text-2xl text-center lobster font-bold text-2xl md:text-2xl lg:text-2xl xl:text-3xl 2xl:text-5xl mix-blend-multiply pt-24 md:pt-24 lg:pt-24 xl:pt-24 2xl:pt-24 uppercase">
+                      class="text-black sm:text-2xl text-center lobster  sombra-txt font-bold h-full  w-full text-2xl md:text-2xl lg:text-2xl xl:text-3xl 2xl:text-5xl mix-blend-multiply pt-24 md:pt-24 lg:pt-24 xl:pt-24 2xl:pt-24 uppercase">
                       Casa y Decoración</p>
 
                   </div>
@@ -224,12 +229,12 @@
             <div class="w-full max-w-6xl rounded md:mb-0  ">
               <div class="relative panel-wrapper">
                 <div
-                  style="background-image:url('{{ asset('img/CATEGORIAS/NATURALEZA-min.jpg') }}');background-repeat: no-repeat;background-size: contain;background-position: center;"
-                  class="image is-3by4 rounded-3xl w-full h-48 object-cover overflow-hidden">
+                  style="background-image:url('{{ asset('img/CATEGORIAS/NATURALEZA-min.jpg') }}');background-repeat: no-repeat;background-size: cover;background-position: center;"
+                  class="image is-1by1 rounded-3xl w-full hover:rounded-none  h-48 object-cover overflow-hidden">
                   <div
-                    class=" h-full  w-full absolute  bg-blend-darken left-0 top-0 opacity-75 hover:opacity-95  bg-blue-600 hover:bg-yellow-600">
+                    class=" h-full  w-full absolute  bg-blend-darken left-0 top-0 opacity-75 hover:opacity-95  bg-blue-600 hover:bg-transparent hover:border-black hover:rounded-none  border-4 border-blue-600 ">
                     <p
-                      class="text-black sm:text-2xl text-center lobster font-bold text-2xl md:text-2xl lg:text-2xl xl:text-3xl 2xl:text-5xl mix-blend-multiply pt-24 md:pt-24 lg:pt-24 xl:pt-24 2xl:pt-24 uppercase">
+                      class="text-black sm:text-2xl text-center lobster  sombra-txt font-bold h-full  w-full text-2xl md:text-2xl lg:text-2xl xl:text-3xl 2xl:text-5xl mix-blend-multiply pt-24 md:pt-24 lg:pt-24 xl:pt-24 2xl:pt-24 uppercase">
                       naturaleza</p>
 
                   </div>
@@ -253,12 +258,12 @@
             <div class="w-full max-w-6xl rounded md:mb-0  ">
               <div class="relative panel-wrapper">
                 <div
-                  style="background-image:url('{{ asset('img/CATEGORIAS/BELLEZA Y CUIDADO-min.jpg') }}');background-repeat: no-repeat;background-size: contain;background-position: center;"
-                  class="image is-3by4 rounded-3xl w-full h-48 object-cover overflow-hidden">
+                  style="background-image:url('{{ asset('img/CATEGORIAS/BELLEZA Y CUIDADO-min.jpg') }}');background-repeat: no-repeat;background-size: cover;background-position: center;"
+                  class="image is-1by1 rounded-3xl w-full hover:rounded-none  h-48 object-cover overflow-hidden">
                   <div
-                    class=" h-full  w-full absolute  bg-blend-darken left-0 top-0 opacity-75 hover:opacity-95  bg-blue-600 hover:bg-yellow-600">
+                    class=" h-full  w-full absolute  bg-blend-darken left-0 top-0 opacity-75 hover:opacity-95  bg-blue-600 hover:bg-transparent hover:border-black hover:rounded-none  border-4 border-blue-600 ">
                     <p
-                      class="text-black sm:text-2xl text-center lobster font-bold text-2xl md:text-2xl lg:text-2xl xl:text-3xl 2xl:text-5xl mix-blend-multiply pt-24 md:pt-24 lg:pt-24 xl:pt-24 2xl:pt-24 uppercase">
+                      class="text-black sm:text-2xl text-center lobster  sombra-txt font-bold h-full  w-full text-2xl md:text-2xl lg:text-2xl xl:text-3xl 2xl:text-5xl mix-blend-multiply pt-24 md:pt-24 lg:pt-24 xl:pt-24 2xl:pt-24 uppercase">
                       salud y belleza</p>
 
                   </div>
@@ -282,12 +287,12 @@
             <div class="w-full max-w-6xl rounded md:mb-0  ">
               <div class="relative panel-wrapper">
                 <div
-                  style="background-image:url('{{ asset('img/CATEGORIAS/DISEÑO-min.jpg') }}');background-repeat: no-repeat;background-size: contain;background-position: center;"
-                  class="image is-3by4 rounded-3xl w-full h-48 object-cover overflow-hidden">
+                  style="background-image:url('{{ asset('img/CATEGORIAS/DISEÑO-min.jpg') }}');background-repeat: no-repeat;background-size: cover;background-position: center;"
+                  class="image is-1by1 rounded-3xl w-full hover:rounded-none  h-48 object-cover overflow-hidden">
                   <div
-                    class=" h-full  w-full absolute  bg-blend-darken left-0 top-0 opacity-75 hover:opacity-95  bg-blue-600 hover:bg-yellow-600">
+                    class=" h-full  w-full absolute  bg-blend-darken left-0 top-0 opacity-75 hover:opacity-95  bg-blue-600 hover:bg-transparent hover:border-black hover:rounded-none  border-4 border-blue-600 ">
                     <p
-                      class="text-black sm:text-2xl text-center lobster font-bold text-2xl md:text-2xl lg:text-2xl xl:text-3xl 2xl:text-5xl mix-blend-multiply pt-24 md:pt-24 lg:pt-24 xl:pt-24 2xl:pt-24 uppercase">
+                      class="text-black sm:text-2xl text-center lobster  sombra-txt font-bold h-full  w-full text-2xl md:text-2xl lg:text-2xl xl:text-3xl 2xl:text-5xl mix-blend-multiply pt-24 md:pt-24 lg:pt-24 xl:pt-24 2xl:pt-24 uppercase">
                       Diseño</p>
 
                   </div>
