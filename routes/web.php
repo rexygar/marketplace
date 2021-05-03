@@ -68,3 +68,4 @@ Route::get('/Categorias/{id}', [App\Http\Controllers\MainController::class, 'sho
 Route::get('/Blog', [App\Http\Controllers\MainController::class, 'show_Blog']);
 Route::get('/Tienda/{id}', [App\Http\Controllers\MainController::class, 'show_Tienda']);
 Route::get('/Product/{sku}', [App\Http\Controllers\MainController::class, 'getProduct']);
+Route::POST('/contacto', [App\Http\Controllers\MainController::class, 'contact'])->name('contacto');
