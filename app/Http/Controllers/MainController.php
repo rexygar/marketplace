@@ -3,12 +3,15 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
+use App\Mail\ContactanosMaillable;
 use App\Models\blog;
 use Illuminate\Support\Facades\Auth;
 use App\Models\Categoria;
 use App\Models\Producto;
 use App\Models\Tienda;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\View\View;
 
 class MainController extends Controller
@@ -180,5 +183,18 @@ class MainController extends Controller
     { //mostrar todos los productos
 
         return redirect('/');
+    }
+
+    public function contact(Request $request){
+        try {
+            if($request->ajax()){
+                $correo = new ContactanosMaillable($request->all());
+                Mail::to("Autogestionomil@gmail.com")->send($correo);
+
+                return ['message' => "Successful"];
+            }
+        } catch (\Throwable $th) {
+            throw $th;
+        }
     }
 }

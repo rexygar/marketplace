@@ -23,6 +23,7 @@
         @import url('https://fonts.googleapis.com/css2?family=Lobster+Two&family=Poppins:wght@300&family=Varela+Round&display=swap');
     </style>
     <link href="{{ asset('css/animate.min.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('js/toastr/toastr.min.css') }}">
     <script src="{{ asset('js/jquery-3.6.0.min.js') }}"></script>
     <script src="{{ asset('js/lozad.min.js') }}"></script>
     <style>
@@ -107,7 +108,8 @@
     const observer = lozad(); // lazy loads elements with default selector as '.lozad'
 observer.observe();
 </script>
-
+<script src="{{ asset('js/contacto.js') }}"></script>
+<script src="{{ asset('js/toastr/toastr.js') }}"></script>
 </html>
 
 <!-- /HEADER -->
