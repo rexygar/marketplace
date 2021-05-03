@@ -1,13 +1,12 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
 <div class="sm:block hidden" x-data="{ searchy : true}">
     <nav class="font-sans grid  grid-cols-12 text-justify content-center sm:flex-row sm:text-left sm:justify-between py-2 px-6 sm:items-baseline w-full"
-        style="background-color: #44b0e8">
+        style="background-color: indigo">
         <div class="grid grid-cols-12  col-span-12 md:grid-cols-12 lg:py-2">
             <div class="col-span-3 sm:col-span-3 md:col-span-3 lg:col-span-3 xl:col-span-3 2xl:col-span-3">
                 <div class="col-span-12">
                     <a class="navbar-brand lg:w-1/3 lg:mx-auto md:w-5/6" href=" {{ __('/') }}">
-                        <H1 class="sm:text-2xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-4xl lobster font-bold"
-                            style="color: darkmagenta">MARKETPLACE</H1>
+                        <img class="branding__logo img-fluid" src=" {{asset('/img/IMPULSALOGO-w.png')}}" max-width="95px" alt="">
                     </a>
                 </div>
             </div>
@@ -16,7 +15,7 @@
 
                 <div class="col-span-12 grid grid-cols-12  ">
               
-                    <div class="col-span-12 xl:col-start-3 2xl:col-start-3 lg:col-start-2 md:col-start-2"><span class="font-bold text-white text-xl"><button type="button"
+                    <div class="col-span-12 xl:col-start-4 2xl:col-start-4 lg:col-start-2 md:col-start-2"><span class="font-bold text-white text-xl"><button type="button"
                                 @click="searchy = !searchy"
                                 class="text-white dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400 focus:outline-none sm:px-2 md:px-4 lg:px-10 xl:px-10 2xl:px-10 focus:text-gray-600 dark:focus:text-gray-400"
                                 aria-label="toggle menu">

@@ -33,7 +33,7 @@
     <div class="col-span-3 lg:col-span-3 md:col-span-4 xl:col-span-3 2xl:col-span-3 grid grid-cols-12 ">
       <div class="col-span-12  ">
         <div
-          class="h-auto  rounded-t-2xl mx-2 text-left bg-white   shadow-xl lg:w-3/12 xl:w-3/12 2xl:w-3/12  md:w-4/12 absolute md:p-0 lg:p-0 md:mx-0 md:pr-0   lg:mx-0 w-full   md:-mt-36 xl:-mt-36 2xl:-mt-36 lg:-mt-36"
+          class="h-auto  rounded-t-2xl mx-2 text-left bg-white   shadow-xl lg:w-3/12 xl:w-3/12 2xl:w-3/12  md:w-4/12 absolute md:p-0 lg:p-0 md:mx-0 md:pr-0   lg:mx-0 w-full   md:-mt-36 xl:-mt-36 2xl:-mt-36 lg:-mt-28"
           @click.away="Despacho = false" style="z-index: 99999999;">
           <!-- Success alert -->
           <div style="background-color: #fba70b" class="flex p-4  text-center rounded-t-2xl">
@@ -109,12 +109,12 @@
       class="col-span-9 lg:col-span-9 md:col-span-8 xl:col-span-9 2xl:col-span-9 grid grid-cols-3  md:grid-flow-row row-span-2">
       <div></div>
       <div class="col-span-2 lg:col-span-2 xl:col-span-2  2xl:col-span-2  md:col-span-2 md:col-start-2 rounded-3xl">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1408.7842839982643!2d-71.25559838252569!3d-32.88038116587377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9689cd90215c124d%3A0xaff3176bc6559eb4!2sLa%20Concepci%C3%B3n%20877%2C%20Quillota%2C%20Valpara%C3%ADso!5e0!3m2!1ses!2scl!4v1620064023942!5m2!1ses!2scl" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <iframe class="w-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1408.7842839982643!2d-71.25559838252569!3d-32.88038116587377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9689cd90215c124d%3A0xaff3176bc6559eb4!2sLa%20Concepci%C3%B3n%20877%2C%20Quillota%2C%20Valpara%C3%ADso!5e0!3m2!1ses!2scl!4v1620064023942!5m2!1ses!2scl" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       </div>
       <div class="col-span-3  md:col-span-3 lg:col-span-3 xl:col-span-3 2xl:col-span-3 md:col-start-2">
         <div class="col-span-12 ">
           <a class="navbar-brand lg:w-1/3 lg:mx-auto md:w-5/6 py-5" href=" {{ __('/') }}">
-            <H1 class="text-4xl lobster font-bold" style="color: darkmagenta">MARKETPLACE</H1>
+            <img class="branding__logo img-fluid" src=" {{asset('/img/IMPULSALOGO-w.png')}}" max-width="95px" alt="">
           </a>
         </div>
       </div>
