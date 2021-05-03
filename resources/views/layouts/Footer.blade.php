@@ -13,7 +13,7 @@
     /* show it on small screens */
   }
 </style>
-<footer class="w-full col-span-12 no_mostrar  pt-16 lg:pt-16 md:pt-16 xl:pt-16 2xl:pt-16 pb-36 md:pb-48  sm:block hidden   animate__fadeInUp animate__animated wow"
+<footer class="w-full col-span-12 no_mostrar  pt-16 lg:pt-16 md:pt-32 xl:pt-16 2xl:pt-16 pb-36 md:pb-48  sm:block hidden   animate__fadeInUp animate__animated wow"
   style="background-image:url('{{ url('/img/FOOT.png') }}');background-repeat: no-repeat;background-size: cover;">
 
   <div class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"

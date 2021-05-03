@@ -15,8 +15,8 @@
                 class="md:col-span-9 lg:col-span-9 sm:col-span-9 xl:col-span-9 2xl:col-span-9 grid grid-cols-12 lg:ml-16 md:ml-6 sm:ml-6 xl::ml-24 2xl::ml-36">
 
                 <div class="col-span-12 grid grid-cols-12  ">
-                    <div class="col-span-1 "></div>
-                    <div class="col-span-12"><span class="font-bold text-white text-xl"><button type="button"
+              
+                    <div class="col-span-12 xl:col-start-3 2xl:col-start-3 lg:col-start-2 md:col-start-2"><span class="font-bold text-white text-xl"><button type="button"
                                 @click="searchy = !searchy"
                                 class="text-white dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400 focus:outline-none sm:px-2 md:px-4 lg:px-10 xl:px-10 2xl:px-10 focus:text-gray-600 dark:focus:text-gray-400"
                                 aria-label="toggle menu">

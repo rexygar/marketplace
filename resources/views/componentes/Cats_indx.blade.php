@@ -25,7 +25,7 @@
   }
 </style>
 <div
-  class="col-span-12 grid grid-cols-12 h-full md:px-6 lg:px-16 xl:px-16 2xl:px-16 pt-6 pb-36 md:pt-6 md:pb-36 lg:pt-6 lg:pb-36 xl:pt-6 xl:pb-36 2xl:pt-6 2xl:pb-36 animate__fadeInLeft animate__animated wow ">
+  class="col-span-12 grid grid-cols-12 h-full md:px-6 lg:px-16 xl:px-16 2xl:px-16 pt-6 pb-36 md:pt-6 md:pb-16 lg:pt-6 lg:pb-36 xl:pt-6 xl:pb-36 2xl:pt-6 2xl:pb-36 animate__fadeInLeft animate__animated wow ">
 
   <div class="col-span-12 grid gap-4 grid-cols-12 py-4 xs:px-6 sm:px-16 md:px-16 lg:px-16 2xl:px-16 xl:px-16">
 
@@ -322,22 +322,22 @@
   <div class="col-span-12 grid gap-4 grid-cols-6 py-4 xs:px-6 sm:px-16 md:px-16 lg:px-16 2xl:px-16 xl:px-16 ">
 
     <div class="col-span-1">
-      <img src="/uploads/SOCIOS/ban-amor.png" alt="" srcset="">
+      <img src="img/footer/ban-amor.png" alt="" srcset="">
     </div>
     <div class="col-span-1">
-      <img src="/uploads/SOCIOS/colbun.png" alt="" srcset="">
+      <img src="img/footer/colbun.png" alt="" srcset="">
     </div>
     <div class="col-span-1">
-      <img src="/uploads/SOCIOS/marca-con.png" alt="" srcset="">
+      <img src="img/footer/marca-con.png" alt="" srcset="">
     </div>
     <div class="col-span-1">
-      <img src="/uploads/SOCIOS/qui-dedeco.png" alt="" srcset="">
+      <img src="img/footer/qui-dedeco.png" alt="" srcset="">
     </div>
     <div class="col-span-1">
-      <img src="/uploads/SOCIOS/quillota.png" alt="" srcset="">
+      <img src="img/footer/quillota.png" alt="" srcset="">
     </div>
     <div class="col-span-1">
-      <img src="/uploads/SOCIOS/semilla.png" alt="" srcset="">
+      <img src="img/footer/semilla.png" alt="" srcset="">
     </div>
 
 
