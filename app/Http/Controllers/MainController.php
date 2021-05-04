@@ -74,7 +74,7 @@ class MainController extends Controller
 
     public static function show_Tienda($id_tienda)
     { //mostrar tienda y todos los productos de una tienda
-        $tienda = Tienda::find($id_tienda)->producto();
+
         $publicacion = DB::table('tienda')->where('tienda.id', $id_tienda)
             ->leftJoin('producto', 'tienda.id', '=', 'producto.id_tienda')
             ->leftJoin('enlace_compra', 'producto.enlace_compra', '=', 'enlace_compra.id')
@@ -185,9 +185,77 @@ class MainController extends Controller
         return redirect('/');
     }
 
-    public function contact(Request $request){
+    public function search(Request $request)
+    {
+
+        $search = preg_replace('([^A-Za-z0-9 ])', '', trim($request->search));
+        return redirect('/Search' . '/' . $search);
+    }
+    public static function search_Tiendas(Request $request)
+    {
+        $busqueda = $request->search;
+        $portadas = [];
+        // $tiendas = Tienda::where('razon_social', 'like', '%' . $busqueda . '%')->get();
+        //
+        $tiendas = Tienda::where('razon_social', 'like', '%' . $busqueda . '%')
+            ->leftJoin('categorias', 'tienda.id_categoria', '=', 'categorias.id')
+            ->select(
+                'tienda.*',
+                'categorias.nombre',
+            )
+            ->orderBy('tienda.id', 'DESC')
+            ->get();
+
+        // 
+
+        if ($tiendas != null) {
+            $i = 0;
+            foreach ($tiendas as $tienda_cat) {
+                $i++;
+                switch ($tienda_cat->id_categoria) {
+                    case  1:
+                        $portadas[$i] = '/TEXTIL-min.jpg';
+                        break;
+                    case 2:
+                        $portadas[$i] = '/DISEÑO-min.jpg';
+                        break;
+                    case 3:
+                        $portadas[$i] = '/BELLEZA Y CUIDADO-min.jpg';
+                        break;
+                    case  4:
+                        $portadas[$i] = '/DECORACION-min.jpg';
+                        break;
+                    case  5:
+                        $portadas[$i] = '/GASTRONOMIA-min.jpg';
+                        break;
+                    case  6:
+                        $portadas[$i] = '/NATURALEZA-min.jpg';
+                        break;
+
+                    default:
+                        # code...
+                        break;
+                }
+            }
+        } else {
+            $portadas = null;
+        }
+
+        //
+
+
+        return view('Vistas.Busqueda')->with(
+            'tiendas',
+            $tiendas
+        )->with(
+            'portadas',
+            $portadas
+        );
+    }
+    public function contact(Request $request)
+    {
         try {
-            if($request->ajax()){
+            if ($request->ajax()) {
                 $correo = new ContactanosMaillable($request->all());
                 Mail::to("Autogestionomil@gmail.com")->send($correo);
 

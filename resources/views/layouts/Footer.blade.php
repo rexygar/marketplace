@@ -129,10 +129,7 @@
   <!-- </footer> -->
 
 </footer>
-<scrip src="{{ asset('js/wow.min.js') }} "></scrip>
-<scrip src="{{ asset('js/alpine.js') }} "></scrip>
-<script>
-  new WOW().init();
-</script>
+
+
 
 @include('layouts.Footer-mobile')

@@ -6,7 +6,8 @@
             <div class="col-span-3 sm:col-span-3 md:col-span-3 lg:col-span-3 xl:col-span-3 2xl:col-span-3">
                 <div class="col-span-12">
                     <a class="navbar-brand lg:w-1/3 lg:mx-auto md:w-5/6" href=" {{ __('/') }}">
-                        <img class="branding__logo img-fluid" src=" {{asset('/img/IMPULSALOGO-w.png')}}" max-width="95px" alt="">
+                        <img class="branding__logo img-fluid" src=" {{asset('/img/IMPULSALOGO-w.png')}}"
+                            max-width="95px" alt="">
                     </a>
                 </div>
             </div>
@@ -14,9 +15,9 @@
                 class="md:col-span-9 lg:col-span-9 sm:col-span-9 xl:col-span-9 2xl:col-span-9 grid grid-cols-12 lg:ml-16 md:ml-6 sm:ml-6 xl::ml-24 2xl::ml-36">
 
                 <div class="col-span-12 grid grid-cols-12  ">
-              
-                    <div class="col-span-12 xl:col-start-4 2xl:col-start-4 lg:col-start-2 md:col-start-2"><span class="font-bold text-white text-xl"><button type="button"
-                                @click="searchy = !searchy"
+
+                    <div class="col-span-12 xl:col-start-4 2xl:col-start-4 lg:col-start-2 md:col-start-2"><span
+                            class="font-bold text-white text-xl"><button type="button" @click="searchy = !searchy"
                                 class="text-white dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400 focus:outline-none sm:px-2 md:px-4 lg:px-10 xl:px-10 2xl:px-10 focus:text-gray-600 dark:focus:text-gray-400"
                                 aria-label="toggle menu">
                                 <i class="fa fa-search" aria-hidden="true"></i>
@@ -45,7 +46,7 @@
     <div class="relative px-24 bg-white shadow-xl block" :class="{' hidden': searchy, 'block': !searchy}"
         id="search-content">
         <div class="container mx-auto py-4 text-black">
-            <form action="" method="GET">
+            <form action="{{ __('Search') }}" method="GET">
 
                 <input id="searchfield" type="search" name="search" placeholder="Search..." autofocus="autofocus"
                     class="w-5/6 text-grey-800 transition focus:outline-none focus:border-transparent p-2 appearance-none leading-normal text-xl lg:text-2xl">
@@ -95,7 +96,7 @@
     <div class="relative w-full bg-white shadow-xl  md:hidden" :class="{' hidden': searchy, 'block': !searchy}"
         id="search-content">
         <div class="container mx-auto py-4 text-black">
-            <form action="" method="GET">
+            <form action="{{ __('Search') }}" method="GET">
 
                 <input id="searchfield" type="search" name="search" placeholder="Search..." autofocus="autofocus"
                     class="w-full text-grey-800 transition focus:outline-none focus:border-transparent p-2 appearance-none leading-normal text-xl lg:text-2xl">

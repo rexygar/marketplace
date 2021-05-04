@@ -106,7 +106,8 @@
                                   </button>
                                 </span>
 
-                                <span class=" w-full text-base text-justify py-3">Nos pondremos en contacto contigo en un plazo de
+                                <span class=" w-full text-base text-justify py-3">Nos pondremos en contacto contigo en
+                                  un plazo de
                                   24
                                   horas.</span>
                               </div>
@@ -261,7 +262,9 @@
 
       </div>
       <div class="col-span-12 text-justify">
-        <p class="py-3 px-6 font-black text-base text-gray-700  w-full  "> Impulsa tu Negocio es un programa de capacitación destinado a potenciar 45 emprendimientos que nace a raíz de la iniciativa de la Municipalidad de Quillota, en conjunto con la empresa Colbún, Fundación BanAmor, Fundación La Semilla y Marca Consciente.
+        <p class="py-3 px-6 font-black text-base text-gray-700  w-full  "> Impulsa tu Negocio es un programa de
+          capacitación destinado a potenciar 45 emprendimientos que nace a raíz de la iniciativa de la Municipalidad de
+          Quillota, en conjunto con la empresa Colbún, Fundación BanAmor, Fundación La Semilla y Marca Consciente.
           Conoce los productos y servicios que los emprendedores de Quillota tienen para ti.</p>
       </div>
       <div></div>
@@ -292,8 +295,17 @@
   <!-- </footer> -->
 
 </footer>
-<script src="{{ asset('js/wow.min.js') }} "></script>
+<script src="{{ asset('js/contacto.js') }}"></script>
+<script src="{{ asset('js/toastr/toastr.js') }}"></script>
 <script src="{{ asset('js/alpine.js') }} "></script>
+<script src="{{ asset('js/lozad.min.js') }}"></script>
+<script>
+  const observer = lozad(); // lazy loads elements with default selector as '.lozad'
+observer.observe();
+</script>
+
+</html>
+<script  src="{{ asset('js/wow.min.js') }} "></script>
 <script>
   new WOW().init();
 </script>

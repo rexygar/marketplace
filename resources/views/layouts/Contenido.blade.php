@@ -100,16 +100,7 @@
     @include('layouts.Footer')
     {{-- footer --}}
 </body>
-<script src="{{ asset('js/wow.min.js') }} "></script>
-<script defer>
-    new WOW().init();
-</script>
-<script>
-    const observer = lozad(); // lazy loads elements with default selector as '.lozad'
-observer.observe();
-</script>
-<script src="{{ asset('js/contacto.js') }}"></script>
-<script src="{{ asset('js/toastr/toastr.js') }}"></script>
-</html>
+ 
+
 
 <!-- /HEADER -->

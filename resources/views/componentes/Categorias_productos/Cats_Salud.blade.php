@@ -57,13 +57,13 @@
 
           <div class="w-full max-w-6xl rounded md:mb-0  ">
             <div class="relative panel-wrapper">
-              <div  data-background-image="{{$ruta_s }}{{$img_s }}"
-                style="background-repeat: no-repeat;background-size: contain;background-position: center;"
-                class="image is-1by1 lozad border-4 border-blue-400 hover:border-yellow-500 w-full h-48 object-cover overflow-hidden">
+              <div data-background-image="{{$ruta_s }}{{$img_s }}"
+                style="background-repeat: no-repeat;background-size: cover;background-position: center;"
+                class="image is-1by1 lozad rounded-3xl w-full hover:border-black    h-48 object-cover overflow-hidden">
                 <div
-                  class="px-6 py-4 h-full  w-full absolute  bg-blend-darken left-0 top-0 opacity-50 hover:opacity-95 bg-blue-500 hover:bg-yellow-500">
+                  class="  h-full  w-full absolute  bg-blend-darken left-0 top-0 opacity-75 hover:opacity-95 rounded-3xl bg-blue-600 hover:bg-transparent hover:border-black   border-4 border-blue-600  ">
                   <p style="z-index: 99999999999999999;opacity: 100%;"
-                    class="text-black sm:text-2xl sombra-txt text-center lobster font-bold text-2xl md:text-2xl lg:text-2xl xl:text-3xl 2xl:text-5xl pt-5 md:pt-12 lg:pt-12 xl:pt-12 2xl:pt-24 uppercase">
+                    class="text-black sm:text-2xl text-center lobster  sombra-txt font-bold h-full  w-full text-2xl md:text-2xl lg:text-2xl xl:text-3xl 2xl:text-5xl pt-24 md:pt-12 lg:pt-12 xl:pt-24 2xl:pt-24 uppercase">
                     {{$tiendas_s->razon_social}}</p>
 
                 </div>
@@ -74,6 +74,7 @@
       </a>
 
     </div>
+
 
     {{--  --}}
     @endforeach

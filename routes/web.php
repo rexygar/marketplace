@@ -37,26 +37,16 @@ Route::POST('/ADM/blogCreado', [App\Http\Controllers\AdminController::class, 'ad
 
 Route::get('/ADM', [App\Http\Controllers\AdminController::class, 'index'])->name('admin.index');
 Route::get('/ADM/allClear', [App\Http\Controllers\AdminController::class, 'allClear']);
+//search
+Route::get('/Search',[App\Http\Controllers\MainController::class, 'search'])->name('search');
+Route::get('/Search/{search}', [App\Http\Controllers\MainController::class, 'search_Tiendas']);
 
-Route::get('/tests1', function () {
-    return view('Vistas.index');
-});
-
-Route::get('/tests2', function () {
-    return view('Vistas.Cats');
-});
-
-Route::get('/tests3', function () {
-    return view('Vistas.Tienda');
-});
-Route::get('/tests4', function () {
-    return view('Vistas.productos');
-});
+//
 
 Route::get('/About', function () {
     return view('Vistas.About');
 });
- 
+
 Route::get('/', function () {
     return view('Vistas.Index');
 });
