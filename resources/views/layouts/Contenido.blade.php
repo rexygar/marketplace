@@ -79,6 +79,8 @@
 </head>
 
 <body>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v10.0" nonce="zhrKYBKV"></script>
     <div class=" w-full py-auto relative" style="z-index: 99999">
 
         @include('componentes.brandHeader')

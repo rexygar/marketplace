@@ -317,7 +317,7 @@
 
 
     <div class="col-span-4 col-start-2 -mx-5">
-      <button class="rounded-full py-3 px-6 font-black text-white w-full bg-yellow-500 uppercase"> informacion</button>
+      <div class="fb-page" data-href="https://www.facebook.com/DigitalizaQuillota.cl" data-tabs="timeline" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/DigitalizaQuillota.cl" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/DigitalizaQuillota.cl">Digitaliza tu Negocio Quillota</a></blockquote></div>
     </div>
     <div></div>
     <div class="col-span-4 -mx-5">
@@ -331,22 +331,34 @@
   <div class="col-span-12 grid gap-4 grid-cols-6 py-4 xs:px-6 sm:px-16 md:px-16 lg:px-16 2xl:px-16 xl:px-16 ">
 
     <div class="col-span-1">
-      <img src="img/footer/ban-amor.png" alt="" srcset="">
+      <a href="http://www.fundacionbanamor.cl/">
+        <img src="img/footer/ban-amor.png" alt="" srcset="">
+      </a>
     </div>
     <div class="col-span-1">
-      <img src="img/footer/colbun.png" alt="" srcset="">
+      <a href="https://www.colbun.cl/">
+        <img src="img/footer/colbun.png" alt="" srcset="">
+      </a>
     </div>
     <div class="col-span-1">
-      <img src="img/footer/marca-con.png" alt="" srcset="">
+      <a href="https://marcaconsciente.cl/">
+        <img src="img/footer/marca-con.png" alt="" srcset="">
+      </a>
     </div>
     <div class="col-span-1">
-      <img src="img/footer/qui-dedeco.png" alt="" srcset="">
+      <a href="https://www.quillota.cl/udel/">
+        <img src="img/footer/qui-dedeco.png" alt="" srcset="">
+      </a>
     </div>
     <div class="col-span-1">
-      <img src="img/footer/quillota.png" alt="" srcset="">
+      <a href="https://quillota.cl/municipalidad/">
+        <img src="img/footer/quillota.png" alt="" srcset="">
+      </a>
     </div>
     <div class="col-span-1">
-      <img src="img/footer/semilla.png" alt="" srcset="">
+      <a href="https://www.fundacionlasemilla.cl/">
+        <img src="img/footer/semilla.png" alt="" srcset="">
+      </a>
     </div>
 
 
