@@ -321,7 +321,7 @@
     </div>
     <div></div>
     <div class="col-span-4 -mx-5">
-      <button class="rounded-full py-3 px-6 font-black text-white w-full bg-indigo-500 uppercase"> informacion</button>
+      <iframe src="https://snapwidget.com/embed/935243" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden;  width:100%; "></iframe>
     </div>
 
 

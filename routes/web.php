@@ -56,6 +56,7 @@ Route::get('/', function () {
 Route::get('/Categorias', [App\Http\Controllers\MainController::class, 'show_Tiendas']);
 Route::get('/Categorias/{id}', [App\Http\Controllers\MainController::class, 'show_Categorias']);
 Route::get('/Blog', [App\Http\Controllers\MainController::class, 'show_Blog']);
+Route::get('/Blog/{id}', [App\Http\Controllers\MainController::class, 'get_Blog'])->name('blog.noticia');
 Route::get('/Tienda/{id}', [App\Http\Controllers\MainController::class, 'show_Tienda']);
 Route::get('/Product/{sku}', [App\Http\Controllers\MainController::class, 'getProduct']);
 Route::POST('/contacto', [App\Http\Controllers\MainController::class, 'contact'])->name('contacto');

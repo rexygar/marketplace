@@ -230,6 +230,7 @@ class AdminController extends Controller
 
         $blog->titulo = $request->titulo;
         $blog->descripcion = $request->descripcion;
+        $blog->resumen = substr($request->descripcion, 0, 250);
         $blog->save();
 
         return Redirect()->back();

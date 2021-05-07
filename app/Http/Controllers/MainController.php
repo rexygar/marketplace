@@ -160,6 +160,14 @@ class MainController extends Controller
             return View('componentes.404');
         }
     }
+    public function get_Blog($id_Blog)
+    {
+        $blog = blog::where('id', $id_Blog)->get();
+        return View('Vistas.Publicacion')->with(
+            'blog',
+            $blog
+        );
+    }
     public static function show_Blog()
     { //mostrar todas las tiendas ->with('producto ,$(product')->producto()
 
@@ -179,6 +187,7 @@ class MainController extends Controller
             );
         }
     }
+
     public static function show_Productos()
     { //mostrar todos los productos
 
