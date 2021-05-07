@@ -41,7 +41,7 @@
             <div class="text-center w-full">
               <div class="text-black text-center">
                 <h2 class=" font-bold md:text-2xl text-center  text-white">
-                  ESCRIBENOS
+                  ESCRÍBENOS
                 </h2>
               </div>
 
@@ -87,7 +87,7 @@
                         <span class="flex w-full  shadow-sm py-3">
                           <button id="enviar" @click="Despacho = false" style="background-color: #fba70b"
                             class="inline-flex justify-center text-justify text-base rounded-3xl font-boldpx-6 py-3 text-white  w-full hover:bg-black">
-                            OBTENGA SU INFORME!
+                            ENVIAR
                           </button>
                         </span>
                         

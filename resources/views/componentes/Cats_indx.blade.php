@@ -151,7 +151,7 @@
                   <div
                     class="  h-full  w-full absolute  bg-blend-darken left-0 top-0 opacity-75 hover:opacity-95 rounded-3xl bg-blue-600 hover:bg-transparent hover:border-black   border-4 border-blue-600  ">
                     <p style="z-index: 99999999999999999;opacity: 100%;"
-                      class="text-black sm:text-2xl text-center lobster  sombra-txt font-bold h-full  w-full text-2xl md:text-2xl lg:text-2xl xl:text-3xl 2xl:text-5xl pt-24 md:pt-12 lg:pt-12 xl:pt-24 2xl:pt-24 uppercase">
+                      class="text-black sm:text-2xl text-center roboto  sombra-txt font-bold h-full  w-full text-2xl md:text-2xl lg:text-2xl xl:text-3xl 2xl:text-5xl pt-24 md:pt-12 lg:pt-12 xl:pt-24 2xl:pt-24 uppercase">
                       textil</p>
 
                   </div>
@@ -180,7 +180,7 @@
                   <div
                     class="  h-full  w-full absolute  bg-blend-darken left-0 top-0 opacity-75 hover:opacity-95 rounded-3xl bg-blue-600 hover:bg-transparent hover:border-black   border-4 border-blue-600  ">
                     <p style="z-index: 99999999999999999;opacity: 100%;"
-                      class="text-black sm:text-2xl text-center lobster  sombra-txt font-bold h-full  w-full text-2xl md:text-2xl lg:text-2xl xl:text-3xl 2xl:text-5xl pt-24 md:pt-12 lg:pt-12 xl:pt-24 2xl:pt-24 uppercase">
+                      class="text-black sm:text-2xl text-center roboto  sombra-txt font-bold h-full  w-full text-2xl md:text-2xl lg:text-2xl xl:text-3xl 2xl:text-5xl pt-24 md:pt-12 lg:pt-12 xl:pt-24 2xl:pt-24 uppercase">
                       gastronomia</p>
 
                   </div>
@@ -209,7 +209,7 @@
                   <div
                     class="  h-full  w-full absolute  bg-blend-darken left-0 top-0 opacity-75 hover:opacity-95 rounded-3xl bg-blue-600 hover:bg-transparent hover:border-black   border-4 border-blue-600  ">
                     <p style="z-index: 99999999999999999;opacity: 100%;"
-                      class="text-black sm:text-2xl text-center lobster  sombra-txt font-bold h-full  w-full text-2xl md:text-2xl lg:text-2xl xl:text-3xl 2xl:text-5xl pt-24 md:pt-12 lg:pt-12 xl:pt-24 2xl:pt-24 uppercase">
+                      class="text-black sm:text-2xl text-center roboto  sombra-txt font-bold h-full  w-full text-2xl md:text-2xl lg:text-2xl xl:text-3xl 2xl:text-5xl pt-24 md:pt-12 lg:pt-12 xl:pt-24 2xl:pt-24 uppercase">
                       Casa y Decoración</p>
 
                   </div>
@@ -238,7 +238,7 @@
                   <div
                     class="  h-full  w-full absolute  bg-blend-darken left-0 top-0 opacity-75 hover:opacity-95 rounded-3xl bg-blue-600 hover:bg-transparent hover:border-black   border-4 border-blue-600  ">
                     <p style="z-index: 99999999999999999;opacity: 100%;"
-                      class="text-black sm:text-2xl text-center lobster  sombra-txt font-bold h-full  w-full text-2xl md:text-2xl lg:text-2xl xl:text-3xl 2xl:text-5xl pt-24 md:pt-12 lg:pt-12 xl:pt-24 2xl:pt-24 uppercase">
+                      class="text-black sm:text-2xl text-center roboto  sombra-txt font-bold h-full  w-full text-2xl md:text-2xl lg:text-2xl xl:text-3xl 2xl:text-5xl pt-24 md:pt-12 lg:pt-12 xl:pt-24 2xl:pt-24 uppercase">
                       naturaleza</p>
 
                   </div>
@@ -267,7 +267,7 @@
                   <div
                     class="  h-full  w-full absolute  bg-blend-darken left-0 top-0 opacity-75 hover:opacity-95 rounded-3xl bg-blue-600 hover:bg-transparent hover:border-black   border-4 border-blue-600  ">
                     <p style="z-index: 99999999999999999;opacity: 100%;"
-                      class="text-black sm:text-2xl text-center lobster  sombra-txt font-bold h-full  w-full text-2xl md:text-2xl lg:text-2xl xl:text-3xl 2xl:text-5xl pt-24 md:pt-12 lg:pt-12 xl:pt-24 2xl:pt-24 uppercase">
+                      class="text-black sm:text-2xl text-center roboto  sombra-txt font-bold h-full  w-full text-2xl md:text-2xl lg:text-2xl xl:text-3xl 2xl:text-5xl pt-24 md:pt-12 lg:pt-12 xl:pt-24 2xl:pt-24 uppercase">
                       salud y belleza</p>
 
                   </div>
@@ -296,7 +296,7 @@
                   <div
                     class="  h-full  w-full absolute  bg-blend-darken left-0 top-0 opacity-75 hover:opacity-95 rounded-3xl bg-blue-600 hover:bg-transparent hover:border-black   border-4 border-blue-600  ">
                     <p style="z-index: 99999999999999999;opacity: 100%;"
-                      class="text-black sm:text-2xl text-center lobster  sombra-txt font-bold h-full  w-full text-2xl md:text-2xl lg:text-2xl xl:text-3xl 2xl:text-5xl pt-24 md:pt-12 lg:pt-12 xl:pt-24 2xl:pt-24 uppercase">
+                      class="text-black sm:text-2xl text-center roboto  sombra-txt font-bold h-full  w-full text-2xl md:text-2xl lg:text-2xl xl:text-3xl 2xl:text-5xl pt-24 md:pt-12 lg:pt-12 xl:pt-24 2xl:pt-24 uppercase">
                       Diseño</p>
 
                   </div>
@@ -331,32 +331,32 @@
   <div class="col-span-12 grid gap-4 grid-cols-6 py-4 xs:px-6 sm:px-16 md:px-16 lg:px-16 2xl:px-16 xl:px-16 ">
 
     <div class="col-span-1">
-      <a href="http://www.fundacionbanamor.cl/">
+      <a href="http://www.fundacionbanamor.cl/" target="_blank">
         <img src="img/footer/ban-amor.png" alt="" srcset="">
       </a>
     </div>
     <div class="col-span-1">
-      <a href="https://www.colbun.cl/">
+      <a href="https://www.colbun.cl/" target="_blank">
         <img src="img/footer/colbun.png" alt="" srcset="">
       </a>
     </div>
     <div class="col-span-1">
-      <a href="https://marcaconsciente.cl/">
+      <a href="https://marcaconsciente.cl/" target="_blank">
         <img src="img/footer/marca-con.png" alt="" srcset="">
       </a>
     </div>
     <div class="col-span-1">
-      <a href="https://www.quillota.cl/udel/">
+      <a href="https://www.quillota.cl/udel/" target="_blank">
         <img src="img/footer/qui-dedeco.png" alt="" srcset="">
       </a>
     </div>
     <div class="col-span-1">
-      <a href="https://quillota.cl/municipalidad/">
+      <a href="https://quillota.cl/municipalidad/" target="_blank">
         <img src="img/footer/quillota.png" alt="" srcset="">
       </a>
     </div>
     <div class="col-span-1">
-      <a href="https://www.fundacionlasemilla.cl/">
+      <a href="https://www.fundacionlasemilla.cl/" target="_blank">
         <img src="img/footer/semilla.png" alt="" srcset="">
       </a>
     </div>
