@@ -24,19 +24,19 @@
                                 <i class="fa fa-search" aria-hidden="true"></i>
                             </button></span>
                         <span
-                            class="font-bold text-white text-xl sm:text-base md:text-xl lg:text-xl xl:text-xl 2xl:text-2xl lg:px-2 xl:px-2 2xl:px-2"><a
+                            class="font-bold text-blue-900 text-xl sm:text-base md:text-xl lg:text-xl xl:text-xl 2xl:text-2xl lg:px-2 xl:px-2 2xl:px-2"><a
                                 href="{{__('/') }}">INICIO
                             </a></span>
                         <span
-                            class="font-bold text-white text-xl sm:text-base md:text-xl lg:text-xl xl:text-xl 2xl:text-2xl lg:px-2 xl:px-2 2xl:px-2"><a
+                            class="font-bold text-blue-900 text-xl sm:text-base md:text-xl lg:text-xl xl:text-xl 2xl:text-2xl lg:px-2 xl:px-2 2xl:px-2"><a
                                 href="{{ __('/About') }}">QUIÉNES
                                 SOMOS</a></span>
                         <span
-                            class="font-bold text-white text-xl sm:text-base md:text-xl lg:text-xl xl:text-xl 2xl:text-2xl lg:px-2 xl:px-2 2xl:px-2"><a
+                            class="font-bold text-blue-900 text-xl sm:text-base md:text-xl lg:text-xl xl:text-xl 2xl:text-2xl lg:px-2 xl:px-2 2xl:px-2"><a
                                 href="{{ __('/Categorias') }}">PRODUCTOS
                             </a></span>
                         <span
-                            class="font-bold text-white text-xl sm:text-base md:text-xl lg:text-xl xl:text-xl 2xl:text-2xl lg:px-2 xl:px-2 2xl:px-2"><a
+                            class="font-bold text-blue-900 text-xl sm:text-base md:text-xl lg:text-xl xl:text-xl 2xl:text-2xl lg:px-2 xl:px-2 2xl:px-2"><a
                                 href="{{__('/Blog') }}">BLOG</a></span></div>
 
                 </div>

@@ -36,7 +36,7 @@
                     de la Tienda</span>
                   <input type="text"
                     class="text-sm pl-4 w-full inline-block  text-justify align-middle  rounded-2xl md:p-2 bg-white border-2 border-gray-300  placeholder-gray-600 shadow-md focus:placeholder-gray-500  focus:border-gray-600 focus:outline-none"
-                    name="descripcion" value="@if (isset($tienda->descripcion)){{ $tienda->descripcion }} @endif">
+                    name="descripcion" value="@if (isset($tienda->descr)){{ $tienda->descr }} @endif">
                   <div class="mt-8">
 
                   </div>
