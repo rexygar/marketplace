@@ -7,7 +7,7 @@
         <div class="col-span-3 block-inline">
           <div class="col-span-1 inline">
             @if ($tienda[0]->facebook != null)
-            <a href="https://web.facebook.com/{{$tienda[0]->facebook }}" target="_blank">
+            <a href="{{$tienda[0]->facebook }}" target="_blank">
               <img class="inline w-3/12 h-auto" src="/img/FB.png" alt="" srcset="">
 
             </a>
@@ -15,18 +15,12 @@
           </div>
           <div class="col-span-1 inline">
             @if ($tienda[0]->instagram != null)
-            <a href="https://www.instagram.com/{{$tienda[0]->instagram}}" target="_blank">
+            <a href="{{$tienda[0]->instagram}}" target="_blank">
               <img class="inline w-3/12 h-auto" src="/img/IG.png" alt="" srcset="">
             </a>
 
             @endif
           </div>
-
-          @if ($tienda[0]->instagram != null)
-          <div class="col-span-1 inline">
-            <p class="inline py-3 font-black text-2xl">/{{$tienda[0]->instagram}}</p>
-          </div>
-          @endif
 
         </div>
       </div>

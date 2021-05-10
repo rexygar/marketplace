@@ -28,7 +28,7 @@
                             </a></span>
                         <span
                             class="font-bold text-white text-xl sm:text-base md:text-xl lg:text-xl xl:text-xl 2xl:text-2xl lg:px-2 xl:px-2 2xl:px-2"><a
-                                href="{{ __('/About') }}">QUIENES
+                                href="{{ __('/About') }}">QUIÉNES
                                 SOMOS</a></span>
                         <span
                             class="font-bold text-white text-xl sm:text-base md:text-xl lg:text-xl xl:text-xl 2xl:text-2xl lg:px-2 xl:px-2 2xl:px-2"><a
