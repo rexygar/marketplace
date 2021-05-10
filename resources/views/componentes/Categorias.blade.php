@@ -13,7 +13,7 @@
   }
   .sombra-txt {
     color: white;
-     text-shadow: -4px 3px 0 black;
+     text-shadow: 3px 4px 0 black;
   }
   input[type="checkbox"]+span:before {
     width: 16px;

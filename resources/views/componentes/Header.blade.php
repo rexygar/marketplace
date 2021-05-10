@@ -1,11 +1,12 @@
+ 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
-<div class="sm:block hidden" x-data="{ searchy : true}">
+<div class="sm:block hidden xl:-mb-36 2xl:-mb-36 lg:-mb-24 md:-mb-20 sm:-mb-20" x-data="{ searchy : true}">
     <nav class="font-sans grid  grid-cols-12 text-justify content-center sm:flex-row sm:text-left sm:justify-between py-2 px-6 sm:items-baseline w-full"
-        style="background-color: indigo">
+        style="background-color: transparent">
         <div class="grid grid-cols-12  col-span-12 md:grid-cols-12 lg:py-2">
             <div class="col-span-3 sm:col-span-3 md:col-span-3 lg:col-span-3 xl:col-span-3 2xl:col-span-3">
                 <div class="col-span-12">
-                    <a class="navbar-brand lg:w-1/3 lg:mx-auto md:w-5/6" href=" {{ __('/') }}">
+                    <a class="navbar-brand lg:w-2/3 lg:mx-auto md:w-5/6" href=" {{ __('/') }}">
                         <img class="branding__logo img-fluid" src=" {{asset('/img/IMPULSALOGO-w.png')}}"
                             max-width="95px" alt="">
                     </a>

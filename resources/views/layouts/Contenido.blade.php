@@ -31,16 +31,10 @@
             font-family: 'Nunito';
         }
 
-
         @font-face {
-            font-family: 'Lobster Two';
-            font-style: normal;
-            font-weight: 400;
-            font-display: swap;
-            src: url('/public/fonts/LobsterTwo-Regular.ttf') format('ttf');
-            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+            font-family: 'Verdana Italic';
 
-
+            src: local('Verdana Italic'), url('/public/fonts/VERDANAI.woff') format('woff');
         }
 
         @media screen and (min-width: 0px) and (max-width: 650px) {
@@ -49,6 +43,10 @@
             }
 
             /* show it on small screens */
+        }
+
+        @media (min-width: 128px) .xl\:-mb-26 {
+            margin-bottom: -7rem;
         }
 
         @media screen and (min-width: 1024px) {
@@ -61,7 +59,7 @@
 
         .lobster {
 
-            font-family: 'Lobster Two',
+            font-family: 'Verdana',
                 cursive !important;
         }
 
@@ -80,7 +78,8 @@
 
 <body>
     <div id="fb-root"></div>
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v10.0" nonce="zhrKYBKV"></script>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v10.0"
+        nonce="zhrKYBKV"></script>
     <script src="https://snapwidget.com/js/snapwidget.js"></script>
     <div class=" w-full py-auto relative" style="z-index: 99999">
 
@@ -90,7 +89,7 @@
         {{-- @include('componentes.Header') --}}
     </div>
     {{-- Contenido --}}
-    <main class="bg-cover bg-center" style="background-image:url('{{ url('/img/FONDO.jpg') }}')">
+    <main class="bg-cover bg-center" style="background-image:url('{{ url('/img/FONDO.png') }}')">
         @yield('content')
     </main>
     {{-- Contenido --}}
@@ -103,7 +102,7 @@
     @include('layouts.Footer')
     {{-- footer --}}
 </body>
- 
+
 
 
 <!-- /HEADER -->
