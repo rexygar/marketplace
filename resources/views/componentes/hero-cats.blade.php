@@ -2,7 +2,7 @@
  
 
 
-  <img class="col-span-12 " src="{{ asset('img/PRODUCTOS-indx.png') }}" alt="">
+  <img class="col-span-12 " src="{{ asset('img/CATEGORÍAS-bk.png') }}" alt="">
 
 
 
