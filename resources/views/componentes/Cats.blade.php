@@ -36,7 +36,7 @@
 
 
   <div class="col-span-12 grid grid-cols-12 col-start-1 text-left    text-black">
-    <fieldset class="rating col-span-12 grid grid-cols-12 text-center ">
+    <fieldset class="rating col-span-12 grid grid-cols-4 md:grid-cols-6 sm:grid-cols-6 lg:grid-cols-12 xl:grid-cols-12 2xl:grid-cols-12 text-center  ">
 
       <label class="full col-span-2 py-3 px-2 lx:px-6 md:inline-block align-middle " for="star6">
         <div class="col-span-2  text-center ">

@@ -13,7 +13,8 @@
     /* show it on small screens */
   }
 </style>
-<footer class="w-full col-span-12 no_mostrar  pt-16 lg:pt-16 md:pt-32 xl:pt-16 2xl:pt-16 pb-36 md:pb-48  sm:block hidden   animate__fadeInUp animate__animated wow"
+<footer
+  class="w-full col-span-12 no_mostrar  pt-16 lg:pt-16 md:pt-32 xl:pt-16 2xl:pt-16 pb-36 md:pb-48  sm:block hidden   animate__fadeInUp animate__animated wow"
   style="background-image:url('{{ url('/img/FOOT.png') }}');background-repeat: no-repeat;background-size: cover;">
 
   <div class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
@@ -85,12 +86,12 @@
                       <div class="text-2xl col-span-12 ">
 
                         <span class="flex w-full  shadow-sm py-3">
-                          <button id="enviar" @click="Despacho = false" style="background-color: #fba70b"
+                          <button id="enviar" style="background-color: #fba70b"
                             class="inline-flex justify-center text-justify text-base rounded-3xl font-boldpx-6 py-3 text-white  w-full hover:bg-black">
                             ENVIAR
                           </button>
                         </span>
-                        
+
                         <span class=" w-full text-base  py-3 text-justify">Nos pondremos en contacto contigo en un plazo
                           de 24
                           horas.</span>
@@ -101,7 +102,7 @@
                 </div>
               </label>
             </article>
-          </div> 
+          </div>
         </div>
       </div>
     </div>
@@ -109,7 +110,9 @@
       class="col-span-9 lg:col-span-9 md:col-span-8 xl:col-span-9 2xl:col-span-9 grid grid-cols-3  md:grid-flow-row row-span-2">
       <div></div>
       <div class="col-span-2 lg:col-span-2 xl:col-span-2  2xl:col-span-2  md:col-span-2 md:col-start-2 rounded-3xl">
-        <iframe class="w-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1408.7842839982643!2d-71.25559838252569!3d-32.88038116587377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9689cd90215c124d%3A0xaff3176bc6559eb4!2sLa%20Concepci%C3%B3n%20877%2C%20Quillota%2C%20Valpara%C3%ADso!5e0!3m2!1ses!2scl!4v1620064023942!5m2!1ses!2scl" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <iframe class="w-full"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1408.7842839982643!2d-71.25559838252569!3d-32.88038116587377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9689cd90215c124d%3A0xaff3176bc6559eb4!2sLa%20Concepci%C3%B3n%20877%2C%20Quillota%2C%20Valpara%C3%ADso!5e0!3m2!1ses!2scl!4v1620064023942!5m2!1ses!2scl"
+          width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       </div>
       <div class="col-span-3  md:col-span-3 lg:col-span-3 xl:col-span-3 2xl:col-span-3 md:col-start-2">
         <div class="col-span-12 ">
@@ -121,7 +124,7 @@
 
 
     </div>
- 
+
   </div>
 
 

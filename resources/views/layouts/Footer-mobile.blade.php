@@ -70,24 +70,24 @@
                           <div class=" rounded-b lg:rounded-b-none  w-full lg:rounded-r p-4 leading-normal">
                             <div class="mb-8">
                               <div class="py-2">
-
-                                <input type="text" placeholder=" Nombre completo"
-                                  class="text-sm pl-4 w-full inline-block text-justify align-middle  rounded-2xl md:p-2 bg-white border-2 border-gray-300  placeholder-gray-600 shadow-md focus:placeholder-gray-500  focus:border-gray-600 focus:outline-none"
+                                <input type="hidden" id="url" value="{{ route('contacto') }}">
+                                <input type="text" id="nombre_mble" placeholder=" Nombre completo"
+                                  class="text-sm pl-4 w-full inline-block text-justify align-middle  rounded-2xl md:p-2 bg-white border-2 border-gray-300  placeholder-gray-600 shadow-md focus:placeholder-gray-500  focus:border-gray-600 focus:outline-none py-3"
                                   style="background-color: #f9f9f9">
                               </div>
                               <div class="py-2">
-                                <input type="email" placeholder=" Email"
-                                  class="text-sm pl-4 w-full inline-block text-justify align-middle  rounded-2xl md:p-2 bg-white border-2 border-gray-300  placeholder-gray-600 shadow-md focus:placeholder-gray-500  focus:border-gray-600 focus:outline-none"
+                                <input type="email" id="correo_mble" placeholder=" Email"
+                                  class="text-sm pl-4 w-full inline-block text-justify align-middle  rounded-2xl md:p-2 bg-white border-2 border-gray-300  placeholder-gray-600 shadow-md focus:placeholder-gray-500  focus:border-gray-600 focus:outline-none py-3"
                                   style="background-color: #f9f9f9">
                               </div>
                               <div class="py-2">
-                                <input type="text" placeholder=" Url de tu sitio web"
-                                  class="text-sm pl-4 w-full inline-block text-justify align-middle  rounded-2xl md:p-2 bg-white border-2 border-gray-300  placeholder-gray-600 shadow-md focus:placeholder-gray-500  focus:border-gray-600 focus:outline-none"
+                                <input type="text" id="urlSitio_mble" placeholder=" Url de tu sitio web"
+                                  class="text-sm pl-4 w-full inline-block text-justify align-middle  rounded-2xl md:p-2 bg-white border-2 border-gray-300  placeholder-gray-600 shadow-md focus:placeholder-gray-500  focus:border-gray-600 focus:outline-none py-3"
                                   style="background-color: #f9f9f9">
                               </div>
                               <div class="py-2">
-                                <input type="text" placeholder=" Nombre de la Empresa"
-                                  class="text-sm pl-4 w-full inline-block text-justify align-middle  rounded-2xl md:p-2 bg-white border-2 border-gray-300  placeholder-gray-600 shadow-md focus:placeholder-gray-500  focus:border-gray-600 focus:outline-none"
+                                <input type="text" id="nombreEmp_mble" placeholder=" Nombre de la Empresa"
+                                  class="text-sm pl-4 w-full inline-block text-justify align-middle  rounded-2xl md:p-2 bg-white border-2 border-gray-300  placeholder-gray-600 shadow-md focus:placeholder-gray-500  focus:border-gray-600 focus:outline-none py-3"
                                   style="background-color: #f9f9f9">
 
 
@@ -100,7 +100,7 @@
                               <div class="text-2xl col-span-12 ">
 
                                 <span class="flex w-full  shadow-sm py-3">
-                                  <button @click="Despacho = false" style="background-color: #fba70b"
+                                  <button id="enviar_mble" style="background-color: #fba70b"
                                     class="inline-flex justify-center text-base rounded-3xl font-boldpx-6 py-3 text-white text-justify  w-full hover:bg-black">
                                     OBTENGA SU INFORME!
                                   </button>
@@ -295,17 +295,18 @@
   <!-- </footer> -->
 
 </footer>
-<script src="{{ asset('js/contacto.js') }}"></script>
 <script src="{{ asset('js/toastr/toastr.js') }}"></script>
 <script src="{{ asset('js/alpine.js') }} "></script>
 <script src="{{ asset('js/lozad.min.js') }}"></script>
+<script defer src="{{ asset('js/contacto.js') }}"></script>
+<script defer src="{{ asset('js/contacto_mobile.js') }}"></script>
 <script>
   const observer = lozad(); // lazy loads elements with default selector as '.lozad'
 observer.observe();
 </script>
 
 </html>
-<script  src="{{ asset('js/wow.min.js') }} "></script>
+<script src="{{ asset('js/wow.min.js') }} "></script>
 <script>
   new WOW().init();
 </script>

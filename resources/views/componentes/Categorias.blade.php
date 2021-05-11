@@ -40,10 +40,7 @@
   {{-- CATS --}}
   @include('componentes.Categorias_productos.Cats_all',
   compact('tiendas'))
- 
- 
-
-  {{--  --}}
+   {{--  --}}
 
 
 

@@ -12,9 +12,10 @@
     color: white;
     text-shadow: 2px 2px 2px black;
   }
+
   .sombra-txt {
     color: white;
-     text-shadow: -4px 3px 0 black;
+    text-shadow: -4px 3px 0 black;
   }
 
   input[type="checkbox"]+span:before {
@@ -151,7 +152,7 @@
                   <div
                     class="  h-full  w-full absolute  bg-blend-darken left-0 top-0 opacity-75 hover:opacity-95 rounded-3xl bg-blue-600 hover:bg-transparent hover:border-black   border-4 border-blue-600  ">
                     <p style="z-index: 99999999999999999;opacity: 100%;"
-                      class="text-black sm:text-2xl text-center lobster  sombra-txt font-bold h-full  w-full text-2xl md:text-2xl lg:text-2xl xl:text-3xl 2xl:text-5xl pt-24 md:pt-12 lg:pt-12 xl:pt-24 2xl:pt-24 uppercase">
+                      class="text-black sm:text-2xl text-center lobster font-bold sombra-txt font-bold h-full  w-full text-base md:text-2xl lg:text-2xl xl:text-3xl 2xl:text-4xl pt-4 md:pt-12 lg:pt-12 xl:pt-24 2xl:pt-24 uppercase">
                       textil</p>
 
                   </div>
@@ -180,7 +181,7 @@
                   <div
                     class="  h-full  w-full absolute  bg-blend-darken left-0 top-0 opacity-75 hover:opacity-95 rounded-3xl bg-blue-600 hover:bg-transparent hover:border-black   border-4 border-blue-600  ">
                     <p style="z-index: 99999999999999999;opacity: 100%;"
-                      class="text-black sm:text-2xl text-center lobster  sombra-txt font-bold h-full  w-full text-2xl md:text-2xl lg:text-2xl xl:text-3xl 2xl:text-5xl pt-24 md:pt-12 lg:pt-12 xl:pt-24 2xl:pt-24 uppercase">
+                      class="text-black sm:text-2xl text-center lobster font-bold sombra-txt font-bold h-full  w-full text-base md:text-2xl lg:text-2xl xl:text-3xl 2xl:text-4xl pt-4 md:pt-12 lg:pt-12 xl:pt-24 2xl:pt-24 uppercase">
                       gastronomía</p>
 
                   </div>
@@ -209,7 +210,7 @@
                   <div
                     class="  h-full  w-full absolute  bg-blend-darken left-0 top-0 opacity-75 hover:opacity-95 rounded-3xl bg-blue-600 hover:bg-transparent hover:border-black   border-4 border-blue-600  ">
                     <p style="z-index: 99999999999999999;opacity: 100%;"
-                      class="text-black sm:text-2xl text-center lobster  sombra-txt font-bold h-full  w-full text-2xl md:text-2xl lg:text-2xl xl:text-3xl 2xl:text-5xl pt-24 md:pt-12 lg:pt-12 xl:pt-24 2xl:pt-24 uppercase">
+                      class="text-black sm:text-2xl text-center lobster font-bold sombra-txt font-bold h-full  w-full text-base md:text-2xl lg:text-2xl xl:text-3xl 2xl:text-4xl pt-4 md:pt-12 lg:pt-12 xl:pt-24 2xl:pt-24 uppercase">
                       Casa y Decoración</p>
 
                   </div>
@@ -238,7 +239,7 @@
                   <div
                     class="  h-full  w-full absolute  bg-blend-darken left-0 top-0 opacity-75 hover:opacity-95 rounded-3xl bg-blue-600 hover:bg-transparent hover:border-black   border-4 border-blue-600  ">
                     <p style="z-index: 99999999999999999;opacity: 100%;"
-                      class="text-black sm:text-2xl text-center lobster  sombra-txt font-bold h-full  w-full text-2xl md:text-2xl lg:text-2xl xl:text-3xl 2xl:text-5xl pt-24 md:pt-12 lg:pt-12 xl:pt-24 2xl:pt-24 uppercase">
+                      class="text-black sm:text-2xl text-center lobster font-bold sombra-txt font-bold h-full  w-full text-base md:text-2xl lg:text-2xl xl:text-3xl 2xl:text-4xl pt-4 md:pt-12 lg:pt-12 xl:pt-24 2xl:pt-24 uppercase">
                       naturaleza</p>
 
                   </div>
@@ -267,7 +268,7 @@
                   <div
                     class="  h-full  w-full absolute  bg-blend-darken left-0 top-0 opacity-75 hover:opacity-95 rounded-3xl bg-blue-600 hover:bg-transparent hover:border-black   border-4 border-blue-600  ">
                     <p style="z-index: 99999999999999999;opacity: 100%;"
-                      class="text-black sm:text-2xl text-center lobster  sombra-txt font-bold h-full  w-full text-2xl md:text-2xl lg:text-2xl xl:text-3xl 2xl:text-5xl pt-24 md:pt-12 lg:pt-12 xl:pt-24 2xl:pt-24 uppercase">
+                      class="text-black sm:text-2xl text-center lobster font-bold sombra-txt font-bold h-full  w-full text-base md:text-2xl lg:text-2xl xl:text-3xl 2xl:text-4xl pt-4 md:pt-12 lg:pt-12 xl:pt-24 2xl:pt-24 uppercase">
                       salud y belleza</p>
 
                   </div>
@@ -296,7 +297,7 @@
                   <div
                     class="  h-full  w-full absolute  bg-blend-darken left-0 top-0 opacity-75 hover:opacity-95 rounded-3xl bg-blue-600 hover:bg-transparent hover:border-black   border-4 border-blue-600  ">
                     <p style="z-index: 99999999999999999;opacity: 100%;"
-                      class="text-black sm:text-2xl text-center lobster  sombra-txt font-bold h-full  w-full text-2xl md:text-2xl lg:text-2xl xl:text-3xl 2xl:text-5xl pt-24 md:pt-12 lg:pt-12 xl:pt-24 2xl:pt-24 uppercase">
+                      class="text-black sm:text-2xl text-center lobster font-bold sombra-txt font-bold h-full  w-full text-base md:text-2xl lg:text-2xl xl:text-3xl 2xl:text-4xl pt-4 md:pt-12 lg:pt-12 xl:pt-24 2xl:pt-24 uppercase">
                       Diseño</p>
 
                   </div>
@@ -317,11 +318,17 @@
 
 
     <div class="col-span-4 col-start-2 -mx-5">
-      <div class="fb-page" data-href="https://www.facebook.com/DigitalizaQuillota.cl" data-tabs="timeline" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/DigitalizaQuillota.cl" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/DigitalizaQuillota.cl">Digitaliza tu Negocio Quillota</a></blockquote></div>
+      <div class="fb-page" data-href="https://www.facebook.com/DigitalizaQuillota.cl" data-tabs="timeline" data-width=""
+        data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false"
+        data-show-facepile="true">
+        <blockquote cite="https://www.facebook.com/DigitalizaQuillota.cl" class="fb-xfbml-parse-ignore"><a
+            href="https://www.facebook.com/DigitalizaQuillota.cl">Digitaliza tu Negocio Quillota</a></blockquote>
+      </div>
     </div>
     <div></div>
     <div class="col-span-4 -mx-5">
-      <iframe src="https://snapwidget.com/embed/935243" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden;  width:100%; "></iframe>
+      <iframe src="https://snapwidget.com/embed/935243" class="snapwidget-widget" allowtransparency="true"
+        frameborder="0" scrolling="no" style="border:none; overflow:hidden;  width:100%; "></iframe>
     </div>
 
 

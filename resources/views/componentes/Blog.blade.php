@@ -46,7 +46,7 @@
                 </div>
             @else
                 <div
-                    class="col-span-12  lg:col-span-12 md:col-span-12 xl:col-span-12 2xl:col-span-12 grid grid-cols-3  px-10 gap-2 py-6">
+                    class="col-span-12  lg:col-span-12 md:col-span-12 xl:col-span-12 2xl:col-span-12 grid grid-cols-3  lg:px-10 xl:px-10 2xl:px-10 px-3 gap-2 py-6">
 
                     @foreach ($blogs as $blog)
 

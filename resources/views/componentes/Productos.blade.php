@@ -1,4 +1,4 @@
-<div class="col-span-12 grid grid-cols-7 _Naturaleza py-20 px-36 sm:px-6 md:px-16 lg:px-36 2xl:px-36 xl:px-36">
+<div class="col-span-12 grid grid-cols-7 py-20 px-6 sm:px-6 md:px-16 lg:px-36 2xl:px-36 xl:px-36">
 
   <div class="col-span-12 grid gap-4 grid-cols-12 py-4 xs:px-6 sm:px-16 md:px-16 lg:px-16 2xl:px-16 xl:px-16 ">
 
@@ -27,7 +27,8 @@
   </div>
   <div class="col-span-12 text-center  grid grid-cols-12">
 
-    <h2 class="font-black col-span-12 text-6xl lg:-mt-24 xl:-mt-24 2xl:-mt-24 " style="color: #066393">
+    <h2 class="font-black col-span-12 xl:text-6xl 2xl:text-6xl lg:text-4xl text-2xl lg:-mt-24 xl:-mt-24 2xl:-mt-24 "
+      style="color: #066393">
       {{$tienda[0]->razon_social}}</h2>
 
 
@@ -121,7 +122,7 @@
 
 </div>
 <div
-  class="col-span-7 grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3 md:grid-cols-3 px-36 md:px-6 sm:px-16 lg:px-16 xl:px-36 2xl:px-36  gap-6 lg:gap-4 py-10">
+  class="col-span-7 grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3 md:grid-cols-3 px-6 md:px-6 sm:px-16 lg:px-16 xl:px-36 2xl:px-36  gap-6 lg:gap-4 py-10">
   @foreach ($tienda as $productos)
   @if (!isset($productos->id))
   <div class=" mb-10 md:container md:mx-auto px-4 md:px-0 col-span-1">
@@ -165,8 +166,7 @@
 
 <div class="col-span-12 grid gap-4 grid-cols-6 py-4 xs:px-6 sm:px-16 md:px-16 lg:px-16 2xl:px-16 xl:px-16 ">
 
-  @for ($i = 0; $i < 1; $i++) 
-  <div>
+  @for ($i = 0; $i < 1; $i++) <div>
 </div>
 <div>
 </div>
