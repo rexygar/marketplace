@@ -273,19 +273,11 @@
     </div>
 
     <hr class="my-6 border-gray-400 col-span-12 mx-auto" />
-    <div class="flex flex-wrap items-center md:justify-between  ">
-      <div class="w-full md:w-4/12 px-4 mx-auto text-justify">
-        <div class="text-sm text-gray-600 font-semibold py-1">
-          <div class="grid grid-cols-12  col-span-12 md:grid-cols-12 lg:py-2">
-            <div class="col-span-2 sm:col-span-10 md:col-span-6 lg:col-span-6 xl:col-span-6 2xl:col-span-6">
-              <div class="col-span-12 -mr-10">
-                <a class="navbar-brand lg:w-1/3 lg:mx-auto md:w-5/6" href=" {{ __('/') }}">
-                  <H1 class="text-4xl lobster font-bold" style="color: darkmagenta">MARKETPLACE</H1>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
+    <div class="grid grid-cols-6 col-span-12 mx-auto">
+      <div class="col-span-12 ">
+        <a class="navbar-brand lg:w-1/3 lg:mx-auto md:w-5/6 py-5" href=" /">
+          <img class="branding__logo img-fluid" src=" http://127.0.0.1:8000/img/IMPULSALOGO-w.png" max-width="95px" alt="">
+        </a>
       </div>
     </div>
   </div>

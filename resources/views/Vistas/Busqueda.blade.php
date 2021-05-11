@@ -3,6 +3,6 @@
 @section('content')
 @include('componentes.hero-busqueda')
 <div class="w-full">
-    @include('componentes.busqueda')
+    @include('componentes.Busqueda')
 </div>
 @endsection

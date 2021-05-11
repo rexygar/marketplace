@@ -2,28 +2,28 @@
 
   <div class="col-span-12 grid gap-4 grid-cols-12 py-4 xs:px-6 sm:px-16 md:px-16 lg:px-16 2xl:px-16 xl:px-16 ">
 
-    @for ($i = 0; $i < 1; $i++) <div class="col-span-3 grid-cols-3 grid -mt-10">
-      <div class="block-inline col-span-3 grid-cols-3 grid float" style="z-index: 9999999">
-        <div class="col-span-3 block-inline">
-          <div class="col-span-1 inline">
-            @if ($tienda[0]->facebook != null)
-            <a href="{{$tienda[0]->facebook }}" target="_blank">
-              <img class="inline w-3/12 h-auto" src="/img/FB.png" alt="" srcset="">
+    @for ($i = 0; $i < 1; $i++) <div
+      class="col-span-4  xl:col-span-2 2xl:col-span-2 lg:col-span-2 grid-cols-2  grid -mt-10">
 
-            </a>
-            @endif
-          </div>
-          <div class="col-span-1 inline">
-            @if ($tienda[0]->instagram != null)
-            <a href="{{$tienda[0]->instagram}}" target="_blank">
-              <img class="inline w-3/12 h-auto" src="/img/IG.png" alt="" srcset="">
-            </a>
+      <div class="col-span-1 mx-auto">
+        @if ($tienda[0]->facebook != null)
+        <a href="{{$tienda[0]->facebook }}" target="_blank">
+          <img class="inline xl:w-full 2xl:w-full lg:w-full w-full h-auto" src="/img/FB.png" alt="" srcset="">
 
-            @endif
-          </div>
-
-        </div>
+        </a>
+        @endif
       </div>
+      <div class="col-span-1 mx-auto">
+        @if ($tienda[0]->instagram != null)
+        <a href="{{$tienda[0]->instagram}}" target="_blank">
+          <img class="inline xl:w-full 2xl:w-full lg:w-full w-full h-auto" src="/img/IG.png" alt="" srcset="">
+        </a>
+
+        @endif
+      </div>
+
+
+
   </div>
   <div class="col-span-12 text-center  grid grid-cols-12">
 

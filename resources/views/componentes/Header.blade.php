@@ -147,8 +147,8 @@ md:hidden  lg:block" x-data="{ searchy : true}">
         <div class="md:relative      text-xl text-white font-bold col-span-1">
             <div class="col-span-12 ">
                 <a class="navbar-brand  p-4" href=" /">
-                    <img class="branding__logo img-fluid  w-2/3 md:w-2/3" src=" http://127.0.0.1:8000/img/IMPULSALOGO-w.png"
-                        max-width="95px" alt="">
+                    <img class="branding__logo img-fluid  w-2/3 md:w-2/3"
+                        src=" http://127.0.0.1:8000/img/IMPULSALOGO-w.png" max-width="95px" alt="">
                 </a>
             </div>
 
