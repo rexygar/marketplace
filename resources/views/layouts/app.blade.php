@@ -7,7 +7,7 @@
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-
+    <link rel="icon" href="{{asset('/img/IMPULSA_TU_NEGOCIO_LOGOS_Mesa_de_trabajo_1.png')}}" type="image/x-icon">   
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
 

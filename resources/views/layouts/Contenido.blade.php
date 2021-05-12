@@ -8,7 +8,7 @@
 
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Marketplace Quillota</title>
-    <link rel="icon" href="{{asset('/img/logo_digitaliza.png')}}" type="image/x-icon"> <!-- Favicon-->
+    <link rel="icon" href="{{asset('/img/IMPULSA_TU_NEGOCIO_LOGOS_Mesa_de_trabajo_1.png')}}" type="image/x-icon"> <!-- Favicon-->
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
 
