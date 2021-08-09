@@ -5,9 +5,9 @@
 
 
 
-  <div style="background-color: darkmagenta" class="col-span-12 py-16 xl:px-16 2xl:px-16 lg:px-10 md:px-6 xl:py-16 2yl:py-16 lg:py-10 md:py-6">
+  <div style="background: #fff" class="col-span-12 py-16 xl:px-16 2xl:px-16 lg:px-10 md:px-6 xl:py-16 2yl:py-16 lg:py-10 md:py-6">
 
-    <p class="py-3 px-6 font-black text-base text-white  w-full text-3xl">Impulsa tu Negocio es un programa de capacitación
+    <p class="py-3 px-6 font-black text-blue-800 w-full text-3xl text-center">Impulsa tu Negocio es un programa de capacitación
       destinado a potenciar 45 emprendimientos que nace a raíz de la iniciativa de la Municipalidad de Quillota, en
       conjunto con la empresa Colbún, Fundación BanAmor, Fundación La Semilla y Marca Consciente.</p>
   </div>

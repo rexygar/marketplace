@@ -148,10 +148,11 @@
               <div class="relative panel-wrapper">
                 <div
                   style="background-image:url('{{ asset('img/CATEGORIAS/TEXTIL-min.jpg') }}');background-repeat: no-repeat;background-size: cover;background-position: center;"
-                  class="image is-1by1 rounded-3xl w-full hover:border-black    h-48 object-cover overflow-hidden">
+                  class="image is-1by1 rounded-3xl w-full hover:border-black    h-48 object-cover overflow-hidden filtegray">
                   <div
-                    class="  h-full  w-full absolute  bg-blend-darken left-0 top-0 opacity-75 hover:opacity-95 rounded-3xl bg-blue-600 hover:bg-transparent hover:border-black   border-4 border-blue-600  ">
-                    <p style="z-index: 99999999999999999;opacity: 100%;"
+                    class="  h-full  w-full absolute  bg-blend-darken left-0 top-0 opacity-75 hover:opacity-95 rounded-3xl hover:bg-transparent hover:border-black"
+                    style=" display: table;">
+                    <p style="z-index: 99999999999999999;opacity: 100%; display: table-cell; vertical-align: middle; margin: 0; padding: 0;"
                       class="text-black sm:text-2xl text-center lobster font-bold sombra-txt font-bold h-full  w-full text-base md:text-2xl lg:text-2xl xl:text-3xl 2xl:text-4xl pt-4 md:pt-12 lg:pt-12 xl:pt-24 2xl:pt-24 uppercase">
                       textil</p>
 
@@ -177,10 +178,11 @@
               <div class="relative panel-wrapper">
                 <div
                   style="background-image:url('{{ asset('img/CATEGORIAS/GASTRONOMIA-min.jpg') }}');background-repeat: no-repeat;background-size: cover;background-position: center;"
-                  class="image is-1by1 rounded-3xl w-full hover:border-black    h-48 object-cover overflow-hidden">
+                  class="image is-1by1 rounded-3xl w-full hover:border-black h-48 object-cover overflow-hidden filtegray">
                   <div
-                    class="  h-full  w-full absolute  bg-blend-darken left-0 top-0 opacity-75 hover:opacity-95 rounded-3xl bg-blue-600 hover:bg-transparent hover:border-black   border-4 border-blue-600  ">
-                    <p style="z-index: 99999999999999999;opacity: 100%;"
+                    class="  h-full  w-full absolute  bg-blend-darken left-0 top-0 opacity-75 hover:opacity-95 rounded-3xl hover:bg-transparent hover:border-black"
+                    style=" display: table;">
+                    <p style="z-index: 99999999999999999;opacity: 100%; display: table-cell; vertical-align: middle; margin: 0; padding: 0;"
                       class="text-black sm:text-2xl text-center lobster font-bold sombra-txt font-bold h-full  w-full text-base md:text-2xl lg:text-2xl xl:text-3xl 2xl:text-4xl pt-4 md:pt-12 lg:pt-12 xl:pt-24 2xl:pt-24 uppercase">
                       gastronomía</p>
 
@@ -206,10 +208,11 @@
               <div class="relative panel-wrapper">
                 <div
                   style="background-image:url('{{ asset('img/CATEGORIAS/DECORACION-min.jpg') }}');background-repeat: no-repeat;background-size: cover;background-position: center;"
-                  class="image is-1by1 rounded-3xl w-full hover:border-black    h-48 object-cover overflow-hidden">
+                  class="image is-1by1 rounded-3xl w-full hover:border-black h-48 object-cover overflow-hidden filtegray">
                   <div
-                    class="  h-full  w-full absolute  bg-blend-darken left-0 top-0 opacity-75 hover:opacity-95 rounded-3xl bg-blue-600 hover:bg-transparent hover:border-black   border-4 border-blue-600  ">
-                    <p style="z-index: 99999999999999999;opacity: 100%;"
+                    class="  h-full  w-full absolute  bg-blend-darken left-0 top-0 opacity-75 hover:opacity-95 rounded-3xl hover:bg-transparent hover:border-black"
+                    style=" display: table;">
+                    <p style="z-index: 99999999999999999;opacity: 100%; display: table-cell; vertical-align: middle; margin: 0; padding: 0;"
                       class="text-black sm:text-2xl text-center lobster font-bold sombra-txt font-bold h-full  w-full text-base md:text-2xl lg:text-2xl xl:text-3xl 2xl:text-4xl pt-4 md:pt-12 lg:pt-12 xl:pt-24 2xl:pt-24 uppercase">
                       Casa y Decoración</p>
 
@@ -235,10 +238,11 @@
               <div class="relative panel-wrapper">
                 <div
                   style="background-image:url('{{ asset('img/CATEGORIAS/NATURALEZA-min.jpg') }}');background-repeat: no-repeat;background-size: cover;background-position: center;"
-                  class="image is-1by1 rounded-3xl w-full hover:border-black    h-48 object-cover overflow-hidden">
+                  class="image is-1by1 rounded-3xl w-full hover:border-black h-48 object-cover overflow-hidden filtegray">
                   <div
-                    class="  h-full  w-full absolute  bg-blend-darken left-0 top-0 opacity-75 hover:opacity-95 rounded-3xl bg-blue-600 hover:bg-transparent hover:border-black   border-4 border-blue-600  ">
-                    <p style="z-index: 99999999999999999;opacity: 100%;"
+                    class="  h-full  w-full absolute  bg-blend-darken left-0 top-0 opacity-75 hover:opacity-95 rounded-3xl hover:bg-transparent hover:border-black"
+                    style=" display: table;">
+                    <p style="z-index: 99999999999999999;opacity: 100%; display: table-cell; vertical-align: middle; margin: 0; padding: 0;"
                       class="text-black sm:text-2xl text-center lobster font-bold sombra-txt font-bold h-full  w-full text-base md:text-2xl lg:text-2xl xl:text-3xl 2xl:text-4xl pt-4 md:pt-12 lg:pt-12 xl:pt-24 2xl:pt-24 uppercase">
                       naturaleza</p>
 
@@ -264,10 +268,11 @@
               <div class="relative panel-wrapper">
                 <div
                   style="background-image:url('{{ asset('img/CATEGORIAS/BELLEZA Y CUIDADO-min.jpg') }}');background-repeat: no-repeat;background-size: cover;background-position: center;"
-                  class="image is-1by1 rounded-3xl w-full hover:border-black    h-48 object-cover overflow-hidden">
+                  class="image is-1by1 rounded-3xl w-full hover:border-black h-48 object-cover overflow-hidden filtegray">
                   <div
-                    class="  h-full  w-full absolute  bg-blend-darken left-0 top-0 opacity-75 hover:opacity-95 rounded-3xl bg-blue-600 hover:bg-transparent hover:border-black   border-4 border-blue-600  ">
-                    <p style="z-index: 99999999999999999;opacity: 100%;"
+                    class="  h-full  w-full absolute  bg-blend-darken left-0 top-0 opacity-75 hover:opacity-95 rounded-3xl hover:bg-transparent hover:border-black"
+                    style=" display: table;">
+                    <p style="z-index: 99999999999999999;opacity: 100%; display: table-cell; vertical-align: middle; margin: 0; padding: 0;"
                       class="text-black sm:text-2xl text-center lobster font-bold sombra-txt font-bold h-full  w-full text-base md:text-2xl lg:text-2xl xl:text-3xl 2xl:text-4xl pt-4 md:pt-12 lg:pt-12 xl:pt-24 2xl:pt-24 uppercase">
                       salud y belleza</p>
 
@@ -293,10 +298,11 @@
               <div class="relative panel-wrapper">
                 <div
                   style="background-image:url('{{ asset('img/CATEGORIAS/DISEÑO-min.jpg') }}');background-repeat: no-repeat;background-size: cover;background-position: center;"
-                  class="image is-1by1 rounded-3xl w-full hover:border-black    h-48 object-cover overflow-hidden">
+                  class="image is-1by1 rounded-3xl w-full hover:border-black    h-48 object-cover overflow-hidden filtegray">
                   <div
-                    class="  h-full  w-full absolute  bg-blend-darken left-0 top-0 opacity-75 hover:opacity-95 rounded-3xl bg-blue-600 hover:bg-transparent hover:border-black   border-4 border-blue-600  ">
-                    <p style="z-index: 99999999999999999;opacity: 100%;"
+                    class="  h-full  w-full absolute  bg-blend-darken left-0 top-0 opacity-75 hover:opacity-95 rounded-3xl hover:bg-transparent hover:border-black"
+                    style=" display: table;">
+                    <p style="z-index: 99999999999999999;opacity: 100%; display: table-cell; vertical-align: middle; margin: 0; padding: 0;"
                       class="text-black sm:text-2xl text-center lobster font-bold sombra-txt font-bold h-full  w-full text-base md:text-2xl lg:text-2xl xl:text-3xl 2xl:text-4xl pt-4 md:pt-12 lg:pt-12 xl:pt-24 2xl:pt-24 uppercase">
                       Diseño</p>
 

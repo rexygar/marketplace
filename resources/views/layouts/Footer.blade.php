@@ -110,9 +110,8 @@
       class="col-span-9 lg:col-span-9 md:col-span-8 xl:col-span-9 2xl:col-span-9 grid grid-cols-3  md:grid-flow-row row-span-2">
       <div></div>
       <div class="col-span-2 lg:col-span-2 xl:col-span-2  2xl:col-span-2  md:col-span-2 md:col-start-2 rounded-3xl">
-        <iframe class="w-full"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1408.7842839982643!2d-71.25559838252569!3d-32.88038116587377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9689cd90215c124d%3A0xaff3176bc6559eb4!2sLa%20Concepci%C3%B3n%20877%2C%20Quillota%2C%20Valpara%C3%ADso!5e0!3m2!1ses!2scl!4v1620064023942!5m2!1ses!2scl"
-          width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1675.3784335293446!2d-71.24896184174074!3d-32.8781517426431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9689cd9b40029207%3A0x2aecfb2703532503!2sChacabuco%20394%2C%20Quillota%2C%20Valpara%C3%ADso!5e0!3m2!1ses-419!2scl!4v1628529129228!5m2!1ses-419!2scl" 
+           height="300" style="border:0; width: 100%" allowfullscreen="" loading="lazy" ></iframe>
       </div>
       <div class="col-span-3  md:col-span-3 lg:col-span-3 xl:col-span-3 2xl:col-span-3 md:col-start-2">
         <div class="col-span-12 ">
