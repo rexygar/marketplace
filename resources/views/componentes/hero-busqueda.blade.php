@@ -2,7 +2,7 @@
 
 
 
-  <img class="col-span-12 " src="{{ asset('/img/head.png') }}" alt="" style="width: 100%; height: 85vh;">
+  <img class="col-span-12 " src="{{ asset('/img/head.jpg') }}" alt="" style="width: 100%; height: 85vh;">
 
 
   <div class="col-span-12 py-6 xl:px-16 2xl:px-16 lg:px-10 md:px-6">
